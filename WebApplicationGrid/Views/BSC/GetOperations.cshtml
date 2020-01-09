@@ -1,0 +1,62 @@
+﻿@model  WebApplicationGrid.Models.BSCOperations
+@{
+    ViewBag.Title = "GetOperations";
+}
+
+<style>
+    .valueInput {
+        border-width: 0px !important;
+    }
+</style>
+
+@*//<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>*@
+
+<script>
+    function getFormValues() {
+        var kvpairs = [];
+        var hiddenField = document.getElementById('Sourse')
+        var form = document.getElementsByTagName('form')[0];
+        for (var i = 0; i < form.elements.length; i++) {
+            var e = form.elements[i];
+            kvpairs.push(encodeURIComponent(e.value));
+        }
+        var queryString = kvpairs.join("&");
+        //window.alert(kvpairs);
+        hiddenField.value = kvpairs;
+    }
+</script>
+
+
+@using (Html.BeginForm("Save", "BSC"))
+{
+    <table class="table table-bordered table-responsive table-hover" id="mainTable">
+
+        <tr>
+            @foreach (var item in Model.PropNames)
+            {
+                <th> @item </th>
+            }
+        </tr>
+        @{ int propertyCounter = 0;}
+        @foreach (var item in Model.PropertyValues)
+        {
+
+            <tr>
+                @foreach (var p in Model.PropertyValues)
+                {
+                    if (propertyCounter < p.Count)
+                    {
+                        <td>
+                            <input class="valueInput" value=@p[propertyCounter]>
+
+                        </td>
+                    }
+
+                }
+                @{propertyCounter = propertyCounter + 1;}
+            </tr>
+        }
+    </table>
+    @Html.HiddenFor(m => m.Sourse);
+    <button type="submit" onclick="getFormValues()"> Submit </button>
+}

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BSCTestDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BSCTestT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="OperationType" Type="int" Nullable="false" />
+          <Property Name="OperationName" Type="char" MaxLength="50" />
+          <Property Name="OpAmt" Type="bigint" />
+          <Property Name="OpDescriptin" Type="nvarchar" MaxLength="200" />
+          <Property Name="AddedColumn" Type="varchar" MaxLength="200" />
+          <Property Name="AddedColumn2" Type="int" />
+          <Property Name="AddedColumn3" Type="nvarchar" MaxLength="100" />
+          <Property Name="AddedColumn4" Type="nvarchar" MaxLength="100" />
+          <Property Name="UserId" Type="int" />
+          <Property Name="OperationId" Type="int" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="BSCTestDBModelStoreContainer">
+          <EntitySet Name="BSCTestT" EntityType="Self.BSCTestT" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BSCTestDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="BSCTestDBEntities3" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BSCTestTs" EntityType="BSCTestDBModel.BSCTestT" />
+        </EntityContainer>
+        <EntityType Name="BSCTestT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="OperationType" Type="Int32" Nullable="false" />
+          <Property Name="OperationName" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+          <Property Name="OpAmt" Type="Int64" />
+          <Property Name="OpDescriptin" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="AddedColumn" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="AddedColumn2" Type="Int32" />
+          <Property Name="AddedColumn3" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="AddedColumn4" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="UserId" Type="Int32" />
+          <Property Name="OperationId" Type="Int32" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BSCTestDBModelStoreContainer" CdmEntityContainer="BSCTestDBEntities3">
+          <EntitySetMapping Name="BSCTestTs">
+            <EntityTypeMapping TypeName="BSCTestDBModel.BSCTestT">
+              <MappingFragment StoreEntitySet="BSCTestT">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="OperationId" ColumnName="OperationId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="AddedColumn4" ColumnName="AddedColumn4" />
+                <ScalarProperty Name="AddedColumn3" ColumnName="AddedColumn3" />
+                <ScalarProperty Name="AddedColumn2" ColumnName="AddedColumn2" />
+                <ScalarProperty Name="AddedColumn" ColumnName="AddedColumn" />
+                <ScalarProperty Name="OpDescriptin" ColumnName="OpDescriptin" />
+                <ScalarProperty Name="OpAmt" ColumnName="OpAmt" />
+                <ScalarProperty Name="OperationName" ColumnName="OperationName" />
+                <ScalarProperty Name="OperationType" ColumnName="OperationType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
