@@ -1,0 +1,134 @@
+﻿@{
+    ViewBag.Title = "GetOperations";
+}
+@*Test Change*@
+<style>
+    .valueInput {
+        border-width: 0px !important;
+    }
+    #saveChangesBtn {
+        background-color: #D3D2D9;
+        color: #28A745;
+        float: right;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+</style>
+
+
+<script>
+    function getFormValues() {
+        var kvpairs = [];
+        var hiddenField = document.getElementById('Sourse')
+        var form = document.getElementsByTagName('form')[0];
+        for (var i = 0; i < form.elements.length; i++) {
+            var e = form.elements[i];
+            kvpairs.push(encodeURIComponent(e.value));
+        }
+        var queryString = kvpairs.join("&");
+        //window.alert(kvpairs);
+        hiddenField.value = kvpairs;
+    }
+
+
+    //function onInputValueChange() {
+    //    window.alert("dasd");
+    //    debugger;
+    //}
+    window.onload = function () {
+        var numberOfColumn = document.getElementById('mainTable').rows[0].cells.length;
+        var numberOfRows = document.getElementById('mainTable').rows.length - 5;
+        var arrayCounter = new Array();
+        var propDataTypeArr = new Array();
+        var cellIndexArr = new Array();
+        for (var i = 0; i < numberOfColumn; i++) {
+            arrayCounter.push(i)
+        }
+        arrayCounter.forEach(getCellValue);
+        function getCellValue(item) {
+            propDataTypeArr.push(document.getElementById('mainTable').rows[1].cells[item].innerText)
+        }
+        for (var i = 0; i < numberOfColumn * numberOfRows; i++) {
+            cellIndexArr.push(i);
+        }
+        //debugger;
+        for (var j = 0; j < numberOfColumn; j++) {
+            var counter = 0;
+            for (var i = 0; i < numberOfRows; i++) {
+                if (propDataTypeArr[j].includes("Int")) {
+                    document.getElementsByTagName('input')[j + counter].type = 'number'
+                }
+                if (propDataTypeArr[j].includes("String")) {
+                    document.getElementsByTagName('input')[j + counter].type = 'text'
+                }
+                if (propDataTypeArr[j].includes("Date")) {
+                    document.getElementsByTagName('input')[j + counter].type = 'date'
+                }
+                counter += numberOfColumn;
+            }
+        }
+        //debugger;
+
+    };
+
+</script>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @using (Html.BeginForm("Save", "BSC"))
+    {
+
+        <table class="table table-bordered table-responsive table-hover" id="mainTable">
+            @{ int propertyDataTypeCounter = 0;}
+
+            <tr>
+                @foreach (var item in @ViewBag.Model.PropNames)
+                {
+                    <th> @item </th>
+                    //<td  id="hiddenHeader"> @@ViewBag.Model.PropertyDataTypes[propertyDataTypeCounter] </td>
+                }
+            </tr>
+            <tr hidden="hidden">
+                @foreach (var item in @ViewBag.Model.PropNames)
+                {
+                    <td id="hiddenHeader"> @@ViewBag.Model.PropertyDataTypes[propertyDataTypeCounter] </td>
+                    { propertyDataTypeCounter = propertyDataTypeCounter + 1; }
+
+                }
+            </tr>
+            @{ int propertyValueCounter = 0;}
+
+            @foreach (var item in @ViewBag.Model.PropertyValues)
+            {
+
+                <tr>
+                    @foreach (var p in @ViewBag.Model.PropertyValues)
+                    {
+                        if (propertyValueCounter < p.Count)
+                        {
+                            <td>
+                                <input class="valueInput" value=@p[propertyValueCounter] @*onchange="onInputValueChange()"*@>
+                            </td>
+                        }
+                    }
+                    @{propertyValueCounter = propertyValueCounter + 1;}
+                </tr>
+            }
+        </table>
+       // @Html.HiddenFor(m => m.Sourse);
+        <button class="btn" type="submit" onclick="getFormValues()" id="saveChangesBtn"> <i class="fa fa-floppy-o" aria-hidden="true"></i>   Save Changes </button>
+    }
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>
