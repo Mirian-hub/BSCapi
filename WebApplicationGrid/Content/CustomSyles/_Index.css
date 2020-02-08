@@ -1,0 +1,118 @@
+﻿
+#mainNavbar {
+    background-color: #37C5EF !important;
+    border-radius: 0px;
+}
+
+#firstPageBody {
+    background-color: #F4F6FA;
+    padding: 0px !important;
+}
+
+#mainContainer {
+    padding-left: 10px;
+}
+
+#leftSideManu {
+    float: left;
+}
+
+#MainListView {
+    width: 800px;
+    float: left;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+    .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: -1px;
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px;
+        border-radius: 0 6px 6px 6px;
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu > a:after {
+        display: block;
+        content: " ";
+        float: right;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #ccc;
+        margin-top: 5px;
+        margin-right: -10px;
+    }
+
+    .dropdown-submenu:hover > a:after {
+        border-left-color: #fff;
+    }
+
+    .dropdown-submenu.pull-left {
+        float: none;
+    }
+
+        .dropdown-submenu.pull-left > .dropdown-menu {
+            left: -100%;
+            margin-left: 10px;
+            -webkit-border-radius: 6px 0 6px 6px;
+            -moz-border-radius: 6px 0 6px 6px;
+            border-radius: 6px 0 6px 6px;
+        }
+
+#manuBarDropdowns {
+    float: left;
+    padding-right: 15px;
+}
+
+    #manuBarDropdowns > a {
+        font-family: Arial;
+    }
+
+#manuBarContainer {
+    margin: 0px !important;
+    padding: 0px;
+    content: none !important;
+}
+
+.btn-group-vertical > .btn-group:after,
+.btn-group-vertical > .btn-group:before, .btn-toolbar:after, .btn-toolbar:before,
+.clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after,
+.dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before,
+.modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before,
+.navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after,
+panel-body:before, .row:after, .row:before {
+    display: table;
+    content: none !important;
+}
+
+#manuBarContainer {
+    width: 900px !important;
+    font-size: 25px;
+    border: none;
+}
+
+#dLabel {
+    font-size: 15px;
+    background-color: #37C5EF;
+    border: none;
+}
+
+#TopFiltersGroup {
+    background-color: #D3D2D9 !important;
+}
+
+#topfiltersNavBar {
+    background-color: #D3D2D9 !important;
+}
+

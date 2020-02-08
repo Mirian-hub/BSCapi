@@ -8,7 +8,7 @@ namespace WebApplicationGrid.Models
 {
     public class BSCOperationsDto
     {
-        public IEnumerable<BscOperation> Opearations { get; set; }
+       // public IEnumerable<BscOperation> Opearations { get; set; }
         public List<string> PropNames { get; set; }
         public List<List<object>> PropertyValues { get; set; }
         public List<object> FinalPropertyValues { get; set; }

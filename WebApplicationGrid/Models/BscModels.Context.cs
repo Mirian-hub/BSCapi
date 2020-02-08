@@ -25,7 +25,5 @@ namespace WebApplicationGrid.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<BscOperation> BscOperations { get; set; }
-        public virtual DbSet<ManyBarDropDown> ManyBarDropDowns { get; set; }
     }
 }

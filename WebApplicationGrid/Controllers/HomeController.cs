@@ -11,7 +11,7 @@ namespace WebApplicationGrid.Controllers
     public class HomeController : Controller
     {
        
-               int modelNum = 3;
+        int modelNum = 3;
 
         public List<Type> types = new List<Type>();
         public Type[] GetTypesInNamespace(Assembly assembly, string nameSpace)
@@ -90,7 +90,7 @@ namespace WebApplicationGrid.Controllers
         {
             using (var _context = new BSCdbEntities4())
             {
-                var optest = _context.BscOperations;
+                //var optest = _context;
                 //op.Opearations = _context.BscOperations.ToList();
                 SetOparationsValuesAndNames();
                 GetTypes();
@@ -252,8 +252,6 @@ namespace WebApplicationGrid.Controllers
                         _context.SaveChanges();
                     }
                 }
-
-
 
 
                 // if property type is string 

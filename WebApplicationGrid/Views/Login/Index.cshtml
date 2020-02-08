@@ -1,0 +1,107 @@
+﻿@model WebApplicationGrid.ViewModels.UserVModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        #login-div {
+            position: absolute;
+            left: 40%;
+            top: 20%;
+            border: 1px solid #379ED4;
+            padding: 10px;
+            background-color: #5E7C87;
+            width: 400px;
+            height: 400px;
+            border-radius: 5px;
+        }
+        .field-validation-error { 
+            color:red;
+        }
+        #login-div td {
+            font-size:20px;
+        }
+        #login-div td input {
+            font-size: 20px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+        }
+        .reistrationsBtns {
+            font-size:20px;
+            background-color:#CFD2D6;
+            border:0px;
+            padding:5px 10px;
+            border-radius:5px;
+            margin:5px;
+        }
+        .reistrationsBtns:hover {
+            cursor: pointer;
+            background-color: #FEB41D;
+            border-radius: 15px;
+            transition-duration: 1s;
+        }
+        #redistrationsNametr td {
+            padding:5px;
+        }
+        #redistrationsPasstr td{
+            padding:5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div id="login-div">
+            @using (Html.BeginForm("Register", "Login", FormMethod.Post))
+            {
+                <table>
+                    <tr>
+                        <td> </td>
+                        <td style=" padding:10px; border-radius:5px"> BSC Registrations Form</td>
+                    </tr>
+                    <tr id="redistrationsNametr">
+                        <td>
+                            @Html.LabelFor(model => model.Name)
+                        </td>
+                        <td>
+                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Name"} })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> @Html.ValidationMessageFor(model => model.Name) </td>
+                    </tr>
+                    <tr id="redistrationsPasstr">
+                        <td>  @Html.LabelFor(model => model.Password)</td>
+                        <td> @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Password", type = "password" } })</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> @Html.ValidationMessageFor(model => model.Name) </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="field-validation-error"> @Html.DisplayFor(model=>model.ErrorMessage) </td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td>
+                            <button type="submit" class="reistrationsBtns"> Submit </button>
+                            <button type="reset" class="reistrationsBtns"> Clear </button>
+                        </td>
+                    </tr>
+                </table>
+            }
+        </div>
+    </div>
+
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</body>
+</html>
