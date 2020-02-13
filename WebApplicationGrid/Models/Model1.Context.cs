@@ -49,5 +49,49 @@ namespace WebApplicationGrid.Models
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebShellUser", shellUserKeyParameter, shellUserPasswordParameter, xmlOut);
         }
+    
+        public virtual int WebShellTerm(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter xmlOut)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebShellTerm", shellUserIDParameter, shellOperationIDParameter, xmlOut);
+        }
+    
+        public virtual int WebFuncExecuter(string functionName, string operationID)
+        {
+            var functionNameParameter = functionName != null ?
+                new ObjectParameter("FunctionName", functionName) :
+                new ObjectParameter("FunctionName", typeof(string));
+    
+            var operationIDParameter = operationID != null ?
+                new ObjectParameter("OperationID", operationID) :
+                new ObjectParameter("OperationID", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebFuncExecuter", functionNameParameter, operationIDParameter);
+        }
+    
+        public virtual int WebGroupAll(string tableName)
+        {
+            var tableNameParameter = tableName != null ?
+                new ObjectParameter("TableName", tableName) :
+                new ObjectParameter("TableName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebGroupAll", tableNameParameter);
+        }
+    
+        public virtual int WebGroupsAll(string tableName)
+        {
+            var tableNameParameter = tableName != null ?
+                new ObjectParameter("TableName", tableName) :
+                new ObjectParameter("TableName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebGroupsAll", tableNameParameter);
+        }
     }
 }

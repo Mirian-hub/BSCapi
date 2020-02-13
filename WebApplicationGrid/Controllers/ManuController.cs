@@ -148,5 +148,52 @@ namespace WebApplicationGrid.Controllers
             var modelForView = CreateDropdownHierarchy(ManuOpList);
             return View(modelForView);
         }
+
+        //public ActionResult GetShellGroup(int userId, int operationId )
+        //{
+        //    System.Data.Entity.Core.Objects.ObjectParameter xmlOut = new System.Data.Entity.Core.Objects.ObjectParameter("xmlOut", typeof(object));
+
+        //    using (var _context = new Entities())
+        //    {
+        //        var res = _context.WebShellTerm(userId, operationId, xmlOut);
+        //    }
+        //    var xmlDoc = xmlOut.Value;
+        //    XmlDocument doc = new XmlDocument();
+        //    doc.LoadXml(xmlDoc.ToString());
+        //    var groupSourceTableName = doc.GetElementsByTagName("ShellPageSource");
+
+        //    return PartialView();
+        //}
+        public PartialViewResult Tab (string id)
+        {
+            var userId = int.Parse(Session["userId"].ToString());
+            System.Data.Entity.Core.Objects.ObjectParameter xmlOut = new System.Data.Entity.Core.Objects.ObjectParameter("xmlOut", typeof(object));
+
+            using (var _context = new Entities())
+            {
+                var res = _context.WebShellTerm(userId, 1500, xmlOut);
+            }
+            var xmlDoc = xmlOut.Value;
+            XmlDocument doc = new XmlDocument();
+            doc.LoadXml(xmlDoc.ToString());
+            var listViewSourceName = doc.GetElementsByTagName("ShellPageSource")[0].InnerText;
+            var groupSourceName = doc.GetElementsByTagName("ShellPageGroupSource")[0].InnerText;
+
+           
+
+            using (var _context = new Entities())
+            {
+                var groupsQ = _context.WebFuncExecuter(groupSourceName,"1500");
+                var lisvView = _context.WebGroupAll(listViewSourceName);
+            }
+            
+            List<GroupingModel> resModel = new List<GroupingModel>();
+            resModel.Add(new GroupingModel()
+            {
+
+            });
+
+            return PartialView();
+        }
     }
 }

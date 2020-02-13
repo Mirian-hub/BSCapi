@@ -4,9 +4,24 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="WebFuncExecuter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="FunctionName" Type="nvarchar" Mode="In" />
+          <Parameter Name="OperationID" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="WebGroupAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TableName" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="WebGroupsAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TableName" Type="nvarchar" Mode="In" />
+        </Function>
         <Function Name="WebShellOperation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="ShellUserID" Type="int" Mode="In" />
+          <Parameter Name="xmlOut" Type="xml" Mode="InOut" />
+        </Function>
+        <Function Name="WebShellTerm" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ShellUserID" Type="int" Mode="In" />
+          <Parameter Name="ShellOperationID" Type="int" Mode="In" />
           <Parameter Name="xmlOut" Type="xml" Mode="InOut" />
         </Function>
         <Function Name="WebShellUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -15,8 +30,7 @@
           <Parameter Name="xmlOut" Type="xml" Mode="InOut" />
         </Function>
         <EntityContainer Name="ModelStoreContainer" />
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -30,6 +44,21 @@
             <Parameter Name="ShellUserPassword" Mode="In" Type="String" />
             <Parameter Name="xmlOut" Mode="InOut" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="WebShellTerm">
+            <Parameter Name="ShellUserID" Mode="In" Type="Int32" />
+            <Parameter Name="ShellOperationID" Mode="In" Type="Int32" />
+            <Parameter Name="xmlOut" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="WebFuncExecuter">
+            <Parameter Name="FunctionName" Mode="In" Type="String" />
+            <Parameter Name="OperationID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="WebGroupAll">
+          <Parameter Name="TableName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="WebGroupsAll">
+            <Parameter Name="TableName" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -39,6 +68,10 @@
         <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities" >
           <FunctionImportMapping FunctionImportName="WebShellOperation" FunctionName="Model.Store.WebShellOperation" />
           <FunctionImportMapping FunctionImportName="WebShellUser" FunctionName="Model.Store.WebShellUser" />
+          <FunctionImportMapping FunctionImportName="WebShellTerm" FunctionName="Model.Store.WebShellTerm" />
+          <FunctionImportMapping FunctionImportName="WebFuncExecuter" FunctionName="Model.Store.WebFuncExecuter" />
+          <FunctionImportMapping FunctionImportName="WebGroupAll" FunctionName="Model.Store.WebGroupAll" />
+          <FunctionImportMapping FunctionImportName="WebGroupsAll" FunctionName="Model.Store.WebGroupsAll" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

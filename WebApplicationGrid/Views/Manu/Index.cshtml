@@ -18,8 +18,6 @@
        float:left;
     }
     #MainListView {
-        width: 800px;
-        float: left;
     }
     .dropdown-submenu {
         position: relative;
@@ -70,7 +68,7 @@
     }
     #manuBarDropdowns {
         float:left;
-        padding-right:15px;
+        padding-right:30px;
     }
     #manuBarDropdowns >a {
         font-family:Arial;
@@ -108,7 +106,31 @@
         background-color: #D3D2D9 !important;
     }
 
+    #dialog label, #dialog input {
+        display: block;
+    }
 
+    #dialog label {
+        margin-top: 0.5em;
+    }
+
+    #dialog input, #dialog textarea {
+        width: 95%;
+    }
+
+    #tabs {
+        margin-top: 1em;
+    }
+
+        #tabs li .ui-icon-close {
+            float: left;
+            margin: 0.4em 0.2em 0 0;
+            cursor: pointer;
+        }
+
+    #add_tab {
+        cursor: pointer;
+    }
 
 </style>
 
@@ -119,66 +141,97 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>Index</title>
+    <script src="~/Scripts/mainJS.js"></script>
 </head>
-    <body id="firstPageBody">
+<body id="firstPageBody">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNavbar">
-            <div class="container" id="manuBarContainer">
-                @foreach (var item in Model)
-                {
-                    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNavbar">
+        <div class="container" id="manuBarContainer">
+            @foreach (var item in Model)
+            {
+
                 <div class="dropdown" id="manuBarDropdowns">
                     @if (item.FirstLevel.HasChild)
                     {
-                        <a id="dLabel" role="button" data-toggle="dropdown" class="btn btn-primary" data-target="#" href="/page.html">
-                            @item.FirstLevel.Name <span class="caret"></span>
-                        </a>
+                    <a id="dLabel" role="button" data-toggle="dropdown" class="btn btn-primary" data-target="#" href="/page.html">
+                        @item.FirstLevel.Name <span class="caret"></span>
+                        <input type="hidden" id="hiddenField" value=@item.FirstLevel.Id.ToString() />
+
+                    </a>
                     }
                     else
                     {
-                        <a id="dLabel" role="button" class="btn btn-primary" data-target="#" href="#">
-                            @item.FirstLevel.Name 
+                        <a id="dLabel" role="button" class="btn btn-primary" data-target="#" @*onclick="location.href='@Url.Action("LoadMainPanel", "LoadPanel")'"*@>
+                            @item.FirstLevel.Name
+                            <input type="hidden" id="hiddenField" value=@item.FirstLevel.Id.ToString() />
                         </a>
                     }
 
-                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
 
-                            @foreach (var dd in item.SecondLevel)
+                        @foreach (var dd in item.SecondLevel)
+                        {
+                            if (!dd.HasChild)
                             {
-                                if (!dd.HasChild)
-                                {
-                                    <li> <a href="#"> @dd.Name </a>  </li>
-                                }
-                                else
-                                {
-                                    <li class="dropdown-submenu">
-                                        <a tabindex="-1" href="#">@dd.Name</a>
-                                        <ul class="dropdown-menu">
-                                            @foreach (var tl in item.ThirdLevel[item.FirstLevel.Id])
-                                            {
-                                                if (tl.Key == dd.Id)
-                                                {
-                                                    foreach (var tlvalue in tl.Value)
-                                                    {
-                                                            <li><a tabindex="-1" href="#"> @tlvalue.Name </a></li>
-                                                    }
-                                                }
+                                <li> <a href="#" id="topManubarBtn">
+                                        @dd.Name 
+                                      <input type="hidden" id="hiddenField" value=@dd.Id.ToString() />
 
-
-                                            }
-                                            
-                                        </ul>
-                                    </li>
-                                }
-
+                                    </a>  </li>
                             }
-                        </ul>
-                </div>                 
-                }
+                            else
+                            {
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="#">@dd.Name</a>
+                                    <ul class="dropdown-menu">
+                                        @foreach (var tl in item.ThirdLevel[item.FirstLevel.Id])
+                                        {
+                                            if (tl.Key == dd.Id)
+                                            {
+                                                foreach (var tlvalue in tl.Value)
+                                                {
+                                                    <li><a tabindex="-1" href="#" id="topManubarBtn">
+                                                        @tlvalue.Name
+                                                        <input type="hidden" id="hiddenField" value=@tlvalue.Id.ToString() />
+
+                                                    </a></li>
+                                                }
+                                            }
+                                        }
+                                    </ul>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </div>
+            }
+        </div>
+    </nav>
+
+
+
+
+
+
+
+    <div id="mainContent">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Nunc tincidunt</a> <span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>
+                </ul>
+                @*<div id="tabs-1">
+                    @Html.Partial("Tab")
+                </div>*@
             </div>
-        </nav>
-    </body>
+    </div>
+
+
+
+</body>
 </html>

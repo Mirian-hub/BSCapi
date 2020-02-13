@@ -1,0 +1,38 @@
+﻿@model  IList<WebApplicationGrid.ViewModels.HelperModels.DropDownModel>
+<div id="MainListView">
+    <div id="TopFiltersGroup">
+        @Html.Partial("_Filters")
+
+    </div>
+    <div id="topButtons">
+        @Html.Partial("_TopButtons")
+    </div>
+
+    <div id="leftSideManu">
+
+        @Html.Partial("_LeftManu")
+    </div>
+    @foreach (var item in Model)
+    {
+        
+        <h1>  @item.test  </h1>
+
+    }
+
+    <div>
+        @{
+            var res = Model.Where(c => c.test != null).FirstOrDefault();
+            if (res != null)
+            {
+                <div>
+                    <h1> @res.test </h1>
+                </div>
+            }
+
+        }
+
+    </div>
+    @*<div id="listView">
+            @Html.Partial("_MainListView")
+        </div>*@
+</div>
