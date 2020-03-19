@@ -1,0 +1,61 @@
+﻿#leftManuTable {
+    color: black;
+    width: 100% !important;
+    background-color: #E6EAEE;
+    display: block;
+    height: 600px;
+    overflow: scroll;
+    white-space: nowrap;
+    border: 1px solid #86D2EA;
+}
+
+#leftManuTable tr {
+    font-size: 13px !important;
+    height: 18px;
+}
+
+
+#leftManuTable tbody {
+    width: 100px;
+}
+
+#leftManuTable thead td {
+    position: sticky;
+    top: 0;
+}
+
+#leftManuTable tr:hover {
+    background-color: #ABABB2;
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: auto !important;
+    }
+}
+
+#dataTableGroup_info {
+    display:none !important;
+}
+
+#leftSideManu {
+    background-color:beige;
+}
+#dataTableGroup_filter {
+    text-align:left !important;
+    float:left !important;
+}
+#dataTableGroup_filter input {
+    border: 1px solid #cccccc !important;
+    text-align:left !important;
+}
+label {
+    font-weight:100 !important;
+}
+#leftSideManu {
+    padding-top:3px;
+}
+#dataTableGroup {
+    width: 100%
+}

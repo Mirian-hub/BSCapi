@@ -27,6 +27,678 @@ namespace WebApplicationGrid.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<CashEntryLineStatusTable> CashEntryLineStatusTables { get; set; }
+        public virtual DbSet<CashEntryLineTable> CashEntryLineTables { get; set; }
+        public virtual DbSet<CashEntryLineTypeTable> CashEntryLineTypeTables { get; set; }
+        public virtual DbSet<CashEntryStatusTable> CashEntryStatusTables { get; set; }
+        public virtual DbSet<CashEntryTable> CashEntryTables { get; set; }
+        public virtual DbSet<CashEntryTypeTable> CashEntryTypeTables { get; set; }
+        public virtual DbSet<CashLocationGLAccountTable> CashLocationGLAccountTables { get; set; }
+        public virtual DbSet<CashLocationGroupTable> CashLocationGroupTables { get; set; }
+        public virtual DbSet<CashLocationStatusTable> CashLocationStatusTables { get; set; }
+        public virtual DbSet<CashLocationTable> CashLocationTables { get; set; }
+        public virtual DbSet<CashLocationTypeTable> CashLocationTypeTables { get; set; }
+        public virtual DbSet<CashWorkLiveTable> CashWorkLiveTables { get; set; }
+        public virtual DbSet<CashWorkTable> CashWorkTables { get; set; }
+        public virtual DbSet<DeliveryGraphTable> DeliveryGraphTables { get; set; }
+        public virtual DbSet<RSLogTable> RSLogTables { get; set; }
+        public virtual DbSet<RSMessageGroupTable> RSMessageGroupTables { get; set; }
+        public virtual DbSet<RSMessageStatusTable> RSMessageStatusTables { get; set; }
+        public virtual DbSet<RSMessageTable> RSMessageTables { get; set; }
+        public virtual DbSet<RSMessageTypeTable> RSMessageTypeTables { get; set; }
+        public virtual DbSet<RSSyncProcessTable> RSSyncProcessTables { get; set; }
+        public virtual DbSet<RsWaybillConfirmationStatusTable> RsWaybillConfirmationStatusTables { get; set; }
+        public virtual DbSet<RsWaybillLineTable> RsWaybillLineTables { get; set; }
+        public virtual DbSet<RsWaybillStatusTable> RsWaybillStatusTables { get; set; }
+        public virtual DbSet<RsWaybillTable> RsWaybillTables { get; set; }
+        public virtual DbSet<RsWaybillTypeTable> RsWaybillTypeTables { get; set; }
+        public virtual DbSet<RSWaybillWorkTable> RSWaybillWorkTables { get; set; }
+        public virtual DbSet<ShellComputerGroupTable> ShellComputerGroupTables { get; set; }
+        public virtual DbSet<ShellComputerStatusTable> ShellComputerStatusTables { get; set; }
+        public virtual DbSet<ShellComputerTable> ShellComputerTables { get; set; }
+        public virtual DbSet<ShellComputerTypeTable> ShellComputerTypeTables { get; set; }
+        public virtual DbSet<ShellComputerUserTable> ShellComputerUserTables { get; set; }
+        public virtual DbSet<ShellDataGroupTable> ShellDataGroupTables { get; set; }
+        public virtual DbSet<ShellDataRightTable> ShellDataRightTables { get; set; }
+        public virtual DbSet<ShellDataSearchTable> ShellDataSearchTables { get; set; }
+        public virtual DbSet<ShellDataSortTable> ShellDataSortTables { get; set; }
+        public virtual DbSet<ShellDataStatusTable> ShellDataStatusTables { get; set; }
+        public virtual DbSet<ShellDataTable> ShellDataTables { get; set; }
+        public virtual DbSet<ShellDataTypeTable> ShellDataTypeTables { get; set; }
+        public virtual DbSet<ShellDiagnoseGroupTable> ShellDiagnoseGroupTables { get; set; }
+        public virtual DbSet<ShellDiagnoseStatusTable> ShellDiagnoseStatusTables { get; set; }
+        public virtual DbSet<ShellDiagnoseTable> ShellDiagnoseTables { get; set; }
+        public virtual DbSet<ShellDiagnoseTypeTable> ShellDiagnoseTypeTables { get; set; }
+        public virtual DbSet<ShellDLLGroupTable> ShellDLLGroupTables { get; set; }
+        public virtual DbSet<ShellDLLLanguageTable> ShellDLLLanguageTables { get; set; }
+        public virtual DbSet<ShellDLLStatusTable> ShellDLLStatusTables { get; set; }
+        public virtual DbSet<ShellDLLTable> ShellDLLTables { get; set; }
+        public virtual DbSet<ShellDLLTypeTable> ShellDLLTypeTables { get; set; }
+        public virtual DbSet<ShellImportExcelTable> ShellImportExcelTables { get; set; }
+        public virtual DbSet<ShellLanguageStatusTable> ShellLanguageStatusTables { get; set; }
+        public virtual DbSet<ShellLanguageTable> ShellLanguageTables { get; set; }
+        public virtual DbSet<ShellLanguageTypeTable> ShellLanguageTypeTables { get; set; }
+        public virtual DbSet<ShellLogTable> ShellLogTables { get; set; }
+        public virtual DbSet<ShellMessageGroupTable> ShellMessageGroupTables { get; set; }
+        public virtual DbSet<ShellMessageStatusTable> ShellMessageStatusTables { get; set; }
+        public virtual DbSet<ShellMessageTable> ShellMessageTables { get; set; }
+        public virtual DbSet<ShellMessageTypeTable> ShellMessageTypeTables { get; set; }
+        public virtual DbSet<ShellOperationGroupTable> ShellOperationGroupTables { get; set; }
+        public virtual DbSet<ShellOperationLineTable> ShellOperationLineTables { get; set; }
+        public virtual DbSet<ShellOperationStatusTable> ShellOperationStatusTables { get; set; }
+        public virtual DbSet<ShellOperationTable> ShellOperationTables { get; set; }
+        public virtual DbSet<ShellOperationTypeTable> ShellOperationTypeTables { get; set; }
+        public virtual DbSet<ShellReportFilterStatusTable> ShellReportFilterStatusTables { get; set; }
+        public virtual DbSet<ShellReportFilterTable> ShellReportFilterTables { get; set; }
+        public virtual DbSet<ShellReportFilterTypeTable> ShellReportFilterTypeTables { get; set; }
+        public virtual DbSet<ShellReportFilterValueTable> ShellReportFilterValueTables { get; set; }
+        public virtual DbSet<ShellReportFormTable> ShellReportFormTables { get; set; }
+        public virtual DbSet<ShellReportGroupTable> ShellReportGroupTables { get; set; }
+        public virtual DbSet<ShellReportStatusTable> ShellReportStatusTables { get; set; }
+        public virtual DbSet<ShellReportTable> ShellReportTables { get; set; }
+        public virtual DbSet<ShellReportTypeTable> ShellReportTypeTables { get; set; }
+        public virtual DbSet<ShellSchedulerGroupTable> ShellSchedulerGroupTables { get; set; }
+        public virtual DbSet<ShellSchedulerLanguageTable> ShellSchedulerLanguageTables { get; set; }
+        public virtual DbSet<ShellSchedulerStatusTable> ShellSchedulerStatusTables { get; set; }
+        public virtual DbSet<ShellSchedulerTable> ShellSchedulerTables { get; set; }
+        public virtual DbSet<ShellSchedulerTypeTable> ShellSchedulerTypeTables { get; set; }
+        public virtual DbSet<ShellSettingGroupTable> ShellSettingGroupTables { get; set; }
+        public virtual DbSet<ShellSettingStatusTable> ShellSettingStatusTables { get; set; }
+        public virtual DbSet<ShellSettingTable> ShellSettingTables { get; set; }
+        public virtual DbSet<ShellSettingTypeTable> ShellSettingTypeTables { get; set; }
+        public virtual DbSet<ShellSettingValueTable> ShellSettingValueTables { get; set; }
+        public virtual DbSet<ShellTermGroupTable> ShellTermGroupTables { get; set; }
+        public virtual DbSet<ShellTermNameTable> ShellTermNameTables { get; set; }
+        public virtual DbSet<ShellTermStatusTable> ShellTermStatusTables { get; set; }
+        public virtual DbSet<ShellTermTable> ShellTermTables { get; set; }
+        public virtual DbSet<ShellTermTypeTable> ShellTermTypeTables { get; set; }
+        public virtual DbSet<ShellUserGroupTable> ShellUserGroupTables { get; set; }
+        public virtual DbSet<ShellUserStatusTable> ShellUserStatusTables { get; set; }
+        public virtual DbSet<ShellUserTable> ShellUserTables { get; set; }
+        public virtual DbSet<ShellUserTypeTable> ShellUserTypeTables { get; set; }
+        public virtual DbSet<ShellWorkStatusTable> ShellWorkStatusTables { get; set; }
+        public virtual DbSet<StockAgingGraphTable> StockAgingGraphTables { get; set; }
+        public virtual DbSet<StockAllocationBaseTable> StockAllocationBaseTables { get; set; }
+        public virtual DbSet<StockBOMPlanGroupTable> StockBOMPlanGroupTables { get; set; }
+        public virtual DbSet<StockBOMPlanLineStatusTable> StockBOMPlanLineStatusTables { get; set; }
+        public virtual DbSet<StockBOMPlanLineTable> StockBOMPlanLineTables { get; set; }
+        public virtual DbSet<StockBOMPlanLineTypeTable> StockBOMPlanLineTypeTables { get; set; }
+        public virtual DbSet<StockBOMPlanStatusTable> StockBOMPlanStatusTables { get; set; }
+        public virtual DbSet<StockBOMPlanTable> StockBOMPlanTables { get; set; }
+        public virtual DbSet<StockBOMPlanTypeTable> StockBOMPlanTypeTables { get; set; }
+        public virtual DbSet<StockBudgetTypeTable> StockBudgetTypeTables { get; set; }
+        public virtual DbSet<StockCarGroupTable> StockCarGroupTables { get; set; }
+        public virtual DbSet<StockCarStatusTable> StockCarStatusTables { get; set; }
+        public virtual DbSet<StockCarTable> StockCarTables { get; set; }
+        public virtual DbSet<StockCarTypeTable> StockCarTypeTables { get; set; }
+        public virtual DbSet<StockCompanyCardGroupTable> StockCompanyCardGroupTables { get; set; }
+        public virtual DbSet<StockCompanyCardStatusTable> StockCompanyCardStatusTables { get; set; }
+        public virtual DbSet<StockCompanyCardTable> StockCompanyCardTables { get; set; }
+        public virtual DbSet<StockCompanyCardTypeTable> StockCompanyCardTypeTables { get; set; }
+        public virtual DbSet<StockCompanyGroupTable> StockCompanyGroupTables { get; set; }
+        public virtual DbSet<StockCompanyStatusTable> StockCompanyStatusTables { get; set; }
+        public virtual DbSet<StockCompanyTable> StockCompanyTables { get; set; }
+        public virtual DbSet<StockCompanyTypeTable> StockCompanyTypeTables { get; set; }
+        public virtual DbSet<StockCustomerStatusTable> StockCustomerStatusTables { get; set; }
+        public virtual DbSet<StockCustomerTypeTable> StockCustomerTypeTables { get; set; }
+        public virtual DbSet<StockDeliveryGraphTable> StockDeliveryGraphTables { get; set; }
+        public virtual DbSet<StockDeliveryGroupTable> StockDeliveryGroupTables { get; set; }
+        public virtual DbSet<StockDeliveryStatusTable> StockDeliveryStatusTables { get; set; }
+        public virtual DbSet<StockDeliveryTable> StockDeliveryTables { get; set; }
+        public virtual DbSet<StockDeliveryTypeTable> StockDeliveryTypeTables { get; set; }
+        public virtual DbSet<StockDiscountGroupTable> StockDiscountGroupTables { get; set; }
+        public virtual DbSet<StockDiscountLineStatusTable> StockDiscountLineStatusTables { get; set; }
+        public virtual DbSet<StockDiscountLineTable> StockDiscountLineTables { get; set; }
+        public virtual DbSet<StockDiscountLineTypeTable> StockDiscountLineTypeTables { get; set; }
+        public virtual DbSet<StockDiscountMethodTable> StockDiscountMethodTables { get; set; }
+        public virtual DbSet<StockDiscountStatusTable> StockDiscountStatusTables { get; set; }
+        public virtual DbSet<StockDiscountTable> StockDiscountTables { get; set; }
+        public virtual DbSet<StockDiscountTypeTable> StockDiscountTypeTables { get; set; }
+        public virtual DbSet<StockEntryLineStatusTable> StockEntryLineStatusTables { get; set; }
+        public virtual DbSet<StockEntryLineTable> StockEntryLineTables { get; set; }
+        public virtual DbSet<StockEntryLineTypeTable> StockEntryLineTypeTables { get; set; }
+        public virtual DbSet<StockEntryStatusTable> StockEntryStatusTables { get; set; }
+        public virtual DbSet<StockEntryTable> StockEntryTables { get; set; }
+        public virtual DbSet<StockEntryTypeTable> StockEntryTypeTables { get; set; }
+        public virtual DbSet<StockItemBarcodeTable> StockItemBarcodeTables { get; set; }
+        public virtual DbSet<StockItemByLocationTable> StockItemByLocationTables { get; set; }
+        public virtual DbSet<StockItemGroupTable> StockItemGroupTables { get; set; }
+        public virtual DbSet<StockItemKindTable> StockItemKindTables { get; set; }
+        public virtual DbSet<StockItemStatusTable> StockItemStatusTables { get; set; }
+        public virtual DbSet<StockItemTable> StockItemTables { get; set; }
+        public virtual DbSet<StockItemTypeTable> StockItemTypeTables { get; set; }
+        public virtual DbSet<StockItemUnitGroupTable> StockItemUnitGroupTables { get; set; }
+        public virtual DbSet<StockItemUnitStatusTable> StockItemUnitStatusTables { get; set; }
+        public virtual DbSet<StockItemUnitTable> StockItemUnitTables { get; set; }
+        public virtual DbSet<StockItemUnitTypeTable> StockItemUnitTypeTables { get; set; }
+        public virtual DbSet<StockLocationAddressTable> StockLocationAddressTables { get; set; }
+        public virtual DbSet<StockLocationGroupTable> StockLocationGroupTables { get; set; }
+        public virtual DbSet<StockLocationItemStatusTable> StockLocationItemStatusTables { get; set; }
+        public virtual DbSet<StockLocationItemTable> StockLocationItemTables { get; set; }
+        public virtual DbSet<StockLocationRightTable> StockLocationRightTables { get; set; }
+        public virtual DbSet<StockLocationShelfStatusTable> StockLocationShelfStatusTables { get; set; }
+        public virtual DbSet<StockLocationShelfTable> StockLocationShelfTables { get; set; }
+        public virtual DbSet<StockLocationShelfTypeTable> StockLocationShelfTypeTables { get; set; }
+        public virtual DbSet<StockLocationStatusTable> StockLocationStatusTables { get; set; }
+        public virtual DbSet<StockLocationTable> StockLocationTables { get; set; }
+        public virtual DbSet<StockLocationTypeTable> StockLocationTypeTables { get; set; }
+        public virtual DbSet<StockLocationZoneTable> StockLocationZoneTables { get; set; }
+        public virtual DbSet<StockMarkupGroupTable> StockMarkupGroupTables { get; set; }
+        public virtual DbSet<StockMarkupStatusTable> StockMarkupStatusTables { get; set; }
+        public virtual DbSet<StockMarkupTable> StockMarkupTables { get; set; }
+        public virtual DbSet<StockMarkupTypeTable> StockMarkupTypeTables { get; set; }
+        public virtual DbSet<StockPayMethodTable> StockPayMethodTables { get; set; }
+        public virtual DbSet<StockPayPeriodTable> StockPayPeriodTables { get; set; }
+        public virtual DbSet<StockPersonGroupTable> StockPersonGroupTables { get; set; }
+        public virtual DbSet<StockPersonStatusTable> StockPersonStatusTables { get; set; }
+        public virtual DbSet<StockPersonTable> StockPersonTables { get; set; }
+        public virtual DbSet<StockPersonTypeTable> StockPersonTypeTables { get; set; }
+        public virtual DbSet<StockPriceLineStatusTable> StockPriceLineStatusTables { get; set; }
+        public virtual DbSet<StockPriceLineTable> StockPriceLineTables { get; set; }
+        public virtual DbSet<StockPriceLineTypeTable> StockPriceLineTypeTables { get; set; }
+        public virtual DbSet<StockPriceStatusTable> StockPriceStatusTables { get; set; }
+        public virtual DbSet<StockPriceTable> StockPriceTables { get; set; }
+        public virtual DbSet<StockPriceTypeTable> StockPriceTypeTables { get; set; }
+        public virtual DbSet<StockRecipeStatusTable> StockRecipeStatusTables { get; set; }
+        public virtual DbSet<StockRecipeTable> StockRecipeTables { get; set; }
+        public virtual DbSet<StockRecipeTypeTable> StockRecipeTypeTables { get; set; }
+        public virtual DbSet<StockSalesItemGroupNameTable> StockSalesItemGroupNameTables { get; set; }
+        public virtual DbSet<StockSalesItemGroupTable> StockSalesItemGroupTables { get; set; }
+        public virtual DbSet<StockSalesUserGroupTable> StockSalesUserGroupTables { get; set; }
+        public virtual DbSet<StockScaleTable> StockScaleTables { get; set; }
+        public virtual DbSet<StockSupplierStatusTable> StockSupplierStatusTables { get; set; }
+        public virtual DbSet<StockSupplierTypeTable> StockSupplierTypeTables { get; set; }
+        public virtual DbSet<StockTaxMethodTable> StockTaxMethodTables { get; set; }
+        public virtual DbSet<StockTaxStatusTable> StockTaxStatusTables { get; set; }
+        public virtual DbSet<StockTaxTable> StockTaxTables { get; set; }
+        public virtual DbSet<StockTaxTypeTable> StockTaxTypeTables { get; set; }
+        public virtual DbSet<StockUsageTypeTable> StockUsageTypeTables { get; set; }
+        public virtual DbSet<StockValuationTable> StockValuationTables { get; set; }
+        public virtual DbSet<StockWork2110Table> StockWork2110Table { get; set; }
+        public virtual DbSet<StockWork2120Table> StockWork2120Table { get; set; }
+        public virtual DbSet<StockWork2130Table> StockWork2130Table { get; set; }
+        public virtual DbSet<StockWork2140Table> StockWork2140Table { get; set; }
+        public virtual DbSet<StockWork21xZTable> StockWork21xZTable { get; set; }
+        public virtual DbSet<StockWorkBudgetTable> StockWorkBudgetTables { get; set; }
+        public virtual DbSet<StockWorkLiveTable> StockWorkLiveTables { get; set; }
+        public virtual DbSet<StockWorkTable> StockWorkTables { get; set; }
+        public virtual DbSet<StockWorkValuationTable> StockWorkValuationTables { get; set; }
+        public virtual DbSet<SyncEntryStatusTable> SyncEntryStatusTables { get; set; }
+        public virtual DbSet<SyncEntryTable> SyncEntryTables { get; set; }
+        public virtual DbSet<SyncEntryTypeTable> SyncEntryTypeTables { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<zGLAccountTable> zGLAccountTables { get; set; }
+        public virtual DbSet<zGLAccountTable11> zGLAccountTable11 { get; set; }
+        public virtual DbSet<zPOSWorkTable> zPOSWorkTables { get; set; }
+        public virtual DbSet<zShellSyncStatusTable> zShellSyncStatusTables { get; set; }
+        public virtual DbSet<zShellSyncTable> zShellSyncTables { get; set; }
+        public virtual DbSet<zShellSyncTypeTable> zShellSyncTypeTables { get; set; }
+        public virtual DbSet<zStockEntryProcessTable> zStockEntryProcessTables { get; set; }
+        public virtual DbSet<zStockEntrySubTypeTable> zStockEntrySubTypeTables { get; set; }
+        public virtual DbSet<zzShellSyncStatusTable> zzShellSyncStatusTables { get; set; }
+        public virtual DbSet<zzShellSyncTable> zzShellSyncTables { get; set; }
+        public virtual DbSet<zzShellSyncTypeTable> zzShellSyncTypeTables { get; set; }
+        public virtual DbSet<StockCompanyCardTableLog> StockCompanyCardTableLogs { get; set; }
+        public virtual DbSet<StockPlanningMethodTable> StockPlanningMethodTables { get; set; }
+        public virtual DbSet<zzShellSyncTable_MGroup> zzShellSyncTable_MGroup { get; set; }
+        public virtual DbSet<C2017_06_09_RSEntryATable> C2017_06_09_RSEntryATable { get; set; }
+        public virtual DbSet<CashEntry00Edit0> CashEntry00Edit0 { get; set; }
+        public virtual DbSet<CashEntry00Edit1> CashEntry00Edit1 { get; set; }
+        public virtual DbSet<CashEntry00Edit2> CashEntry00Edit2 { get; set; }
+        public virtual DbSet<CashEntryI10Edit0> CashEntryI10Edit0 { get; set; }
+        public virtual DbSet<CashEntryI10Edit1> CashEntryI10Edit1 { get; set; }
+        public virtual DbSet<CashEntryO10Edit0> CashEntryO10Edit0 { get; set; }
+        public virtual DbSet<CashEntryO10Edit1> CashEntryO10Edit1 { get; set; }
+        public virtual DbSet<CashkLive01Edit1Total> CashkLive01Edit1Total { get; set; }
+        public virtual DbSet<CashLive01Edit0> CashLive01Edit0 { get; set; }
+        public virtual DbSet<CashLive01Edit1> CashLive01Edit1 { get; set; }
+        public virtual DbSet<CashLive01Edit1Total> CashLive01Edit1Total { get; set; }
+        public virtual DbSet<CashLive02Edit0> CashLive02Edit0 { get; set; }
+        public virtual DbSet<CashLive02Edit1> CashLive02Edit1 { get; set; }
+        public virtual DbSet<CashLive02Edit1Total> CashLive02Edit1Total { get; set; }
+        public virtual DbSet<CashLiveCustomerEdit0> CashLiveCustomerEdit0 { get; set; }
+        public virtual DbSet<CashLiveCustomerEdit1> CashLiveCustomerEdit1 { get; set; }
+        public virtual DbSet<CashLiveCustomerEdit1Total> CashLiveCustomerEdit1Total { get; set; }
+        public virtual DbSet<CashLiveCustomerEdit2> CashLiveCustomerEdit2 { get; set; }
+        public virtual DbSet<CashLiveEntry00Edit0> CashLiveEntry00Edit0 { get; set; }
+        public virtual DbSet<CashLiveEntry00Edit1> CashLiveEntry00Edit1 { get; set; }
+        public virtual DbSet<CashLiveEntry00Edit2> CashLiveEntry00Edit2 { get; set; }
+        public virtual DbSet<CashLiveSupplierEdit0> CashLiveSupplierEdit0 { get; set; }
+        public virtual DbSet<CashLiveSupplierEdit1> CashLiveSupplierEdit1 { get; set; }
+        public virtual DbSet<CashLiveSupplierEdit1Total> CashLiveSupplierEdit1Total { get; set; }
+        public virtual DbSet<CashLiveSupplierEdit2> CashLiveSupplierEdit2 { get; set; }
+        public virtual DbSet<CashLocationEdit0> CashLocationEdit0 { get; set; }
+        public virtual DbSet<CashLocationEdit5> CashLocationEdit5 { get; set; }
+        public virtual DbSet<CashLocationGroupEdit0> CashLocationGroupEdit0 { get; set; }
+        public virtual DbSet<CashLocationGroupEdit5> CashLocationGroupEdit5 { get; set; }
+        public virtual DbSet<CashLocationList> CashLocationLists { get; set; }
+        public virtual DbSet<CashWork_OnList> CashWork_OnList { get; set; }
+        public virtual DbSet<ExportPOSCompanyTable> ExportPOSCompanyTables { get; set; }
+        public virtual DbSet<ExportPOSComputerTable> ExportPOSComputerTables { get; set; }
+        public virtual DbSet<ExportPOSItemBarcodeTable> ExportPOSItemBarcodeTables { get; set; }
+        public virtual DbSet<ExportPOSItemGroupTable> ExportPOSItemGroupTables { get; set; }
+        public virtual DbSet<ExportPOSItemTable> ExportPOSItemTables { get; set; }
+        public virtual DbSet<ExportPOSLocationTable> ExportPOSLocationTables { get; set; }
+        public virtual DbSet<ExportPOSUserTable> ExportPOSUserTables { get; set; }
+        public virtual DbSet<ExportRPOSEntryLineTable> ExportRPOSEntryLineTables { get; set; }
+        public virtual DbSet<ExportRPOSEntryTable> ExportRPOSEntryTables { get; set; }
+        public virtual DbSet<ExportRPOSPeriodTable> ExportRPOSPeriodTables { get; set; }
+        public virtual DbSet<ImportPOSEntryLineTable> ImportPOSEntryLineTables { get; set; }
+        public virtual DbSet<ImportPOSEntryTable> ImportPOSEntryTables { get; set; }
+        public virtual DbSet<ImportPOSPeriodTable> ImportPOSPeriodTables { get; set; }
+        public virtual DbSet<ImportRPOSCarGroupTable> ImportRPOSCarGroupTables { get; set; }
+        public virtual DbSet<ImportRPOSCarTable> ImportRPOSCarTables { get; set; }
+        public virtual DbSet<ImportRPOSCompanyCardTable> ImportRPOSCompanyCardTables { get; set; }
+        public virtual DbSet<ImportRPOSCompanyGroupTable> ImportRPOSCompanyGroupTables { get; set; }
+        public virtual DbSet<ImportRPOSCompanyTable> ImportRPOSCompanyTables { get; set; }
+        public virtual DbSet<ImportRPOSComputerTable> ImportRPOSComputerTables { get; set; }
+        public virtual DbSet<ImportRPOSItemBOMTable> ImportRPOSItemBOMTables { get; set; }
+        public virtual DbSet<ImportRPOSItemGroupTable> ImportRPOSItemGroupTables { get; set; }
+        public virtual DbSet<ImportRPOSItemTable> ImportRPOSItemTables { get; set; }
+        public virtual DbSet<ImportRPOSItemUnitTable> ImportRPOSItemUnitTables { get; set; }
+        public virtual DbSet<ImportRPOSLocationRightTable> ImportRPOSLocationRightTables { get; set; }
+        public virtual DbSet<ImportRPOSLocationShelfTable> ImportRPOSLocationShelfTables { get; set; }
+        public virtual DbSet<ImportRPOSLocationTable> ImportRPOSLocationTables { get; set; }
+        public virtual DbSet<ImportRPOSPersonGroupTable> ImportRPOSPersonGroupTables { get; set; }
+        public virtual DbSet<ImportRPOSPersonTable> ImportRPOSPersonTables { get; set; }
+        public virtual DbSet<ImportRPOSSalesItemPriceTable> ImportRPOSSalesItemPriceTables { get; set; }
+        public virtual DbSet<ImportRPOSUserTable> ImportRPOSUserTables { get; set; }
+        public virtual DbSet<MyStockCompanyTable> MyStockCompanyTables { get; set; }
+        public virtual DbSet<OutstandingEntryTable> OutstandingEntryTables { get; set; }
+        public virtual DbSet<POSinTouch_CategoriesList> POSinTouch_CategoriesList { get; set; }
+        public virtual DbSet<POSinTouch_DebitorsCategoriesList> POSinTouch_DebitorsCategoriesList { get; set; }
+        public virtual DbSet<POSinTouch_DebitorsList> POSinTouch_DebitorsList { get; set; }
+        public virtual DbSet<POSinTouch_ProductsList> POSinTouch_ProductsList { get; set; }
+        public virtual DbSet<POSinTouch_WorkList> POSinTouch_WorkList { get; set; }
+        public virtual DbSet<POSinTouch_WorkList2110> POSinTouch_WorkList2110 { get; set; }
+        public virtual DbSet<POSinTouch_WorkList2130> POSinTouch_WorkList2130 { get; set; }
+        public virtual DbSet<POSinTouch_Z> POSinTouch_Z { get; set; }
+        public virtual DbSet<RSEntryAEdit0> RSEntryAEdit0 { get; set; }
+        public virtual DbSet<RSEntryAEdit1> RSEntryAEdit1 { get; set; }
+        public virtual DbSet<RSEntryAGroupList> RSEntryAGroupLists { get; set; }
+        public virtual DbSet<RSEntryAGroupTable> RSEntryAGroupTables { get; set; }
+        public virtual DbSet<RSEntryALineTable> RSEntryALineTables { get; set; }
+        public virtual DbSet<RSEntryAStatusTable> RSEntryAStatusTables { get; set; }
+        public virtual DbSet<RSEntryATable> RSEntryATables { get; set; }
+        public virtual DbSet<RSEntryATypeTable> RSEntryATypeTables { get; set; }
+        public virtual DbSet<RSEntryWP10Edit0> RSEntryWP10Edit0 { get; set; }
+        public virtual DbSet<RSEntryWP10Edit1> RSEntryWP10Edit1 { get; set; }
+        public virtual DbSet<RSEntryWP10Edit2> RSEntryWP10Edit2 { get; set; }
+        public virtual DbSet<RSWaybillLineTable_Part> RSWaybillLineTable_Part { get; set; }
+        public virtual DbSet<RSWaybillTable_Part> RSWaybillTable_Part { get; set; }
+        public virtual DbSet<ShellComputerEdit0> ShellComputerEdit0 { get; set; }
+        public virtual DbSet<ShellComputerEdit1> ShellComputerEdit1 { get; set; }
+        public virtual DbSet<ShellComputerGroupEdit0> ShellComputerGroupEdit0 { get; set; }
+        public virtual DbSet<ShellComputerList> ShellComputerLists { get; set; }
+        public virtual DbSet<ShellDataEdit0> ShellDataEdit0 { get; set; }
+        public virtual DbSet<ShellDataEdit1> ShellDataEdit1 { get; set; }
+        public virtual DbSet<ShellDataEdit2> ShellDataEdit2 { get; set; }
+        public virtual DbSet<ShellDataGroupEdit0> ShellDataGroupEdit0 { get; set; }
+        public virtual DbSet<ShellDataList> ShellDataLists { get; set; }
+        public virtual DbSet<ShellDiagnoseEdit0> ShellDiagnoseEdit0 { get; set; }
+        public virtual DbSet<ShellDiagnoseGroupEdit0> ShellDiagnoseGroupEdit0 { get; set; }
+        public virtual DbSet<ShellDiagnoseGroupEdit5> ShellDiagnoseGroupEdit5 { get; set; }
+        public virtual DbSet<ShellDiagnoseList> ShellDiagnoseLists { get; set; }
+        public virtual DbSet<ShellFunctionTable> ShellFunctionTables { get; set; }
+        public virtual DbSet<ShellMessageEdit0> ShellMessageEdit0 { get; set; }
+        public virtual DbSet<ShellMessageGroupEdit0> ShellMessageGroupEdit0 { get; set; }
+        public virtual DbSet<ShellMessageList> ShellMessageLists { get; set; }
+        public virtual DbSet<ShellOperationEdit0> ShellOperationEdit0 { get; set; }
+        public virtual DbSet<ShellOperationEdit1> ShellOperationEdit1 { get; set; }
+        public virtual DbSet<ShellOperationGroupEdit0> ShellOperationGroupEdit0 { get; set; }
+        public virtual DbSet<ShellOperationGroupEdit1> ShellOperationGroupEdit1 { get; set; }
+        public virtual DbSet<ShellOperationList> ShellOperationLists { get; set; }
+        public virtual DbSet<ShellReportEdit0> ShellReportEdit0 { get; set; }
+        public virtual DbSet<ShellReportEdit1> ShellReportEdit1 { get; set; }
+        public virtual DbSet<ShellReportEdit2> ShellReportEdit2 { get; set; }
+        public virtual DbSet<ShellReportEdit5> ShellReportEdit5 { get; set; }
+        public virtual DbSet<ShellReportGroupEdit0> ShellReportGroupEdit0 { get; set; }
+        public virtual DbSet<ShellReportGroupEdit5> ShellReportGroupEdit5 { get; set; }
+        public virtual DbSet<ShellReportList> ShellReportLists { get; set; }
+        public virtual DbSet<ShellReportWorkList> ShellReportWorkLists { get; set; }
+        public virtual DbSet<ShellSessionTable> ShellSessionTables { get; set; }
+        public virtual DbSet<ShellSessionTable1> ShellSessionTable1 { get; set; }
+        public virtual DbSet<ShellSettingEdit0> ShellSettingEdit0 { get; set; }
+        public virtual DbSet<ShellSettingEdit1> ShellSettingEdit1 { get; set; }
+        public virtual DbSet<ShellSettingGroupEdit0> ShellSettingGroupEdit0 { get; set; }
+        public virtual DbSet<ShellSettingList> ShellSettingLists { get; set; }
+        public virtual DbSet<ShellSyncEdit0> ShellSyncEdit0 { get; set; }
+        public virtual DbSet<ShellSyncList> ShellSyncLists { get; set; }
+        public virtual DbSet<ShellTermEdit0> ShellTermEdit0 { get; set; }
+        public virtual DbSet<ShellTermGroupEdit0> ShellTermGroupEdit0 { get; set; }
+        public virtual DbSet<ShellTermGroupEdit5> ShellTermGroupEdit5 { get; set; }
+        public virtual DbSet<ShellTermList> ShellTermLists { get; set; }
+        public virtual DbSet<ShellUserEdit0> ShellUserEdit0 { get; set; }
+        public virtual DbSet<ShellUserEdit5> ShellUserEdit5 { get; set; }
+        public virtual DbSet<ShellUserGroupEdit0> ShellUserGroupEdit0 { get; set; }
+        public virtual DbSet<ShellUserList> ShellUserLists { get; set; }
+        public virtual DbSet<ShellUserRightTable> ShellUserRightTables { get; set; }
+        public virtual DbSet<ShellWorkPageTable> ShellWorkPageTables { get; set; }
+        public virtual DbSet<StockAging00Edit0> StockAging00Edit0 { get; set; }
+        public virtual DbSet<StockAging00Edit1> StockAging00Edit1 { get; set; }
+        public virtual DbSet<StockAging00Edit2> StockAging00Edit2 { get; set; }
+        public virtual DbSet<StockAging00Edit3> StockAging00Edit3 { get; set; }
+        public virtual DbSet<StockBalance00Edit0> StockBalance00Edit0 { get; set; }
+        public virtual DbSet<StockBalance00Edit1> StockBalance00Edit1 { get; set; }
+        public virtual DbSet<StockBalance00Edit2> StockBalance00Edit2 { get; set; }
+        public virtual DbSet<StockBalance00Edit8> StockBalance00Edit8 { get; set; }
+        public virtual DbSet<StockBalance00Edit9> StockBalance00Edit9 { get; set; }
+        public virtual DbSet<StockBalance10Edit0> StockBalance10Edit0 { get; set; }
+        public virtual DbSet<StockBalance10Edit1> StockBalance10Edit1 { get; set; }
+        public virtual DbSet<StockBalance10Edit9> StockBalance10Edit9 { get; set; }
+        public virtual DbSet<StockBalance20Edit0> StockBalance20Edit0 { get; set; }
+        public virtual DbSet<StockBalance20Edit1> StockBalance20Edit1 { get; set; }
+        public virtual DbSet<StockBalance20Edit1Total> StockBalance20Edit1Total { get; set; }
+        public virtual DbSet<StockBalance20Edit2> StockBalance20Edit2 { get; set; }
+        public virtual DbSet<StockBalance20Edit9> StockBalance20Edit9 { get; set; }
+        public virtual DbSet<StockBOMPlanEdit0> StockBOMPlanEdit0 { get; set; }
+        public virtual DbSet<StockBOMPlanEdit1> StockBOMPlanEdit1 { get; set; }
+        public virtual DbSet<StockBOMPlanEdit2> StockBOMPlanEdit2 { get; set; }
+        public virtual DbSet<StockBOMPlanEdit3> StockBOMPlanEdit3 { get; set; }
+        public virtual DbSet<StockBOMPlanEdit4> StockBOMPlanEdit4 { get; set; }
+        public virtual DbSet<StockBOMPlanEdit5> StockBOMPlanEdit5 { get; set; }
+        public virtual DbSet<StockBOMPlanEdit6> StockBOMPlanEdit6 { get; set; }
+        public virtual DbSet<StockBOMPlanEdit7> StockBOMPlanEdit7 { get; set; }
+        public virtual DbSet<StockBOMPlanEdit8> StockBOMPlanEdit8 { get; set; }
+        public virtual DbSet<StockBOMPlanEdit9> StockBOMPlanEdit9 { get; set; }
+        public virtual DbSet<StockBOMPlanGroupEdit0> StockBOMPlanGroupEdit0 { get; set; }
+        public virtual DbSet<StockBOMPlanGroupEdit5> StockBOMPlanGroupEdit5 { get; set; }
+        public virtual DbSet<StockBOMPlanList> StockBOMPlanLists { get; set; }
+        public virtual DbSet<StockBudget00Edit0> StockBudget00Edit0 { get; set; }
+        public virtual DbSet<StockBudget00Edit1> StockBudget00Edit1 { get; set; }
+        public virtual DbSet<StockBudget00Edit2> StockBudget00Edit2 { get; set; }
+        public virtual DbSet<StockBudget00Edit2W> StockBudget00Edit2W { get; set; }
+        public virtual DbSet<StockBudget00Edit3> StockBudget00Edit3 { get; set; }
+        public virtual DbSet<StockBudget00Edit3W> StockBudget00Edit3W { get; set; }
+        public virtual DbSet<StockBudget00Edit4> StockBudget00Edit4 { get; set; }
+        public virtual DbSet<StockBudget00Edit7> StockBudget00Edit7 { get; set; }
+        public virtual DbSet<StockBudget00Edit8> StockBudget00Edit8 { get; set; }
+        public virtual DbSet<StockBudget00Edit9> StockBudget00Edit9 { get; set; }
+        public virtual DbSet<StockCarEdit0> StockCarEdit0 { get; set; }
+        public virtual DbSet<StockCarGroupEdit0> StockCarGroupEdit0 { get; set; }
+        public virtual DbSet<StockCarGroupEdit5> StockCarGroupEdit5 { get; set; }
+        public virtual DbSet<StockCarList> StockCarLists { get; set; }
+        public virtual DbSet<StockCompanyEdit0> StockCompanyEdit0 { get; set; }
+        public virtual DbSet<StockCompanyList> StockCompanyLists { get; set; }
+        public virtual DbSet<StockCustomerEdit0> StockCustomerEdit0 { get; set; }
+        public virtual DbSet<StockCustomerEdit2> StockCustomerEdit2 { get; set; }
+        public virtual DbSet<StockCustomerEdit3> StockCustomerEdit3 { get; set; }
+        public virtual DbSet<StockCustomerEdit5> StockCustomerEdit5 { get; set; }
+        public virtual DbSet<StockCustomerGroupEdit0> StockCustomerGroupEdit0 { get; set; }
+        public virtual DbSet<StockCustomerGroupEdit1> StockCustomerGroupEdit1 { get; set; }
+        public virtual DbSet<StockCustomerGroupTable> StockCustomerGroupTables { get; set; }
+        public virtual DbSet<StockCustomerList> StockCustomerLists { get; set; }
+        public virtual DbSet<StockCustomerTable> StockCustomerTables { get; set; }
+        public virtual DbSet<StockDeliveryEdit0> StockDeliveryEdit0 { get; set; }
+        public virtual DbSet<StockDeliveryGroupEdit0> StockDeliveryGroupEdit0 { get; set; }
+        public virtual DbSet<StockDeliveryGroupEdit5> StockDeliveryGroupEdit5 { get; set; }
+        public virtual DbSet<StockDeliveryList> StockDeliveryLists { get; set; }
+        public virtual DbSet<StockDiscountEdit0> StockDiscountEdit0 { get; set; }
+        public virtual DbSet<StockDiscountEdit1> StockDiscountEdit1 { get; set; }
+        public virtual DbSet<StockDiscountGroupEdit0> StockDiscountGroupEdit0 { get; set; }
+        public virtual DbSet<StockDiscountGroupEdit5> StockDiscountGroupEdit5 { get; set; }
+        public virtual DbSet<StockDiscountList> StockDiscountLists { get; set; }
+        public virtual DbSet<StockEntry2110Edit0> StockEntry2110Edit0 { get; set; }
+        public virtual DbSet<StockEntry2110Edit1> StockEntry2110Edit1 { get; set; }
+        public virtual DbSet<StockEntry2110Edit2_Fiscal> StockEntry2110Edit2_Fiscal { get; set; }
+        public virtual DbSet<StockEntry2110Edit2_FiscalDitails> StockEntry2110Edit2_FiscalDitails { get; set; }
+        public virtual DbSet<StockEntry2110Edit2_NonFiscal> StockEntry2110Edit2_NonFiscal { get; set; }
+        public virtual DbSet<StockEntry2120Edit0> StockEntry2120Edit0 { get; set; }
+        public virtual DbSet<StockEntry2120Edit1> StockEntry2120Edit1 { get; set; }
+        public virtual DbSet<StockEntry2120Edit2> StockEntry2120Edit2 { get; set; }
+        public virtual DbSet<StockEntry2122Edit0> StockEntry2122Edit0 { get; set; }
+        public virtual DbSet<StockEntry2122Edit1> StockEntry2122Edit1 { get; set; }
+        public virtual DbSet<StockEntry2123Edit0> StockEntry2123Edit0 { get; set; }
+        public virtual DbSet<StockEntry2130Edit0> StockEntry2130Edit0 { get; set; }
+        public virtual DbSet<StockEntry2130Edit1> StockEntry2130Edit1 { get; set; }
+        public virtual DbSet<StockEntry2130Edit2> StockEntry2130Edit2 { get; set; }
+        public virtual DbSet<StockEntry2130Edit2_Fiscal> StockEntry2130Edit2_Fiscal { get; set; }
+        public virtual DbSet<StockEntry2130Edit2_FiscalDitails> StockEntry2130Edit2_FiscalDitails { get; set; }
+        public virtual DbSet<StockEntry2130Edit2_NonFiscal> StockEntry2130Edit2_NonFiscal { get; set; }
+        public virtual DbSet<StockEntry2140Edit0> StockEntry2140Edit0 { get; set; }
+        public virtual DbSet<StockEntry2140Edit1> StockEntry2140Edit1 { get; set; }
+        public virtual DbSet<StockEntry21xZEdit0> StockEntry21xZEdit0 { get; set; }
+        public virtual DbSet<StockEntry21xZEdit1> StockEntry21xZEdit1 { get; set; }
+        public virtual DbSet<StockEntry21xZList> StockEntry21xZList { get; set; }
+        public virtual DbSet<StockEntry6300Edit0> StockEntry6300Edit0 { get; set; }
+        public virtual DbSet<StockEntryDP9Edit0> StockEntryDP9Edit0 { get; set; }
+        public virtual DbSet<StockEntryDP9Edit1> StockEntryDP9Edit1 { get; set; }
+        public virtual DbSet<StockEntryDP9Edit2> StockEntryDP9Edit2 { get; set; }
+        public virtual DbSet<StockEntryI10Edit0> StockEntryI10Edit0 { get; set; }
+        public virtual DbSet<StockEntryI10Edit1> StockEntryI10Edit1 { get; set; }
+        public virtual DbSet<StockEntryI10Edit2> StockEntryI10Edit2 { get; set; }
+        public virtual DbSet<StockEntryI10Edit4> StockEntryI10Edit4 { get; set; }
+        public virtual DbSet<StockEntryI10Edit5> StockEntryI10Edit5 { get; set; }
+        public virtual DbSet<StockEntryI12Edit0> StockEntryI12Edit0 { get; set; }
+        public virtual DbSet<StockEntryI12Edit1> StockEntryI12Edit1 { get; set; }
+        public virtual DbSet<StockEntryI12Edit12> StockEntryI12Edit12 { get; set; }
+        public virtual DbSet<StockEntryI12Edit2> StockEntryI12Edit2 { get; set; }
+        public virtual DbSet<StockEntryI12Edit3> StockEntryI12Edit3 { get; set; }
+        public virtual DbSet<StockEntryLine_BOMTable> StockEntryLine_BOMTable { get; set; }
+        public virtual DbSet<StockEntryM10Edit0> StockEntryM10Edit0 { get; set; }
+        public virtual DbSet<StockEntryM10Edit1> StockEntryM10Edit1 { get; set; }
+        public virtual DbSet<StockEntryM10Edit2> StockEntryM10Edit2 { get; set; }
+        public virtual DbSet<StockEntryM10Edit3> StockEntryM10Edit3 { get; set; }
+        public virtual DbSet<StockEntryM10Edit5> StockEntryM10Edit5 { get; set; }
+        public virtual DbSet<StockEntryM10List> StockEntryM10List { get; set; }
+        public virtual DbSet<StockEntryMatrix_R2> StockEntryMatrix_R2 { get; set; }
+        public virtual DbSet<StockEntryP10Edit0> StockEntryP10Edit0 { get; set; }
+        public virtual DbSet<StockEntryP10Edit1> StockEntryP10Edit1 { get; set; }
+        public virtual DbSet<StockEntryP10Edit1_2> StockEntryP10Edit1_2 { get; set; }
+        public virtual DbSet<StockEntryP10StatusTable> StockEntryP10StatusTable { get; set; }
+        public virtual DbSet<StockEntryP10Table> StockEntryP10Table { get; set; }
+        public virtual DbSet<StockEntryP20Edit0> StockEntryP20Edit0 { get; set; }
+        public virtual DbSet<StockEntryP20Edit1> StockEntryP20Edit1 { get; set; }
+        public virtual DbSet<StockEntryP30Edit0> StockEntryP30Edit0 { get; set; }
+        public virtual DbSet<StockEntryP30Edit1> StockEntryP30Edit1 { get; set; }
+        public virtual DbSet<StockEntryP50Edit0> StockEntryP50Edit0 { get; set; }
+        public virtual DbSet<StockEntryP50Edit1> StockEntryP50Edit1 { get; set; }
+        public virtual DbSet<StockEntryPrintReportTable> StockEntryPrintReportTables { get; set; }
+        public virtual DbSet<StockEntryPrintTable> StockEntryPrintTables { get; set; }
+        public virtual DbSet<StockEntryR10Edit0> StockEntryR10Edit0 { get; set; }
+        public virtual DbSet<StockEntryR10Edit1> StockEntryR10Edit1 { get; set; }
+        public virtual DbSet<StockEntryR10Edit2> StockEntryR10Edit2 { get; set; }
+        public virtual DbSet<StockEntryRP9Edit0> StockEntryRP9Edit0 { get; set; }
+        public virtual DbSet<StockEntryRP9Edit1> StockEntryRP9Edit1 { get; set; }
+        public virtual DbSet<StockEntryRP9Edit2> StockEntryRP9Edit2 { get; set; }
+        public virtual DbSet<StockEntryRP9Edit3> StockEntryRP9Edit3 { get; set; }
+        public virtual DbSet<StockEntryRP9Edit4> StockEntryRP9Edit4 { get; set; }
+        public virtual DbSet<StockEntryRP9Edit5> StockEntryRP9Edit5 { get; set; }
+        public virtual DbSet<StockEntryRP9Edit6> StockEntryRP9Edit6 { get; set; }
+        public virtual DbSet<StockEntryS10Edit0> StockEntryS10Edit0 { get; set; }
+        public virtual DbSet<StockEntryS10Edit1> StockEntryS10Edit1 { get; set; }
+        public virtual DbSet<StockEntryS10Edit4> StockEntryS10Edit4 { get; set; }
+        public virtual DbSet<StockEntryS19Edit0> StockEntryS19Edit0 { get; set; }
+        public virtual DbSet<StockEntryS19Edit1> StockEntryS19Edit1 { get; set; }
+        public virtual DbSet<StockEntryS20Edit0> StockEntryS20Edit0 { get; set; }
+        public virtual DbSet<StockEntryS20Edit1> StockEntryS20Edit1 { get; set; }
+        public virtual DbSet<StockEntrySP9Edit0> StockEntrySP9Edit0 { get; set; }
+        public virtual DbSet<StockEntrySP9Edit1> StockEntrySP9Edit1 { get; set; }
+        public virtual DbSet<StockEntrySP9Edit12> StockEntrySP9Edit12 { get; set; }
+        public virtual DbSet<StockEntrySP9Edit2> StockEntrySP9Edit2 { get; set; }
+        public virtual DbSet<StockEntryT10Edit0> StockEntryT10Edit0 { get; set; }
+        public virtual DbSet<StockEntryT10Edit1> StockEntryT10Edit1 { get; set; }
+        public virtual DbSet<StockEntryT13Edit0> StockEntryT13Edit0 { get; set; }
+        public virtual DbSet<StockEntryT13Edit1> StockEntryT13Edit1 { get; set; }
+        public virtual DbSet<StockEntryT13Edit15> StockEntryT13Edit15 { get; set; }
+        public virtual DbSet<StockEntryT13Edit5> StockEntryT13Edit5 { get; set; }
+        public virtual DbSet<StockEntryT19Edit0> StockEntryT19Edit0 { get; set; }
+        public virtual DbSet<StockEntryT19Edit1> StockEntryT19Edit1 { get; set; }
+        public virtual DbSet<StockEntryW00Edit0> StockEntryW00Edit0 { get; set; }
+        public virtual DbSet<StockEntryW00Edit1> StockEntryW00Edit1 { get; set; }
+        public virtual DbSet<StockItemBOMTable> StockItemBOMTables { get; set; }
+        public virtual DbSet<StockItemEdit1> StockItemEdit1 { get; set; }
+        public virtual DbSet<StockItemEdit2> StockItemEdit2 { get; set; }
+        public virtual DbSet<StockItemEdit3> StockItemEdit3 { get; set; }
+        public virtual DbSet<StockItemEdit4> StockItemEdit4 { get; set; }
+        public virtual DbSet<StockItemGroupEdit0> StockItemGroupEdit0 { get; set; }
+        public virtual DbSet<StockItemT0Edit0> StockItemT0Edit0 { get; set; }
+        public virtual DbSet<StockItemT0Edit1> StockItemT0Edit1 { get; set; }
+        public virtual DbSet<StockItemT0Edit4> StockItemT0Edit4 { get; set; }
+        public virtual DbSet<StockItemT0GroupEdit0> StockItemT0GroupEdit0 { get; set; }
+        public virtual DbSet<StockItemT0GroupEdit1> StockItemT0GroupEdit1 { get; set; }
+        public virtual DbSet<StockItemT0GroupTable> StockItemT0GroupTable { get; set; }
+        public virtual DbSet<StockItemT0StatusTable> StockItemT0StatusTable { get; set; }
+        public virtual DbSet<StockItemT0Table> StockItemT0Table { get; set; }
+        public virtual DbSet<StockItemT0TypeTable> StockItemT0TypeTable { get; set; }
+        public virtual DbSet<StockItemT1Edit0> StockItemT1Edit0 { get; set; }
+        public virtual DbSet<StockItemT1Edit1> StockItemT1Edit1 { get; set; }
+        public virtual DbSet<StockItemT1GroupEdit0> StockItemT1GroupEdit0 { get; set; }
+        public virtual DbSet<StockItemT1GroupEdit1> StockItemT1GroupEdit1 { get; set; }
+        public virtual DbSet<StockItemT1GroupTable> StockItemT1GroupTable { get; set; }
+        public virtual DbSet<StockItemT1StatusTable> StockItemT1StatusTable { get; set; }
+        public virtual DbSet<StockItemT1Table> StockItemT1Table { get; set; }
+        public virtual DbSet<StockItemT2Edit0> StockItemT2Edit0 { get; set; }
+        public virtual DbSet<StockItemT2Edit1> StockItemT2Edit1 { get; set; }
+        public virtual DbSet<StockItemT2Edit2> StockItemT2Edit2 { get; set; }
+        public virtual DbSet<StockItemT2Edit3> StockItemT2Edit3 { get; set; }
+        public virtual DbSet<StockItemT2Edit4> StockItemT2Edit4 { get; set; }
+        public virtual DbSet<StockItemT2Edit5> StockItemT2Edit5 { get; set; }
+        public virtual DbSet<StockItemT2GroupEdit0> StockItemT2GroupEdit0 { get; set; }
+        public virtual DbSet<StockItemT2GroupEdit5> StockItemT2GroupEdit5 { get; set; }
+        public virtual DbSet<StockItemT2GroupTable> StockItemT2GroupTable { get; set; }
+        public virtual DbSet<StockItemT2List> StockItemT2List { get; set; }
+        public virtual DbSet<StockItemT2StatusTable> StockItemT2StatusTable { get; set; }
+        public virtual DbSet<StockItemT2Table> StockItemT2Table { get; set; }
+        public virtual DbSet<StockItemT2TypeTable> StockItemT2TypeTable { get; set; }
+        public virtual DbSet<StockItemT3Edit0> StockItemT3Edit0 { get; set; }
+        public virtual DbSet<StockItemT3Edit1> StockItemT3Edit1 { get; set; }
+        public virtual DbSet<StockItemT3Edit2> StockItemT3Edit2 { get; set; }
+        public virtual DbSet<StockItemT3Edit3> StockItemT3Edit3 { get; set; }
+        public virtual DbSet<StockItemT3Edit4> StockItemT3Edit4 { get; set; }
+        public virtual DbSet<StockItemT3GroupEdit0> StockItemT3GroupEdit0 { get; set; }
+        public virtual DbSet<StockItemT3GroupEdit5> StockItemT3GroupEdit5 { get; set; }
+        public virtual DbSet<StockItemT3GroupTable> StockItemT3GroupTable { get; set; }
+        public virtual DbSet<StockItemT3List> StockItemT3List { get; set; }
+        public virtual DbSet<StockItemT3StatusTable> StockItemT3StatusTable { get; set; }
+        public virtual DbSet<StockItemT3Table> StockItemT3Table { get; set; }
+        public virtual DbSet<StockItemT3TypeTable> StockItemT3TypeTable { get; set; }
+        public virtual DbSet<StockItemT5Edit1> StockItemT5Edit1 { get; set; }
+        public virtual DbSet<StockItemT5Edit2> StockItemT5Edit2 { get; set; }
+        public virtual DbSet<StockItemT5GroupEdit0> StockItemT5GroupEdit0 { get; set; }
+        public virtual DbSet<StockItemT5GroupTable> StockItemT5GroupTable { get; set; }
+        public virtual DbSet<StockItemT5StatusTable> StockItemT5StatusTable { get; set; }
+        public virtual DbSet<StockItemT5TypeTable> StockItemT5TypeTable { get; set; }
+        public virtual DbSet<StockItemUnitEdit0> StockItemUnitEdit0 { get; set; }
+        public virtual DbSet<StockItemUnitGroupEdit0> StockItemUnitGroupEdit0 { get; set; }
+        public virtual DbSet<StockItemUnitGroupEdit5> StockItemUnitGroupEdit5 { get; set; }
+        public virtual DbSet<StockItemUnitList> StockItemUnitLists { get; set; }
+        public virtual DbSet<StockLiveEntry00Edit0> StockLiveEntry00Edit0 { get; set; }
+        public virtual DbSet<StockLiveEntry00Edit1> StockLiveEntry00Edit1 { get; set; }
+        public virtual DbSet<StockLiveEntry00Edit2> StockLiveEntry00Edit2 { get; set; }
+        public virtual DbSet<StockLiveEntry00Edit3> StockLiveEntry00Edit3 { get; set; }
+        public virtual DbSet<StockLiveHeaders00Edit0> StockLiveHeaders00Edit0 { get; set; }
+        public virtual DbSet<StockLiveHeaders00Edit1> StockLiveHeaders00Edit1 { get; set; }
+        public virtual DbSet<StockLiveHeaders00Edit1Total> StockLiveHeaders00Edit1Total { get; set; }
+        public virtual DbSet<StockLiveHeaders02Edit0> StockLiveHeaders02Edit0 { get; set; }
+        public virtual DbSet<StockLiveHeaders02Edit1> StockLiveHeaders02Edit1 { get; set; }
+        public virtual DbSet<StockLiveHeaders02Edit1Total> StockLiveHeaders02Edit1Total { get; set; }
+        public virtual DbSet<StockLiveMovement00Edit0> StockLiveMovement00Edit0 { get; set; }
+        public virtual DbSet<StockLiveMovement00Edit1> StockLiveMovement00Edit1 { get; set; }
+        public virtual DbSet<StockLiveMovement00Edit1Total> StockLiveMovement00Edit1Total { get; set; }
+        public virtual DbSet<StockLiveMovement09Edit0> StockLiveMovement09Edit0 { get; set; }
+        public virtual DbSet<StockLiveMovement10Edit0> StockLiveMovement10Edit0 { get; set; }
+        public virtual DbSet<StockLiveMovement10Edit1> StockLiveMovement10Edit1 { get; set; }
+        public virtual DbSet<StockLiveMovement20Edit0> StockLiveMovement20Edit0 { get; set; }
+        public virtual DbSet<StockLiveMovement20Edit1> StockLiveMovement20Edit1 { get; set; }
+        public virtual DbSet<StockLivePrice00Edit0> StockLivePrice00Edit0 { get; set; }
+        public virtual DbSet<StockLivePrice00Edit1> StockLivePrice00Edit1 { get; set; }
+        public virtual DbSet<StockLocationEdit0> StockLocationEdit0 { get; set; }
+        public virtual DbSet<StockLocationEdit1> StockLocationEdit1 { get; set; }
+        public virtual DbSet<StockLocationEdit4> StockLocationEdit4 { get; set; }
+        public virtual DbSet<StockLocationEdit5> StockLocationEdit5 { get; set; }
+        public virtual DbSet<StockLocationEdit6> StockLocationEdit6 { get; set; }
+        public virtual DbSet<StockLocationEdit9> StockLocationEdit9 { get; set; }
+        public virtual DbSet<StockLocationGroupEdit0> StockLocationGroupEdit0 { get; set; }
+        public virtual DbSet<StockLocationList> StockLocationLists { get; set; }
+        public virtual DbSet<StockMarkupEdit0> StockMarkupEdit0 { get; set; }
+        public virtual DbSet<StockMarkupGroupEdit0> StockMarkupGroupEdit0 { get; set; }
+        public virtual DbSet<StockMarkupGroupEdit5> StockMarkupGroupEdit5 { get; set; }
+        public virtual DbSet<StockMarkupList> StockMarkupLists { get; set; }
+        public virtual DbSet<StockPBalance10Edit0> StockPBalance10Edit0 { get; set; }
+        public virtual DbSet<StockPBalance10Edit1> StockPBalance10Edit1 { get; set; }
+        public virtual DbSet<StockPBalance10Edit1Total> StockPBalance10Edit1Total { get; set; }
+        public virtual DbSet<StockPBalance20Edit0> StockPBalance20Edit0 { get; set; }
+        public virtual DbSet<StockPBalance20Edit1> StockPBalance20Edit1 { get; set; }
+        public virtual DbSet<StockPBalance20Edit1Total> StockPBalance20Edit1Total { get; set; }
+        public virtual DbSet<StockPersonEdit0> StockPersonEdit0 { get; set; }
+        public virtual DbSet<StockPersonGroupEdit0> StockPersonGroupEdit0 { get; set; }
+        public virtual DbSet<StockPersonGroupEdit5> StockPersonGroupEdit5 { get; set; }
+        public virtual DbSet<StockPersonList> StockPersonLists { get; set; }
+        public virtual DbSet<StockPurchase00Edit0> StockPurchase00Edit0 { get; set; }
+        public virtual DbSet<StockPurchase00Edit1> StockPurchase00Edit1 { get; set; }
+        public virtual DbSet<StockPurchase00Edit1Total> StockPurchase00Edit1Total { get; set; }
+        public virtual DbSet<StockPurchase10Edit0> StockPurchase10Edit0 { get; set; }
+        public virtual DbSet<StockPurchase10Edit1> StockPurchase10Edit1 { get; set; }
+        public virtual DbSet<StockPurchase10Edit1Total> StockPurchase10Edit1Total { get; set; }
+        public virtual DbSet<StockPurchase20Edit0> StockPurchase20Edit0 { get; set; }
+        public virtual DbSet<StockPurchase20Edit1> StockPurchase20Edit1 { get; set; }
+        public virtual DbSet<StockPurchase20Edit1Total> StockPurchase20Edit1Total { get; set; }
+        public virtual DbSet<StockPurchase20Edit2> StockPurchase20Edit2 { get; set; }
+        public virtual DbSet<StockPurchase20Edit3> StockPurchase20Edit3 { get; set; }
+        public virtual DbSet<StockPurchase20Edit3Total> StockPurchase20Edit3Total { get; set; }
+        public virtual DbSet<StockSales00Edit0> StockSales00Edit0 { get; set; }
+        public virtual DbSet<StockSales00Edit1> StockSales00Edit1 { get; set; }
+        public virtual DbSet<StockSales00Edit1Total> StockSales00Edit1Total { get; set; }
+        public virtual DbSet<StockSales10Edit0> StockSales10Edit0 { get; set; }
+        public virtual DbSet<StockSales10Edit1> StockSales10Edit1 { get; set; }
+        public virtual DbSet<StockSales10Edit1Total> StockSales10Edit1Total { get; set; }
+        public virtual DbSet<StockSales20Edit0> StockSales20Edit0 { get; set; }
+        public virtual DbSet<StockSales20Edit1> StockSales20Edit1 { get; set; }
+        public virtual DbSet<StockSales20Edit1Total> StockSales20Edit1Total { get; set; }
+        public virtual DbSet<StockSales20Edit2> StockSales20Edit2 { get; set; }
+        public virtual DbSet<StockSales20Edit3> StockSales20Edit3 { get; set; }
+        public virtual DbSet<StockSales20Edit4> StockSales20Edit4 { get; set; }
+        public virtual DbSet<StockSalesItemEdit0> StockSalesItemEdit0 { get; set; }
+        public virtual DbSet<StockSalesItemGroupList> StockSalesItemGroupLists { get; set; }
+        public virtual DbSet<StockSalesItemList> StockSalesItemLists { get; set; }
+        public virtual DbSet<StockSalesItemStatusTable> StockSalesItemStatusTables { get; set; }
+        public virtual DbSet<StockSalesItemTable> StockSalesItemTables { get; set; }
+        public virtual DbSet<StockSalesItemTypeTable> StockSalesItemTypeTables { get; set; }
+        public virtual DbSet<StockSalesPriceEdit0> StockSalesPriceEdit0 { get; set; }
+        public virtual DbSet<StockSalesPriceGroupEdit0> StockSalesPriceGroupEdit0 { get; set; }
+        public virtual DbSet<StockSalesPriceGroupEdit5> StockSalesPriceGroupEdit5 { get; set; }
+        public virtual DbSet<StockSalesPriceGroupTable> StockSalesPriceGroupTables { get; set; }
+        public virtual DbSet<StockSalesPriceList> StockSalesPriceLists { get; set; }
+        public virtual DbSet<StockSalesPriceStatusTable> StockSalesPriceStatusTables { get; set; }
+        public virtual DbSet<StockSalesPriceTable> StockSalesPriceTables { get; set; }
+        public virtual DbSet<StockSupplierEdit0> StockSupplierEdit0 { get; set; }
+        public virtual DbSet<StockSupplierEdit1> StockSupplierEdit1 { get; set; }
+        public virtual DbSet<StockSupplierGroupEdit0> StockSupplierGroupEdit0 { get; set; }
+        public virtual DbSet<StockSupplierGroupEdit1> StockSupplierGroupEdit1 { get; set; }
+        public virtual DbSet<StockSupplierGroupTable> StockSupplierGroupTables { get; set; }
+        public virtual DbSet<StockSupplierList> StockSupplierLists { get; set; }
+        public virtual DbSet<StockSupplierTable> StockSupplierTables { get; set; }
+        public virtual DbSet<StockValuation00Edit0> StockValuation00Edit0 { get; set; }
+        public virtual DbSet<StockValuation00Edit1> StockValuation00Edit1 { get; set; }
+        public virtual DbSet<StockValuation00Edit2> StockValuation00Edit2 { get; set; }
+        public virtual DbSet<StockValuation00Edit3> StockValuation00Edit3 { get; set; }
+        public virtual DbSet<StockWork_OnList> StockWork_OnList { get; set; }
+        public virtual DbSet<StockWork_OnList_LR> StockWork_OnList_LR { get; set; }
+        public virtual DbSet<StockWork_OnList_LR_Transfer> StockWork_OnList_LR_Transfer { get; set; }
+        public virtual DbSet<StockWork_OnList_LR_Transfer1> StockWork_OnList_LR_Transfer1 { get; set; }
+        public virtual DbSet<StockWork_OnList_LR10> StockWork_OnList_LR10 { get; set; }
+        public virtual DbSet<StockWork_OnList_LR2> StockWork_OnList_LR2 { get; set; }
+        public virtual DbSet<StockWork_OnList_T10> StockWork_OnList_T10 { get; set; }
+        public virtual DbSet<StockWork_OnList_T12> StockWork_OnList_T12 { get; set; }
+        public virtual DbSet<StockWork_OnList_T12V> StockWork_OnList_T12V { get; set; }
+        public virtual DbSet<StockWork_OnList_T19> StockWork_OnList_T19 { get; set; }
+        public virtual DbSet<StockWork2120_OnList> StockWork2120_OnList { get; set; }
+        public virtual DbSet<TransItemEdit0> TransItemEdit0 { get; set; }
+        public virtual DbSet<TransItemGroupEdit0> TransItemGroupEdit0 { get; set; }
+        public virtual DbSet<TransItemGroupTable> TransItemGroupTables { get; set; }
+        public virtual DbSet<TransItemStatusTable> TransItemStatusTables { get; set; }
+        public virtual DbSet<TransItemTable> TransItemTables { get; set; }
+        public virtual DbSet<TransItemTypeTable> TransItemTypeTables { get; set; }
+        public virtual DbSet<xStockSalesItemGroupTable> xStockSalesItemGroupTables { get; set; }
+        public virtual DbSet<zPOSEntryZ00Edit0> zPOSEntryZ00Edit0 { get; set; }
+        public virtual DbSet<zPOSEntryZ00Edit1> zPOSEntryZ00Edit1 { get; set; }
+        public virtual DbSet<zPOSEntryZ00List> zPOSEntryZ00List { get; set; }
+        public virtual DbSet<zStockItemT0Edit2> zStockItemT0Edit2 { get; set; }
+        public virtual DbSet<zStockItemT0List> zStockItemT0List { get; set; }
+        public virtual DbSet<zStockItemT1List> zStockItemT1List { get; set; }
+        public virtual DbSet<zStockSupplierEdit2F> zStockSupplierEdit2F { get; set; }
+        public virtual DbSet<zStockSupplierList> zStockSupplierLists { get; set; }
     
         public virtual int WebShellOperation(Nullable<int> shellUserID, ObjectParameter xmlOut)
         {
@@ -92,6 +764,5575 @@ namespace WebApplicationGrid.Models
                 new ObjectParameter("TableName", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebGroupsAll", tableNameParameter);
+        }
+    
+        public virtual int BSC_DayClosing(ObjectParameter shellMessageID)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("BSC_DayClosing", shellMessageID);
+        }
+    
+        public virtual int BSC_DayClosingStock(ObjectParameter shellMessageID)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("BSC_DayClosingStock", shellMessageID);
+        }
+    
+        public virtual int BSC_Integrator_RSG(string action, string xmlData, ObjectParameter output)
+        {
+            var actionParameter = action != null ?
+                new ObjectParameter("action", action) :
+                new ObjectParameter("action", typeof(string));
+    
+            var xmlDataParameter = xmlData != null ?
+                new ObjectParameter("xmlData", xmlData) :
+                new ObjectParameter("xmlData", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("BSC_Integrator_RSG", actionParameter, xmlDataParameter, output);
+        }
+    
+        public virtual int BSC_Integrator_RSG_CompanyName_By_Vat(string vatNumber, ObjectParameter name)
+        {
+            var vatNumberParameter = vatNumber != null ?
+                new ObjectParameter("VatNumber", vatNumber) :
+                new ObjectParameter("VatNumber", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("BSC_Integrator_RSG_CompanyName_By_Vat", vatNumberParameter, name);
+        }
+    
+        public virtual int BSC_Integrator_RSG_Waybill_Open_By_Id(string waybillId, ObjectParameter xmlOutput)
+        {
+            var waybillIdParameter = waybillId != null ?
+                new ObjectParameter("WaybillId", waybillId) :
+                new ObjectParameter("WaybillId", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("BSC_Integrator_RSG_Waybill_Open_By_Id", waybillIdParameter, xmlOutput);
+        }
+    
+        public virtual int BSC_Integrator_RSG_Waybill_Open_By_Key(string waybillKey, ObjectParameter xmlOutput)
+        {
+            var waybillKeyParameter = waybillKey != null ?
+                new ObjectParameter("WaybillKey", waybillKey) :
+                new ObjectParameter("WaybillKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("BSC_Integrator_RSG_Waybill_Open_By_Key", waybillKeyParameter, xmlOutput);
+        }
+    
+        public virtual int BSC_Integrator_RSG_Waybill_Save(string xmlInput, ObjectParameter xmlOutput)
+        {
+            var xmlInputParameter = xmlInput != null ?
+                new ObjectParameter("XmlInput", xmlInput) :
+                new ObjectParameter("XmlInput", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("BSC_Integrator_RSG_Waybill_Save", xmlInputParameter, xmlOutput);
+        }
+    
+        public virtual int BSC_Integrator_RSG_Waybill_Save_List(string xmlInput, ObjectParameter xmlOutput)
+        {
+            var xmlInputParameter = xmlInput != null ?
+                new ObjectParameter("XmlInput", xmlInput) :
+                new ObjectParameter("XmlInput", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("BSC_Integrator_RSG_Waybill_Save_List", xmlInputParameter, xmlOutput);
+        }
+    
+        public virtual int BSC_StockWaybill_Fulfillment(Nullable<int> stockEntryID, ObjectParameter response)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("BSC_StockWaybill_Fulfillment", stockEntryIDParameter, response);
+        }
+    
+        public virtual int BSC_StockWaybill_Fulfillment_ttttt(Nullable<int> stockEntryID, ObjectParameter response)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("BSC_StockWaybill_Fulfillment_ttttt", stockEntryIDParameter, response);
+        }
+    
+        public virtual int BSC_StockWaybill_Fulfillment_20170609(Nullable<int> stockEntryID, ObjectParameter response)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("BSC_StockWaybill_Fulfillment_20170609", stockEntryIDParameter, response);
+        }
+    
+        public virtual int BSC_StockWaybill_Upload(Nullable<int> shellWorkEntryID, ObjectParameter shellMessageID)
+        {
+            var shellWorkEntryIDParameter = shellWorkEntryID.HasValue ?
+                new ObjectParameter("ShellWorkEntryID", shellWorkEntryID) :
+                new ObjectParameter("ShellWorkEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("BSC_StockWaybill_Upload", shellWorkEntryIDParameter, shellMessageID);
+        }
+    
+        public virtual int CashEntry00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashEntry00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashLive01OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashLive01OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashLive01OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashLive01OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashLive02OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashLive02OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashLiveCustomerOnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashLiveCustomerOnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashLiveCustomerOnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashLiveCustomerOnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashLiveEntry00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashLiveEntry00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashLiveEntry00Process(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashLiveEntry00Process", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashLiveSupplierOnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashLiveSupplierOnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashLiveSupplierOnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashLiveSupplierOnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashWorkCheck_00(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashWorkCheck_00", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashWorkCheck_10(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashWorkCheck_10", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashWorkCheck_20(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashWorkCheck_20", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashWorkLive0Message(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashWorkLive0Message", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashWorkLiveMessage(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashWorkLiveMessage", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashWorkLiveOnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashWorkLiveOnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashWorkMessage(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashWorkMessage", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashWorkOnAccept(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashWorkOnAccept", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashWorkOnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashWorkOnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashWorkOnDelete(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashWorkOnDelete", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashWorkOnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashWorkOnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashWorkOnOpen(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashWorkOnOpen", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> CashWorkOnSave(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("CashWorkOnSave", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> CashWorkSave_00(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("CashWorkSave_00", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashWorkSave_10(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashWorkSave_10", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CashWorkSave_90(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CashWorkSave_90", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int CreateEntryData(string dataKey)
+        {
+            var dataKeyParameter = dataKey != null ?
+                new ObjectParameter("DataKey", dataKey) :
+                new ObjectParameter("DataKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CreateEntryData", dataKeyParameter);
+        }
+    
+        public virtual int CreateMasterData(string dataKey)
+        {
+            var dataKeyParameter = dataKey != null ?
+                new ObjectParameter("DataKey", dataKey) :
+                new ObjectParameter("DataKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CreateMasterData", dataKeyParameter);
+        }
+    
+        [DbFunction("Entities", "GetLastStockReceiptPrice")]
+        public virtual IQueryable<GetLastStockReceiptPrice_Result> GetLastStockReceiptPrice(Nullable<System.DateTime> stockEntryDateTo)
+        {
+            var stockEntryDateToParameter = stockEntryDateTo.HasValue ?
+                new ObjectParameter("StockEntryDateTo", stockEntryDateTo) :
+                new ObjectParameter("StockEntryDateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<GetLastStockReceiptPrice_Result>("[Entities].[GetLastStockReceiptPrice](@StockEntryDateTo)", stockEntryDateToParameter);
+        }
+    
+        public virtual int ImportPOSEntryIDProcedure(Nullable<int> shellEntryIDCount, ObjectParameter shellEntryID)
+        {
+            var shellEntryIDCountParameter = shellEntryIDCount.HasValue ?
+                new ObjectParameter("ShellEntryIDCount", shellEntryIDCount) :
+                new ObjectParameter("ShellEntryIDCount", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ImportPOSEntryIDProcedure", shellEntryIDCountParameter, shellEntryID);
+        }
+    
+        public virtual ObjectResult<ItemList_Result> ItemList(string itemHint)
+        {
+            var itemHintParameter = itemHint != null ?
+                new ObjectParameter("ItemHint", itemHint) :
+                new ObjectParameter("ItemHint", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ItemList_Result>("ItemList", itemHintParameter);
+        }
+    
+        public virtual ObjectResult<ItemList2_Result> ItemList2(string itemHint)
+        {
+            var itemHintParameter = itemHint != null ?
+                new ObjectParameter("ItemHint", itemHint) :
+                new ObjectParameter("ItemHint", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ItemList2_Result>("ItemList2", itemHintParameter);
+        }
+    
+        public virtual ObjectResult<ManufacturingItemList_Result> ManufacturingItemList(string item)
+        {
+            var itemParameter = item != null ?
+                new ObjectParameter("Item", item) :
+                new ObjectParameter("Item", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ManufacturingItemList_Result>("ManufacturingItemList", itemParameter);
+        }
+    
+        [DbFunction("Entities", "POS_Check")]
+        public virtual IQueryable<POS_Check_Result> POS_Check(Nullable<int> stockEntryID)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<POS_Check_Result>("[Entities].[POS_Check](@StockEntryID)", stockEntryIDParameter);
+        }
+    
+        [DbFunction("Entities", "POS_ZCheck")]
+        public virtual IQueryable<POS_ZCheck_Result> POS_ZCheck(Nullable<int> stockPayPeriodID)
+        {
+            var stockPayPeriodIDParameter = stockPayPeriodID.HasValue ?
+                new ObjectParameter("StockPayPeriodID", stockPayPeriodID) :
+                new ObjectParameter("StockPayPeriodID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<POS_ZCheck_Result>("[Entities].[POS_ZCheck](@StockPayPeriodID)", stockPayPeriodIDParameter);
+        }
+    
+        [DbFunction("Entities", "POS_ZCheckDaisy")]
+        public virtual IQueryable<POS_ZCheckDaisy_Result> POS_ZCheckDaisy(Nullable<int> stockPayPeriodID)
+        {
+            var stockPayPeriodIDParameter = stockPayPeriodID.HasValue ?
+                new ObjectParameter("StockPayPeriodID", stockPayPeriodID) :
+                new ObjectParameter("StockPayPeriodID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<POS_ZCheckDaisy_Result>("[Entities].[POS_ZCheckDaisy](@StockPayPeriodID)", stockPayPeriodIDParameter);
+        }
+    
+        [DbFunction("Entities", "POS_ZCheckDaisy_M")]
+        public virtual IQueryable<POS_ZCheckDaisy_M_Result> POS_ZCheckDaisy_M(Nullable<int> stockPayPeriodID)
+        {
+            var stockPayPeriodIDParameter = stockPayPeriodID.HasValue ?
+                new ObjectParameter("StockPayPeriodID", stockPayPeriodID) :
+                new ObjectParameter("StockPayPeriodID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<POS_ZCheckDaisy_M_Result>("[Entities].[POS_ZCheckDaisy_M](@StockPayPeriodID)", stockPayPeriodIDParameter);
+        }
+    
+        [DbFunction("Entities", "POS_ZCheckDaisy_R")]
+        public virtual IQueryable<POS_ZCheckDaisy_R_Result> POS_ZCheckDaisy_R(Nullable<int> stockPayPeriodID)
+        {
+            var stockPayPeriodIDParameter = stockPayPeriodID.HasValue ?
+                new ObjectParameter("StockPayPeriodID", stockPayPeriodID) :
+                new ObjectParameter("StockPayPeriodID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<POS_ZCheckDaisy_R_Result>("[Entities].[POS_ZCheckDaisy_R](@StockPayPeriodID)", stockPayPeriodIDParameter);
+        }
+    
+        public virtual ObjectResult<POSinTouch_WorkOnScanner_Result> POSinTouch_WorkOnScanner(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, Nullable<int> shellWorkPageID, ObjectParameter shellWorkPageLineID, string scannedKey, ObjectParameter scannedItemID, ObjectParameter scannedItemKey, ObjectParameter scannedQuantity, ObjectParameter scannedDateTime)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellWorkPageIDParameter = shellWorkPageID.HasValue ?
+                new ObjectParameter("ShellWorkPageID", shellWorkPageID) :
+                new ObjectParameter("ShellWorkPageID", typeof(int));
+    
+            var scannedKeyParameter = scannedKey != null ?
+                new ObjectParameter("ScannedKey", scannedKey) :
+                new ObjectParameter("ScannedKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<POSinTouch_WorkOnScanner_Result>("POSinTouch_WorkOnScanner", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkPageIDParameter, shellWorkPageLineID, scannedKeyParameter, scannedItemID, scannedItemKey, scannedQuantity, scannedDateTime);
+        }
+    
+        public virtual ObjectResult<POSinTouch_WorkOnScanner2110_Result> POSinTouch_WorkOnScanner2110(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, Nullable<int> shellWorkPageID, ObjectParameter shellWorkPageLineID, string scannedKey, ObjectParameter scannedItemID, ObjectParameter scannedItemKey, ObjectParameter scannedQuantity, ObjectParameter scannedDateTime)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellWorkPageIDParameter = shellWorkPageID.HasValue ?
+                new ObjectParameter("ShellWorkPageID", shellWorkPageID) :
+                new ObjectParameter("ShellWorkPageID", typeof(int));
+    
+            var scannedKeyParameter = scannedKey != null ?
+                new ObjectParameter("ScannedKey", scannedKey) :
+                new ObjectParameter("ScannedKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<POSinTouch_WorkOnScanner2110_Result>("POSinTouch_WorkOnScanner2110", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkPageIDParameter, shellWorkPageLineID, scannedKeyParameter, scannedItemID, scannedItemKey, scannedQuantity, scannedDateTime);
+        }
+    
+        public virtual ObjectResult<POSinTouch_WorkOnScanner2130_Result> POSinTouch_WorkOnScanner2130(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, Nullable<int> shellWorkPageID, ObjectParameter shellWorkPageLineID, string scannedKey, ObjectParameter scannedItemID, ObjectParameter scannedItemKey, ObjectParameter scannedQuantity, ObjectParameter scannedDateTime)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellWorkPageIDParameter = shellWorkPageID.HasValue ?
+                new ObjectParameter("ShellWorkPageID", shellWorkPageID) :
+                new ObjectParameter("ShellWorkPageID", typeof(int));
+    
+            var scannedKeyParameter = scannedKey != null ?
+                new ObjectParameter("ScannedKey", scannedKey) :
+                new ObjectParameter("ScannedKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<POSinTouch_WorkOnScanner2130_Result>("POSinTouch_WorkOnScanner2130", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkPageIDParameter, shellWorkPageLineID, scannedKeyParameter, scannedItemID, scannedItemKey, scannedQuantity, scannedDateTime);
+        }
+    
+        [DbFunction("Entities", "ReceiptList")]
+        public virtual IQueryable<ReceiptList_Result> ReceiptList(Nullable<int> shellUserID, Nullable<int> shellOperationID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<ReceiptList_Result>("[Entities].[ReceiptList](@ShellUserID, @ShellOperationID)", shellUserIDParameter, shellOperationIDParameter);
+        }
+    
+        [DbFunction("Entities", "ReceiptList2")]
+        public virtual IQueryable<ReceiptList2_Result> ReceiptList2(Nullable<int> stockItemID, Nullable<double> transQuantity)
+        {
+            var stockItemIDParameter = stockItemID.HasValue ?
+                new ObjectParameter("StockItemID", stockItemID) :
+                new ObjectParameter("StockItemID", typeof(int));
+    
+            var transQuantityParameter = transQuantity.HasValue ?
+                new ObjectParameter("TransQuantity", transQuantity) :
+                new ObjectParameter("TransQuantity", typeof(double));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<ReceiptList2_Result>("[Entities].[ReceiptList2](@StockItemID, @TransQuantity)", stockItemIDParameter, transQuantityParameter);
+        }
+    
+        public virtual ObjectResult<ReceiptList3_Result> ReceiptList3(Nullable<int> stockItemID, Nullable<double> transQuantity, Nullable<bool> recipeItem)
+        {
+            var stockItemIDParameter = stockItemID.HasValue ?
+                new ObjectParameter("StockItemID", stockItemID) :
+                new ObjectParameter("StockItemID", typeof(int));
+    
+            var transQuantityParameter = transQuantity.HasValue ?
+                new ObjectParameter("TransQuantity", transQuantity) :
+                new ObjectParameter("TransQuantity", typeof(double));
+    
+            var recipeItemParameter = recipeItem.HasValue ?
+                new ObjectParameter("RecipeItem", recipeItem) :
+                new ObjectParameter("RecipeItem", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ReceiptList3_Result>("ReceiptList3", stockItemIDParameter, transQuantityParameter, recipeItemParameter);
+        }
+    
+        [DbFunction("Entities", "ReceiptList4")]
+        public virtual IQueryable<ReceiptList4_Result> ReceiptList4(Nullable<int> shellUserID, Nullable<int> shellOperationID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<ReceiptList4_Result>("[Entities].[ReceiptList4](@ShellUserID, @ShellOperationID)", shellUserIDParameter, shellOperationIDParameter);
+        }
+    
+        public virtual int RSEntryA_Ignore(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("RSEntryA_Ignore", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int RSEntryA_Send(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("RSEntryA_Send", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        [DbFunction("Entities", "RSEntryAList")]
+        public virtual IQueryable<RSEntryAList_Result> RSEntryAList(Nullable<int> shellUserID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<RSEntryAList_Result>("[Entities].[RSEntryAList](@ShellUserID)", shellUserIDParameter);
+        }
+    
+        public virtual int RSEntryWP10OnAccept(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("RSEntryWP10OnAccept", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int RSEntryWP10OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("RSEntryWP10OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int RSEntryWP10OnImport(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("RSEntryWP10OnImport", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int RSEntryWP10OnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("RSEntryWP10OnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int RSEntryWP10OnSave(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("RSEntryWP10OnSave", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int RSWaybillCollector(string xmlData, string xmlLineData, ObjectParameter shellMessageId)
+        {
+            var xmlDataParameter = xmlData != null ?
+                new ObjectParameter("xmlData", xmlData) :
+                new ObjectParameter("xmlData", typeof(string));
+    
+            var xmlLineDataParameter = xmlLineData != null ?
+                new ObjectParameter("xmlLineData", xmlLineData) :
+                new ObjectParameter("xmlLineData", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("RSWaybillCollector", xmlDataParameter, xmlLineDataParameter, shellMessageId);
+        }
+    
+        public virtual ObjectResult<RSWaybillConfirmCollector_Result> RSWaybillConfirmCollector(string xmlData, ObjectParameter shellMessageID)
+        {
+            var xmlDataParameter = xmlData != null ?
+                new ObjectParameter("xmlData", xmlData) :
+                new ObjectParameter("xmlData", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<RSWaybillConfirmCollector_Result>("RSWaybillConfirmCollector", xmlDataParameter, shellMessageID);
+        }
+    
+        public virtual ObjectResult<RSWaybillConfirmProcessor_Result> RSWaybillConfirmProcessor(string xmlData, ObjectParameter shellMessageID)
+        {
+            var xmlDataParameter = xmlData != null ?
+                new ObjectParameter("xmlData", xmlData) :
+                new ObjectParameter("xmlData", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<RSWaybillConfirmProcessor_Result>("RSWaybillConfirmProcessor", xmlDataParameter, shellMessageID);
+        }
+    
+        public virtual int RSWaybillConfirmSynchronizer(string xmlData, ObjectParameter shellMessageID)
+        {
+            var xmlDataParameter = xmlData != null ?
+                new ObjectParameter("xmlData", xmlData) :
+                new ObjectParameter("xmlData", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("RSWaybillConfirmSynchronizer", xmlDataParameter, shellMessageID);
+        }
+    
+        public virtual int RSWaybillMessageCollector(string xmlData)
+        {
+            var xmlDataParameter = xmlData != null ?
+                new ObjectParameter("xmlData", xmlData) :
+                new ObjectParameter("xmlData", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("RSWaybillMessageCollector", xmlDataParameter);
+        }
+    
+        public virtual ObjectResult<RSWaybillSaveCollector_Result> RSWaybillSaveCollector(string xmlData, ObjectParameter shellMessageID)
+        {
+            var xmlDataParameter = xmlData != null ?
+                new ObjectParameter("XmlData", xmlData) :
+                new ObjectParameter("XmlData", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<RSWaybillSaveCollector_Result>("RSWaybillSaveCollector", xmlDataParameter, shellMessageID);
+        }
+    
+        public virtual int RSWaybillSaveProcessor(string xmlData, ObjectParameter shellMessageID)
+        {
+            var xmlDataParameter = xmlData != null ?
+                new ObjectParameter("xmlData", xmlData) :
+                new ObjectParameter("xmlData", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("RSWaybillSaveProcessor", xmlDataParameter, shellMessageID);
+        }
+    
+        public virtual int RSWaybillUpdate(Nullable<int> stockEntryID, Nullable<int> rSMessageID, string rSWaybillKey, Nullable<int> rSWaybillID, Nullable<int> rSSyncProcessID)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            var rSMessageIDParameter = rSMessageID.HasValue ?
+                new ObjectParameter("RSMessageID", rSMessageID) :
+                new ObjectParameter("RSMessageID", typeof(int));
+    
+            var rSWaybillKeyParameter = rSWaybillKey != null ?
+                new ObjectParameter("RSWaybillKey", rSWaybillKey) :
+                new ObjectParameter("RSWaybillKey", typeof(string));
+    
+            var rSWaybillIDParameter = rSWaybillID.HasValue ?
+                new ObjectParameter("RSWaybillID", rSWaybillID) :
+                new ObjectParameter("RSWaybillID", typeof(int));
+    
+            var rSSyncProcessIDParameter = rSSyncProcessID.HasValue ?
+                new ObjectParameter("RSSyncProcessID", rSSyncProcessID) :
+                new ObjectParameter("RSSyncProcessID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("RSWaybillUpdate", stockEntryIDParameter, rSMessageIDParameter, rSWaybillKeyParameter, rSWaybillIDParameter, rSSyncProcessIDParameter);
+        }
+    
+        public virtual int RSWaybillWork_OnDelete(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("RSWaybillWork_OnDelete", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int ShellClearAllData100()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellClearAllData100");
+        }
+    
+        public virtual int ShellCreateMData(string dataKey, string dataName, string dataShortName)
+        {
+            var dataKeyParameter = dataKey != null ?
+                new ObjectParameter("DataKey", dataKey) :
+                new ObjectParameter("DataKey", typeof(string));
+    
+            var dataNameParameter = dataName != null ?
+                new ObjectParameter("DataName", dataName) :
+                new ObjectParameter("DataName", typeof(string));
+    
+            var dataShortNameParameter = dataShortName != null ?
+                new ObjectParameter("DataShortName", dataShortName) :
+                new ObjectParameter("DataShortName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellCreateMData", dataKeyParameter, dataNameParameter, dataShortNameParameter);
+        }
+    
+        public virtual int ShellCreateMData200(string dataKey, string dataName, string dataShortName)
+        {
+            var dataKeyParameter = dataKey != null ?
+                new ObjectParameter("DataKey", dataKey) :
+                new ObjectParameter("DataKey", typeof(string));
+    
+            var dataNameParameter = dataName != null ?
+                new ObjectParameter("DataName", dataName) :
+                new ObjectParameter("DataName", typeof(string));
+    
+            var dataShortNameParameter = dataShortName != null ?
+                new ObjectParameter("DataShortName", dataShortName) :
+                new ObjectParameter("DataShortName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellCreateMData200", dataKeyParameter, dataNameParameter, dataShortNameParameter);
+        }
+    
+        public virtual int ShellCreateMDataTerm200(string dataKey, string dataName, string dataShortName)
+        {
+            var dataKeyParameter = dataKey != null ?
+                new ObjectParameter("DataKey", dataKey) :
+                new ObjectParameter("DataKey", typeof(string));
+    
+            var dataNameParameter = dataName != null ?
+                new ObjectParameter("DataName", dataName) :
+                new ObjectParameter("DataName", typeof(string));
+    
+            var dataShortNameParameter = dataShortName != null ?
+                new ObjectParameter("DataShortName", dataShortName) :
+                new ObjectParameter("DataShortName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellCreateMDataTerm200", dataKeyParameter, dataNameParameter, dataShortNameParameter);
+        }
+    
+        public virtual int ShellCreateMDataValue200(string dataKey)
+        {
+            var dataKeyParameter = dataKey != null ?
+                new ObjectParameter("DataKey", dataKey) :
+                new ObjectParameter("DataKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellCreateMDataValue200", dataKeyParameter);
+        }
+    
+        public virtual int ShellData_BeforeInsert(string shellDataKey, ObjectParameter shellDataValueID)
+        {
+            var shellDataKeyParameter = shellDataKey != null ?
+                new ObjectParameter("ShellDataKey", shellDataKey) :
+                new ObjectParameter("ShellDataKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellData_BeforeInsert", shellDataKeyParameter, shellDataValueID);
+        }
+    
+        public virtual int ShellDataRightConsistency(ObjectParameter shellMessageID)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellDataRightConsistency", shellMessageID);
+        }
+    
+        public virtual int ShellGetUserSetting(Nullable<int> shellUserID, string shellSettingKey, ObjectParameter shellSettingValue, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellSettingKeyParameter = shellSettingKey != null ?
+                new ObjectParameter("ShellSettingKey", shellSettingKey) :
+                new ObjectParameter("ShellSettingKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellGetUserSetting", shellUserIDParameter, shellSettingKeyParameter, shellSettingValue, shellMessageID);
+        }
+    
+        public virtual int ShellLogAppend(string shellLogKey, string shellLogName)
+        {
+            var shellLogKeyParameter = shellLogKey != null ?
+                new ObjectParameter("ShellLogKey", shellLogKey) :
+                new ObjectParameter("ShellLogKey", typeof(string));
+    
+            var shellLogNameParameter = shellLogName != null ?
+                new ObjectParameter("ShellLogName", shellLogName) :
+                new ObjectParameter("ShellLogName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellLogAppend", shellLogKeyParameter, shellLogNameParameter);
+        }
+    
+        public virtual int ShellLogAppend_DATE(string shellLogKey, string shellLogName, Nullable<System.DateTime> shellValueDATE)
+        {
+            var shellLogKeyParameter = shellLogKey != null ?
+                new ObjectParameter("ShellLogKey", shellLogKey) :
+                new ObjectParameter("ShellLogKey", typeof(string));
+    
+            var shellLogNameParameter = shellLogName != null ?
+                new ObjectParameter("ShellLogName", shellLogName) :
+                new ObjectParameter("ShellLogName", typeof(string));
+    
+            var shellValueDATEParameter = shellValueDATE.HasValue ?
+                new ObjectParameter("ShellValueDATE", shellValueDATE) :
+                new ObjectParameter("ShellValueDATE", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellLogAppend_DATE", shellLogKeyParameter, shellLogNameParameter, shellValueDATEParameter);
+        }
+    
+        public virtual int ShellLogAppend_INT(string shellLogKey, string shellLogName, Nullable<int> shellValueINT)
+        {
+            var shellLogKeyParameter = shellLogKey != null ?
+                new ObjectParameter("ShellLogKey", shellLogKey) :
+                new ObjectParameter("ShellLogKey", typeof(string));
+    
+            var shellLogNameParameter = shellLogName != null ?
+                new ObjectParameter("ShellLogName", shellLogName) :
+                new ObjectParameter("ShellLogName", typeof(string));
+    
+            var shellValueINTParameter = shellValueINT.HasValue ?
+                new ObjectParameter("ShellValueINT", shellValueINT) :
+                new ObjectParameter("ShellValueINT", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellLogAppend_INT", shellLogKeyParameter, shellLogNameParameter, shellValueINTParameter);
+        }
+    
+        [DbFunction("Entities", "ShellOperationGroupHList")]
+        public virtual IQueryable<ShellOperationGroupHList_Result> ShellOperationGroupHList()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<ShellOperationGroupHList_Result>("[Entities].[ShellOperationGroupHList]()");
+        }
+    
+        [DbFunction("Entities", "ShellOperationGroupList")]
+        public virtual IQueryable<ShellOperationGroupList_Result> ShellOperationGroupList(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<ShellOperationGroupList_Result>("[Entities].[ShellOperationGroupList](@ID)", iDParameter);
+        }
+    
+        public virtual ObjectResult<ShellOperationSelect_Result> ShellOperationSelect(string shellUserKey, string shellUserPassword, string shellComputerKey, ObjectParameter shellUserID, ObjectParameter shellComputerID, ObjectParameter shellMessageID)
+        {
+            var shellUserKeyParameter = shellUserKey != null ?
+                new ObjectParameter("ShellUserKey", shellUserKey) :
+                new ObjectParameter("ShellUserKey", typeof(string));
+    
+            var shellUserPasswordParameter = shellUserPassword != null ?
+                new ObjectParameter("ShellUserPassword", shellUserPassword) :
+                new ObjectParameter("ShellUserPassword", typeof(string));
+    
+            var shellComputerKeyParameter = shellComputerKey != null ?
+                new ObjectParameter("ShellComputerKey", shellComputerKey) :
+                new ObjectParameter("ShellComputerKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ShellOperationSelect_Result>("ShellOperationSelect", shellUserKeyParameter, shellUserPasswordParameter, shellComputerKeyParameter, shellUserID, shellComputerID, shellMessageID);
+        }
+    
+        public virtual ObjectResult<ShellRefreshAllViews_Result> ShellRefreshAllViews()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ShellRefreshAllViews_Result>("ShellRefreshAllViews");
+        }
+    
+        public virtual int ShellReportConsistency(ObjectParameter shellMessageID)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellReportConsistency", shellMessageID);
+        }
+    
+        public virtual int ShellReportOnCheck(Nullable<int> shellUserID, Nullable<int> shellReportID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellReportIDParameter = shellReportID.HasValue ?
+                new ObjectParameter("ShellReportID", shellReportID) :
+                new ObjectParameter("ShellReportID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellReportOnCheck", shellUserIDParameter, shellReportIDParameter, shellMessageID);
+        }
+    
+        public virtual ObjectResult<string> ShellReportOnFormName(Nullable<int> shellReportID, Nullable<int> shellReportFormID, Nullable<int> shellEntryID)
+        {
+            var shellReportIDParameter = shellReportID.HasValue ?
+                new ObjectParameter("ShellReportID", shellReportID) :
+                new ObjectParameter("ShellReportID", typeof(int));
+    
+            var shellReportFormIDParameter = shellReportFormID.HasValue ?
+                new ObjectParameter("ShellReportFormID", shellReportFormID) :
+                new ObjectParameter("ShellReportFormID", typeof(int));
+    
+            var shellEntryIDParameter = shellEntryID.HasValue ?
+                new ObjectParameter("ShellEntryID", shellEntryID) :
+                new ObjectParameter("ShellEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("ShellReportOnFormName", shellReportIDParameter, shellReportFormIDParameter, shellEntryIDParameter);
+        }
+    
+        public virtual ObjectResult<string> ShellReportOnSource(Nullable<int> shellUserID, Nullable<int> shellReportID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellReportIDParameter = shellReportID.HasValue ?
+                new ObjectParameter("ShellReportID", shellReportID) :
+                new ObjectParameter("ShellReportID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("ShellReportOnSource", shellUserIDParameter, shellReportIDParameter);
+        }
+    
+        public virtual int ShellSetUserSetting(Nullable<int> shellUserID, string shellSettingKey, string shellSettingValue, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellSettingKeyParameter = shellSettingKey != null ?
+                new ObjectParameter("ShellSettingKey", shellSettingKey) :
+                new ObjectParameter("ShellSettingKey", typeof(string));
+    
+            var shellSettingValueParameter = shellSettingValue != null ?
+                new ObjectParameter("ShellSettingValue", shellSettingValue) :
+                new ObjectParameter("ShellSettingValue", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellSetUserSetting", shellUserIDParameter, shellSettingKeyParameter, shellSettingValueParameter, shellMessageID);
+        }
+    
+        public virtual int ShellTermConsistency(ObjectParameter shellMessageID)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellTermConsistency", shellMessageID);
+        }
+    
+        [DbFunction("Entities", "ShellTermGroupHList")]
+        public virtual IQueryable<ShellTermGroupHList_Result> ShellTermGroupHList()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<ShellTermGroupHList_Result>("[Entities].[ShellTermGroupHList]()");
+        }
+    
+        [DbFunction("Entities", "ShellTermGroupList")]
+        public virtual IQueryable<ShellTermGroupList_Result> ShellTermGroupList(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<ShellTermGroupList_Result>("[Entities].[ShellTermGroupList](@ID)", iDParameter);
+        }
+    
+        public virtual ObjectResult<ShellUserConnect_Result> ShellUserConnect(string shellUserKey, string shellUserPassword, string shellNTUserName, string shellNTComputerName, ObjectParameter shellUserID, ObjectParameter shellLanguageID, ObjectParameter shellMessageID)
+        {
+            var shellUserKeyParameter = shellUserKey != null ?
+                new ObjectParameter("ShellUserKey", shellUserKey) :
+                new ObjectParameter("ShellUserKey", typeof(string));
+    
+            var shellUserPasswordParameter = shellUserPassword != null ?
+                new ObjectParameter("ShellUserPassword", shellUserPassword) :
+                new ObjectParameter("ShellUserPassword", typeof(string));
+    
+            var shellNTUserNameParameter = shellNTUserName != null ?
+                new ObjectParameter("ShellNTUserName", shellNTUserName) :
+                new ObjectParameter("ShellNTUserName", typeof(string));
+    
+            var shellNTComputerNameParameter = shellNTComputerName != null ?
+                new ObjectParameter("ShellNTComputerName", shellNTComputerName) :
+                new ObjectParameter("ShellNTComputerName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ShellUserConnect_Result>("ShellUserConnect", shellUserKeyParameter, shellUserPasswordParameter, shellNTUserNameParameter, shellNTComputerNameParameter, shellUserID, shellLanguageID, shellMessageID);
+        }
+    
+        public virtual int ShellUserConnect2(string shellUserKey, string shellUserPassword, string shellNTUserName, string shellNTComputerName, ObjectParameter shellUserID, ObjectParameter shellLanguageID, ObjectParameter result)
+        {
+            var shellUserKeyParameter = shellUserKey != null ?
+                new ObjectParameter("ShellUserKey", shellUserKey) :
+                new ObjectParameter("ShellUserKey", typeof(string));
+    
+            var shellUserPasswordParameter = shellUserPassword != null ?
+                new ObjectParameter("ShellUserPassword", shellUserPassword) :
+                new ObjectParameter("ShellUserPassword", typeof(string));
+    
+            var shellNTUserNameParameter = shellNTUserName != null ?
+                new ObjectParameter("ShellNTUserName", shellNTUserName) :
+                new ObjectParameter("ShellNTUserName", typeof(string));
+    
+            var shellNTComputerNameParameter = shellNTComputerName != null ?
+                new ObjectParameter("ShellNTComputerName", shellNTComputerName) :
+                new ObjectParameter("ShellNTComputerName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellUserConnect2", shellUserKeyParameter, shellUserPasswordParameter, shellNTUserNameParameter, shellNTComputerNameParameter, shellUserID, shellLanguageID, result);
+        }
+    
+        public virtual int ShellUserDisconnect(Nullable<int> shellUserID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellUserDisconnect", shellUserIDParameter, shellMessageID);
+        }
+    
+        public virtual int ShellUserWorkRight(Nullable<int> shellUserID, Nullable<int> shellOperationID, Nullable<int> shellComputerID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID, ObjectParameter shellWorkShelfID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellComputerIDParameter = shellComputerID.HasValue ?
+                new ObjectParameter("ShellComputerID", shellComputerID) :
+                new ObjectParameter("ShellComputerID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("ShellUserWorkRight", shellUserIDParameter, shellOperationIDParameter, shellComputerIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID, shellWorkShelfID);
+        }
+    
+        [DbFunction("Entities", "ShellUserWorkShelfList")]
+        public virtual IQueryable<ShellUserWorkShelfList_Result> ShellUserWorkShelfList(Nullable<int> stockLocationID, Nullable<int> stockLocationShelfID, Nullable<System.DateTime> dateTo)
+        {
+            var stockLocationIDParameter = stockLocationID.HasValue ?
+                new ObjectParameter("StockLocationID", stockLocationID) :
+                new ObjectParameter("StockLocationID", typeof(int));
+    
+            var stockLocationShelfIDParameter = stockLocationShelfID.HasValue ?
+                new ObjectParameter("StockLocationShelfID", stockLocationShelfID) :
+                new ObjectParameter("StockLocationShelfID", typeof(int));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<ShellUserWorkShelfList_Result>("[Entities].[ShellUserWorkShelfList](@StockLocationID, @StockLocationShelfID, @DateTo)", stockLocationIDParameter, stockLocationShelfIDParameter, dateToParameter);
+        }
+    
+        public virtual int sp_alterdiagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            var versionParameter = version.HasValue ?
+                new ObjectParameter("version", version) :
+                new ObjectParameter("version", typeof(int));
+    
+            var definitionParameter = definition != null ?
+                new ObjectParameter("definition", definition) :
+                new ObjectParameter("definition", typeof(byte[]));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_alterdiagram", diagramnameParameter, owner_idParameter, versionParameter, definitionParameter);
+        }
+    
+        public virtual int sp_creatediagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            var versionParameter = version.HasValue ?
+                new ObjectParameter("version", version) :
+                new ObjectParameter("version", typeof(int));
+    
+            var definitionParameter = definition != null ?
+                new ObjectParameter("definition", definition) :
+                new ObjectParameter("definition", typeof(byte[]));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_creatediagram", diagramnameParameter, owner_idParameter, versionParameter, definitionParameter);
+        }
+    
+        public virtual int sp_dropdiagram(string diagramname, Nullable<int> owner_id)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_dropdiagram", diagramnameParameter, owner_idParameter);
+        }
+    
+        public virtual ObjectResult<sp_helpdiagramdefinition_Result> sp_helpdiagramdefinition(string diagramname, Nullable<int> owner_id)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_helpdiagramdefinition_Result>("sp_helpdiagramdefinition", diagramnameParameter, owner_idParameter);
+        }
+    
+        public virtual ObjectResult<sp_helpdiagrams_Result> sp_helpdiagrams(string diagramname, Nullable<int> owner_id)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_helpdiagrams_Result>("sp_helpdiagrams", diagramnameParameter, owner_idParameter);
+        }
+    
+        public virtual int sp_renamediagram(string diagramname, Nullable<int> owner_id, string new_diagramname)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            var new_diagramnameParameter = new_diagramname != null ?
+                new ObjectParameter("new_diagramname", new_diagramname) :
+                new ObjectParameter("new_diagramname", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_renamediagram", diagramnameParameter, owner_idParameter, new_diagramnameParameter);
+        }
+    
+        public virtual int sp_upgraddiagrams()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_upgraddiagrams");
+        }
+    
+        public virtual int StockAging00OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockAging00OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockAging00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockAging00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        [DbFunction("Entities", "StockBalance")]
+        public virtual IQueryable<StockBalance_Result> StockBalance(Nullable<System.DateTime> dateTo, string stockLocationKey, string stockItemKey)
+        {
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            var stockItemKeyParameter = stockItemKey != null ?
+                new ObjectParameter("StockItemKey", stockItemKey) :
+                new ObjectParameter("StockItemKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockBalance_Result>("[Entities].[StockBalance](@DateTo, @StockLocationKey, @StockItemKey)", dateToParameter, stockLocationKeyParameter, stockItemKeyParameter);
+        }
+    
+        public virtual int StockBalance00OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockBalance00OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockBalance00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockBalance00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockBalance10OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockBalance10OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockBalance10OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockBalance10OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        [DbFunction("Entities", "StockBalance1a")]
+        public virtual IQueryable<StockBalance1a_Result> StockBalance1a(Nullable<System.DateTime> dateTo, string stockLocationKey, string stockItemKey, string stockItemGroupKey)
+        {
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            var stockItemKeyParameter = stockItemKey != null ?
+                new ObjectParameter("StockItemKey", stockItemKey) :
+                new ObjectParameter("StockItemKey", typeof(string));
+    
+            var stockItemGroupKeyParameter = stockItemGroupKey != null ?
+                new ObjectParameter("StockItemGroupKey", stockItemGroupKey) :
+                new ObjectParameter("StockItemGroupKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockBalance1a_Result>("[Entities].[StockBalance1a](@DateTo, @StockLocationKey, @StockItemKey, @StockItemGroupKey)", dateToParameter, stockLocationKeyParameter, stockItemKeyParameter, stockItemGroupKeyParameter);
+        }
+    
+        public virtual int StockBalance20OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockBalance20OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockBalance20OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockBalance20OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockBalance50OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockBalance50OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        [DbFunction("Entities", "StockBalanceV00_IL")]
+        public virtual IQueryable<StockBalanceV00_IL_Result> StockBalanceV00_IL(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo, string stockLocationGroupKey, string stockLocationKey, string stockItemGroupKey, string stockItemKey, string companyKey)
+        {
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var stockLocationGroupKeyParameter = stockLocationGroupKey != null ?
+                new ObjectParameter("StockLocationGroupKey", stockLocationGroupKey) :
+                new ObjectParameter("StockLocationGroupKey", typeof(string));
+    
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            var stockItemGroupKeyParameter = stockItemGroupKey != null ?
+                new ObjectParameter("StockItemGroupKey", stockItemGroupKey) :
+                new ObjectParameter("StockItemGroupKey", typeof(string));
+    
+            var stockItemKeyParameter = stockItemKey != null ?
+                new ObjectParameter("StockItemKey", stockItemKey) :
+                new ObjectParameter("StockItemKey", typeof(string));
+    
+            var companyKeyParameter = companyKey != null ?
+                new ObjectParameter("CompanyKey", companyKey) :
+                new ObjectParameter("CompanyKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockBalanceV00_IL_Result>("[Entities].[StockBalanceV00_IL](@DateFrom, @DateTo, @StockLocationGroupKey, @StockLocationKey, @StockItemGroupKey, @StockItemKey, @CompanyKey)", dateFromParameter, dateToParameter, stockLocationGroupKeyParameter, stockLocationKeyParameter, stockItemGroupKeyParameter, stockItemKeyParameter, companyKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockBalanceWithStatus071")]
+        public virtual IQueryable<StockBalanceWithStatus071_Result> StockBalanceWithStatus071(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo, string stockLocationKey, string stockItemGroupKey, string stockItemKey)
+        {
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            var stockItemGroupKeyParameter = stockItemGroupKey != null ?
+                new ObjectParameter("StockItemGroupKey", stockItemGroupKey) :
+                new ObjectParameter("StockItemGroupKey", typeof(string));
+    
+            var stockItemKeyParameter = stockItemKey != null ?
+                new ObjectParameter("StockItemKey", stockItemKey) :
+                new ObjectParameter("StockItemKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockBalanceWithStatus071_Result>("[Entities].[StockBalanceWithStatus071](@DateFrom, @DateTo, @StockLocationKey, @StockItemGroupKey, @StockItemKey)", dateFromParameter, dateToParameter, stockLocationKeyParameter, stockItemGroupKeyParameter, stockItemKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockBalanceWithStatus5")]
+        public virtual IQueryable<StockBalanceWithStatus5_Result> StockBalanceWithStatus5(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo, string stockLocationKey, string stockItemGroupKey, string stockItemKey)
+        {
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            var stockItemGroupKeyParameter = stockItemGroupKey != null ?
+                new ObjectParameter("StockItemGroupKey", stockItemGroupKey) :
+                new ObjectParameter("StockItemGroupKey", typeof(string));
+    
+            var stockItemKeyParameter = stockItemKey != null ?
+                new ObjectParameter("StockItemKey", stockItemKey) :
+                new ObjectParameter("StockItemKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockBalanceWithStatus5_Result>("[Entities].[StockBalanceWithStatus5](@DateFrom, @DateTo, @StockLocationKey, @StockItemGroupKey, @StockItemKey)", dateFromParameter, dateToParameter, stockLocationKeyParameter, stockItemGroupKeyParameter, stockItemKeyParameter);
+        }
+    
+        public virtual int StockBasePriceConsistency(Nullable<int> stockEntryID, ObjectParameter shellMessageID)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockBasePriceConsistency", stockEntryIDParameter, shellMessageID);
+        }
+    
+        public virtual int StockBOMPlanCopyProcess(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockBOMPlanCopyProcess", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockBudget00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockBudget00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockBudget00OnFill_byWeek(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockBudget00OnFill_byWeek", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        [DbFunction("Entities", "StockCarGroupHList")]
+        public virtual IQueryable<StockCarGroupHList_Result> StockCarGroupHList()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockCarGroupHList_Result>("[Entities].[StockCarGroupHList]()");
+        }
+    
+        [DbFunction("Entities", "StockCarGroupHView")]
+        public virtual IQueryable<StockCarGroupHView_Result> StockCarGroupHView(Nullable<int> shellUserID, Nullable<int> shellLanguageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellLanguageIDParameter = shellLanguageID.HasValue ?
+                new ObjectParameter("ShellLanguageID", shellLanguageID) :
+                new ObjectParameter("ShellLanguageID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockCarGroupHView_Result>("[Entities].[StockCarGroupHView](@ShellUserID, @ShellLanguageID)", shellUserIDParameter, shellLanguageIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockCarGroupList")]
+        public virtual IQueryable<StockCarGroupList_Result> StockCarGroupList(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockCarGroupList_Result>("[Entities].[StockCarGroupList](@ID)", iDParameter);
+        }
+    
+        [DbFunction("Entities", "StockCompanyGroupHList")]
+        public virtual IQueryable<StockCompanyGroupHList_Result> StockCompanyGroupHList()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockCompanyGroupHList_Result>("[Entities].[StockCompanyGroupHList]()");
+        }
+    
+        [DbFunction("Entities", "StockCompanyGroupList")]
+        public virtual IQueryable<StockCompanyGroupList_Result> StockCompanyGroupList(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockCompanyGroupList_Result>("[Entities].[StockCompanyGroupList](@ID)", iDParameter);
+        }
+    
+        [DbFunction("Entities", "StockCompanyPrice")]
+        public virtual IQueryable<StockCompanyPrice_Result> StockCompanyPrice(Nullable<int> companyID, Nullable<System.DateTime> dateTo)
+        {
+            var companyIDParameter = companyID.HasValue ?
+                new ObjectParameter("CompanyID", companyID) :
+                new ObjectParameter("CompanyID", typeof(int));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockCompanyPrice_Result>("[Entities].[StockCompanyPrice](@CompanyID, @DateTo)", companyIDParameter, dateToParameter);
+        }
+    
+        public virtual int StockCostPriceConsistency(Nullable<int> stockEntryID, ObjectParameter shellMessageID)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockCostPriceConsistency", stockEntryIDParameter, shellMessageID);
+        }
+    
+        [DbFunction("Entities", "StockCustomerGroupHList")]
+        public virtual IQueryable<StockCustomerGroupHList_Result> StockCustomerGroupHList()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockCustomerGroupHList_Result>("[Entities].[StockCustomerGroupHList]()");
+        }
+    
+        [DbFunction("Entities", "StockCustomerGroupList")]
+        public virtual IQueryable<StockCustomerGroupList_Result> StockCustomerGroupList(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockCustomerGroupList_Result>("[Entities].[StockCustomerGroupList](@ID)", iDParameter);
+        }
+    
+        public virtual int StockDateTimeStamp(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockDateTimeStamp", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        [DbFunction("Entities", "StockEntry21xxKitchenReport")]
+        public virtual IQueryable<StockEntry21xxKitchenReport_Result> StockEntry21xxKitchenReport(Nullable<int> stockEntryID)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockEntry21xxKitchenReport_Result>("[Entities].[StockEntry21xxKitchenReport](@StockEntryID)", stockEntryIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockEntry21xxKitchenReport_NEW")]
+        public virtual IQueryable<StockEntry21xxKitchenReport_NEW_Result> StockEntry21xxKitchenReport_NEW(Nullable<int> stockEntryID)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockEntry21xxKitchenReport_NEW_Result>("[Entities].[StockEntry21xxKitchenReport_NEW](@StockEntryID)", stockEntryIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockEntry21xxReport")]
+        public virtual IQueryable<StockEntry21xxReport_Result> StockEntry21xxReport(Nullable<int> stockEntryID)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockEntry21xxReport_Result>("[Entities].[StockEntry21xxReport](@StockEntryID)", stockEntryIDParameter);
+        }
+    
+        public virtual int StockEntryConsistency(ObjectParameter shellMessageID)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryConsistency", shellMessageID);
+        }
+    
+        public virtual int StockEntryDP9OnAccept(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryDP9OnAccept", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryDP9OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryDP9OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryDP9OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryDP9OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryI00OnAccept(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryI00OnAccept", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryI00OnAccept_2(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryI00OnAccept_2", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryI00OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryI00OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryI00OnCheck_T(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryI00OnCheck_T", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryI00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryI00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryI00OnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryI00OnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryI12_OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryI12_OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryID_OnNumber(Nullable<System.DateTime> shellEntryDate, Nullable<int> shellEntryIDCount, ObjectParameter shellEntryID, ObjectParameter shellMessageID)
+        {
+            var shellEntryDateParameter = shellEntryDate.HasValue ?
+                new ObjectParameter("ShellEntryDate", shellEntryDate) :
+                new ObjectParameter("ShellEntryDate", typeof(System.DateTime));
+    
+            var shellEntryIDCountParameter = shellEntryIDCount.HasValue ?
+                new ObjectParameter("ShellEntryIDCount", shellEntryIDCount) :
+                new ObjectParameter("ShellEntryIDCount", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryID_OnNumber", shellEntryDateParameter, shellEntryIDCountParameter, shellEntryID, shellMessageID);
+        }
+    
+        public virtual int StockEntryM10OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryM10OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryM10OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryM10OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryM10OnFill2(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryM10OnFill2", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryM10OnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryM10OnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryM10OnRejectActual(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryM10OnRejectActual", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryP00OnAccept(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryP00OnAccept", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryP00OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryP00OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryP00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryP00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryP00OnFill_2(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryP00OnFill_2", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryP30OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryP30OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryP30OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryP30OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryP50OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryP50OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryP50OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryP50OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryR00OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryR00OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryR00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryR00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryRP9OnAccept(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryRP9OnAccept", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryRP9OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryRP9OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryRP9OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryRP9OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryRP9OnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryRP9OnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryS00OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryS00OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryS00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryS00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryS10OnAccept(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryS10OnAccept", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryS10OnReject(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryS10OnReject", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryS20OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryS20OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryS20OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryS20OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntrySP9_OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntrySP9_OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> StockEntrySP9OnAccept(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("StockEntrySP9OnAccept", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryT00OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryT00OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryT00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryT00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryT00OnFill_2(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryT00OnFill_2", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryT10OnAccept(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryT10OnAccept", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryT10OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryT10OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryT10OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryT10OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual ObjectResult<StockEntryT10Report_Result> StockEntryT10Report(Nullable<System.DateTime> shellDateFrom, Nullable<System.DateTime> shellDateTo, Nullable<int> issueLocationID, Nullable<int> receiveLocationID, string stockItemKey, Nullable<int> stockItemGroupID, Nullable<bool> groupReport)
+        {
+            var shellDateFromParameter = shellDateFrom.HasValue ?
+                new ObjectParameter("ShellDateFrom", shellDateFrom) :
+                new ObjectParameter("ShellDateFrom", typeof(System.DateTime));
+    
+            var shellDateToParameter = shellDateTo.HasValue ?
+                new ObjectParameter("ShellDateTo", shellDateTo) :
+                new ObjectParameter("ShellDateTo", typeof(System.DateTime));
+    
+            var issueLocationIDParameter = issueLocationID.HasValue ?
+                new ObjectParameter("IssueLocationID", issueLocationID) :
+                new ObjectParameter("IssueLocationID", typeof(int));
+    
+            var receiveLocationIDParameter = receiveLocationID.HasValue ?
+                new ObjectParameter("ReceiveLocationID", receiveLocationID) :
+                new ObjectParameter("ReceiveLocationID", typeof(int));
+    
+            var stockItemKeyParameter = stockItemKey != null ?
+                new ObjectParameter("StockItemKey", stockItemKey) :
+                new ObjectParameter("StockItemKey", typeof(string));
+    
+            var stockItemGroupIDParameter = stockItemGroupID.HasValue ?
+                new ObjectParameter("StockItemGroupID", stockItemGroupID) :
+                new ObjectParameter("StockItemGroupID", typeof(int));
+    
+            var groupReportParameter = groupReport.HasValue ?
+                new ObjectParameter("GroupReport", groupReport) :
+                new ObjectParameter("GroupReport", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<StockEntryT10Report_Result>("StockEntryT10Report", shellDateFromParameter, shellDateToParameter, issueLocationIDParameter, receiveLocationIDParameter, stockItemKeyParameter, stockItemGroupIDParameter, groupReportParameter);
+        }
+    
+        public virtual int StockEntryT12OnReject(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryT12OnReject", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryT13OnAccept(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryT13OnAccept", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryT13OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryT13OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryT19OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryT19OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual ObjectResult<StockEntryT19Report_Result> StockEntryT19Report(Nullable<System.DateTime> shellDateFrom, Nullable<System.DateTime> shellDateTo, Nullable<int> issueLocationID, Nullable<int> receiveLocationID, string stockItemKey, Nullable<int> stockItemGroupID)
+        {
+            var shellDateFromParameter = shellDateFrom.HasValue ?
+                new ObjectParameter("ShellDateFrom", shellDateFrom) :
+                new ObjectParameter("ShellDateFrom", typeof(System.DateTime));
+    
+            var shellDateToParameter = shellDateTo.HasValue ?
+                new ObjectParameter("ShellDateTo", shellDateTo) :
+                new ObjectParameter("ShellDateTo", typeof(System.DateTime));
+    
+            var issueLocationIDParameter = issueLocationID.HasValue ?
+                new ObjectParameter("IssueLocationID", issueLocationID) :
+                new ObjectParameter("IssueLocationID", typeof(int));
+    
+            var receiveLocationIDParameter = receiveLocationID.HasValue ?
+                new ObjectParameter("ReceiveLocationID", receiveLocationID) :
+                new ObjectParameter("ReceiveLocationID", typeof(int));
+    
+            var stockItemKeyParameter = stockItemKey != null ?
+                new ObjectParameter("StockItemKey", stockItemKey) :
+                new ObjectParameter("StockItemKey", typeof(string));
+    
+            var stockItemGroupIDParameter = stockItemGroupID.HasValue ?
+                new ObjectParameter("StockItemGroupID", stockItemGroupID) :
+                new ObjectParameter("StockItemGroupID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<StockEntryT19Report_Result>("StockEntryT19Report", shellDateFromParameter, shellDateToParameter, issueLocationIDParameter, receiveLocationIDParameter, stockItemKeyParameter, stockItemGroupIDParameter);
+        }
+    
+        public virtual int StockEntryVoidProcedure(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryVoidProcedure", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockEntryW00OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryW00OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockEntryW00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockEntryW00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        [DbFunction("Entities", "StockItemBOM")]
+        public virtual IQueryable<StockItemBOM_Result> StockItemBOM(Nullable<int> stockItemID, Nullable<System.DateTime> stockDateTo)
+        {
+            var stockItemIDParameter = stockItemID.HasValue ?
+                new ObjectParameter("StockItemID", stockItemID) :
+                new ObjectParameter("StockItemID", typeof(int));
+    
+            var stockDateToParameter = stockDateTo.HasValue ?
+                new ObjectParameter("StockDateTo", stockDateTo) :
+                new ObjectParameter("StockDateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemBOM_Result>("[Entities].[StockItemBOM](@StockItemID, @StockDateTo)", stockItemIDParameter, stockDateToParameter);
+        }
+    
+        [DbFunction("Entities", "StockItemBOMPlanning")]
+        public virtual IQueryable<StockItemBOMPlanning_Result> StockItemBOMPlanning(Nullable<int> stockLocationID, Nullable<System.DateTime> stockEntryDate)
+        {
+            var stockLocationIDParameter = stockLocationID.HasValue ?
+                new ObjectParameter("StockLocationID", stockLocationID) :
+                new ObjectParameter("StockLocationID", typeof(int));
+    
+            var stockEntryDateParameter = stockEntryDate.HasValue ?
+                new ObjectParameter("StockEntryDate", stockEntryDate) :
+                new ObjectParameter("StockEntryDate", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemBOMPlanning_Result>("[Entities].[StockItemBOMPlanning](@StockLocationID, @StockEntryDate)", stockLocationIDParameter, stockEntryDateParameter);
+        }
+    
+        [DbFunction("Entities", "StockItemBOMRecursive")]
+        public virtual IQueryable<StockItemBOMRecursive_Result> StockItemBOMRecursive(Nullable<int> shellUserID, Nullable<int> shellOperationID, Nullable<int> shellWorkPageID, Nullable<System.DateTime> stockEntryDate)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellWorkPageIDParameter = shellWorkPageID.HasValue ?
+                new ObjectParameter("ShellWorkPageID", shellWorkPageID) :
+                new ObjectParameter("ShellWorkPageID", typeof(int));
+    
+            var stockEntryDateParameter = stockEntryDate.HasValue ?
+                new ObjectParameter("StockEntryDate", stockEntryDate) :
+                new ObjectParameter("StockEntryDate", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemBOMRecursive_Result>("[Entities].[StockItemBOMRecursive](@ShellUserID, @ShellOperationID, @ShellWorkPageID, @StockEntryDate)", shellUserIDParameter, shellOperationIDParameter, shellWorkPageIDParameter, stockEntryDateParameter);
+        }
+    
+        public virtual int StockItemByLocationConsistency(Nullable<int> shellMessageID)
+        {
+            var shellMessageIDParameter = shellMessageID.HasValue ?
+                new ObjectParameter("ShellMessageID", shellMessageID) :
+                new ObjectParameter("ShellMessageID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockItemByLocationConsistency", shellMessageIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockItemCostPrice")]
+        public virtual IQueryable<StockItemCostPrice_Result> StockItemCostPrice(Nullable<System.DateTime> shellDateTo, Nullable<int> issueLocationID, Nullable<int> stockItemID, Nullable<int> stockItemGroupID, Nullable<int> stockEntryStatusID)
+        {
+            var shellDateToParameter = shellDateTo.HasValue ?
+                new ObjectParameter("ShellDateTo", shellDateTo) :
+                new ObjectParameter("ShellDateTo", typeof(System.DateTime));
+    
+            var issueLocationIDParameter = issueLocationID.HasValue ?
+                new ObjectParameter("IssueLocationID", issueLocationID) :
+                new ObjectParameter("IssueLocationID", typeof(int));
+    
+            var stockItemIDParameter = stockItemID.HasValue ?
+                new ObjectParameter("StockItemID", stockItemID) :
+                new ObjectParameter("StockItemID", typeof(int));
+    
+            var stockItemGroupIDParameter = stockItemGroupID.HasValue ?
+                new ObjectParameter("StockItemGroupID", stockItemGroupID) :
+                new ObjectParameter("StockItemGroupID", typeof(int));
+    
+            var stockEntryStatusIDParameter = stockEntryStatusID.HasValue ?
+                new ObjectParameter("StockEntryStatusID", stockEntryStatusID) :
+                new ObjectParameter("StockEntryStatusID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemCostPrice_Result>("[Entities].[StockItemCostPrice](@ShellDateTo, @IssueLocationID, @StockItemID, @StockItemGroupID, @StockEntryStatusID)", shellDateToParameter, issueLocationIDParameter, stockItemIDParameter, stockItemGroupIDParameter, stockEntryStatusIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockItemGroupHList")]
+        public virtual IQueryable<StockItemGroupHList_Result> StockItemGroupHList()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemGroupHList_Result>("[Entities].[StockItemGroupHList]()");
+        }
+    
+        [DbFunction("Entities", "StockItemGroupHView")]
+        public virtual IQueryable<StockItemGroupHView_Result> StockItemGroupHView(Nullable<int> shellUserID, Nullable<int> shellLanguageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellLanguageIDParameter = shellLanguageID.HasValue ?
+                new ObjectParameter("ShellLanguageID", shellLanguageID) :
+                new ObjectParameter("ShellLanguageID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemGroupHView_Result>("[Entities].[StockItemGroupHView](@ShellUserID, @ShellLanguageID)", shellUserIDParameter, shellLanguageIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockItemGroupList")]
+        public virtual IQueryable<StockItemGroupList_Result> StockItemGroupList(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemGroupList_Result>("[Entities].[StockItemGroupList](@ID)", iDParameter);
+        }
+    
+        [DbFunction("Entities", "StockItemGroupView")]
+        public virtual IQueryable<StockItemGroupView_Result> StockItemGroupView(Nullable<int> shellUserID, Nullable<int> shellLanguageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellLanguageIDParameter = shellLanguageID.HasValue ?
+                new ObjectParameter("ShellLanguageID", shellLanguageID) :
+                new ObjectParameter("ShellLanguageID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemGroupView_Result>("[Entities].[StockItemGroupView](@ShellUserID, @ShellLanguageID)", shellUserIDParameter, shellLanguageIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockItemT0GroupHList")]
+        public virtual IQueryable<StockItemT0GroupHList_Result> StockItemT0GroupHList()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemT0GroupHList_Result>("[Entities].[StockItemT0GroupHList]()");
+        }
+    
+        [DbFunction("Entities", "StockItemT0GroupList")]
+        public virtual IQueryable<StockItemT0GroupList_Result> StockItemT0GroupList(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemT0GroupList_Result>("[Entities].[StockItemT0GroupList](@ID)", iDParameter);
+        }
+    
+        [DbFunction("Entities", "StockItemT1GroupHList")]
+        public virtual IQueryable<StockItemT1GroupHList_Result> StockItemT1GroupHList()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemT1GroupHList_Result>("[Entities].[StockItemT1GroupHList]()");
+        }
+    
+        [DbFunction("Entities", "StockItemT1GroupList")]
+        public virtual IQueryable<StockItemT1GroupList_Result> StockItemT1GroupList(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemT1GroupList_Result>("[Entities].[StockItemT1GroupList](@ID)", iDParameter);
+        }
+    
+        [DbFunction("Entities", "StockItemT2GroupHList")]
+        public virtual IQueryable<StockItemT2GroupHList_Result> StockItemT2GroupHList()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemT2GroupHList_Result>("[Entities].[StockItemT2GroupHList]()");
+        }
+    
+        [DbFunction("Entities", "StockItemT2GroupList")]
+        public virtual IQueryable<StockItemT2GroupList_Result> StockItemT2GroupList(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemT2GroupList_Result>("[Entities].[StockItemT2GroupList](@ID)", iDParameter);
+        }
+    
+        [DbFunction("Entities", "StockItemT3GroupHList")]
+        public virtual IQueryable<StockItemT3GroupHList_Result> StockItemT3GroupHList()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemT3GroupHList_Result>("[Entities].[StockItemT3GroupHList]()");
+        }
+    
+        [DbFunction("Entities", "StockItemT3GroupList")]
+        public virtual IQueryable<StockItemT3GroupList_Result> StockItemT3GroupList(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemT3GroupList_Result>("[Entities].[StockItemT3GroupList](@ID)", iDParameter);
+        }
+    
+        [DbFunction("Entities", "StockItemT5GroupHList")]
+        public virtual IQueryable<StockItemT5GroupHList_Result> StockItemT5GroupHList()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemT5GroupHList_Result>("[Entities].[StockItemT5GroupHList]()");
+        }
+    
+        [DbFunction("Entities", "StockItemT5GroupList")]
+        public virtual IQueryable<StockItemT5GroupList_Result> StockItemT5GroupList(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockItemT5GroupList_Result>("[Entities].[StockItemT5GroupList](@ID)", iDParameter);
+        }
+    
+        public virtual int StockLiveEntry00OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockLiveEntry00OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockLiveEntry00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockLiveEntry00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockLiveHeaders00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockLiveHeaders00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockLiveHeaders00OnProcess(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockLiveHeaders00OnProcess", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockLiveHeaders01OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockLiveHeaders01OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockLiveHeaders01OnLink(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockLiveHeaders01OnLink", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockLiveHeaders02OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockLiveHeaders02OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockLiveHeaders02OnLink(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockLiveHeaders02OnLink", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockLiveMovement00OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockLiveMovement00OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockLiveMovement00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockLiveMovement00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockLiveMovement09OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockLiveMovement09OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockLiveMovement20OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockLiveMovement20OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockLivePrice00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockLivePrice00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockLivePrice00OnLink(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockLivePrice00OnLink", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        [DbFunction("Entities", "StockLocationGroupHList")]
+        public virtual IQueryable<StockLocationGroupHList_Result> StockLocationGroupHList()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockLocationGroupHList_Result>("[Entities].[StockLocationGroupHList]()");
+        }
+    
+        [DbFunction("Entities", "StockLocationGroupList")]
+        public virtual IQueryable<StockLocationGroupList_Result> StockLocationGroupList(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockLocationGroupList_Result>("[Entities].[StockLocationGroupList](@ID)", iDParameter);
+        }
+    
+        [DbFunction("Entities", "StockLocationGroupView")]
+        public virtual IQueryable<StockLocationGroupView_Result> StockLocationGroupView(Nullable<int> shellUserID, Nullable<int> shellLanguageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellLanguageIDParameter = shellLanguageID.HasValue ?
+                new ObjectParameter("ShellLanguageID", shellLanguageID) :
+                new ObjectParameter("ShellLanguageID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockLocationGroupView_Result>("[Entities].[StockLocationGroupView](@ShellUserID, @ShellLanguageID)", shellUserIDParameter, shellLanguageIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockLocationView")]
+        public virtual IQueryable<StockLocationView_Result> StockLocationView(Nullable<int> shellUserID, Nullable<int> shellLanguageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellLanguageIDParameter = shellLanguageID.HasValue ?
+                new ObjectParameter("ShellLanguageID", shellLanguageID) :
+                new ObjectParameter("ShellLanguageID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockLocationView_Result>("[Entities].[StockLocationView](@ShellUserID, @ShellLanguageID)", shellUserIDParameter, shellLanguageIDParameter);
+        }
+    
+        public virtual int StockPBalance10OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockPBalance10OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockPBalance10OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockPBalance10OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockPBalance20OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockPBalance20OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockPBalance20OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockPBalance20OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockPriceConsistency(ObjectParameter shellMessageID)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockPriceConsistency", shellMessageID);
+        }
+    
+        [DbFunction("Entities", "StockPriceList")]
+        public virtual IQueryable<StockPriceList_Result> StockPriceList(Nullable<System.DateTime> dateTo)
+        {
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockPriceList_Result>("[Entities].[StockPriceList](@DateTo)", dateToParameter);
+        }
+    
+        public virtual int StockPurchase00OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockPurchase00OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockPurchase00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockPurchase00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockPurchase10OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockPurchase10OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockPurchase10OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockPurchase10OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockPurchase20OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockPurchase20OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockPurchase20OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockPurchase20OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockPurchase20OnFill2(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockPurchase20OnFill2", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        [DbFunction("Entities", "StockPurchaseInfo")]
+        public virtual IQueryable<StockPurchaseInfo_Result> StockPurchaseInfo(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo, string companyGroupKey, string companyKey, string stockLocationKey)
+        {
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var companyGroupKeyParameter = companyGroupKey != null ?
+                new ObjectParameter("CompanyGroupKey", companyGroupKey) :
+                new ObjectParameter("CompanyGroupKey", typeof(string));
+    
+            var companyKeyParameter = companyKey != null ?
+                new ObjectParameter("CompanyKey", companyKey) :
+                new ObjectParameter("CompanyKey", typeof(string));
+    
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockPurchaseInfo_Result>("[Entities].[StockPurchaseInfo](@DateFrom, @DateTo, @CompanyGroupKey, @CompanyKey, @StockLocationKey)", dateFromParameter, dateToParameter, companyGroupKeyParameter, companyKeyParameter, stockLocationKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockPurchasePrice")]
+        public virtual IQueryable<StockPurchasePrice_Result> StockPurchasePrice(Nullable<int> companyID, Nullable<int> currencyID, Nullable<System.DateTime> dateTo)
+        {
+            var companyIDParameter = companyID.HasValue ?
+                new ObjectParameter("CompanyID", companyID) :
+                new ObjectParameter("CompanyID", typeof(int));
+    
+            var currencyIDParameter = currencyID.HasValue ?
+                new ObjectParameter("CurrencyID", currencyID) :
+                new ObjectParameter("CurrencyID", typeof(int));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockPurchasePrice_Result>("[Entities].[StockPurchasePrice](@CompanyID, @CurrencyID, @DateTo)", companyIDParameter, currencyIDParameter, dateToParameter);
+        }
+    
+        [DbFunction("Entities", "StockPurchasePriceLast")]
+        public virtual IQueryable<StockPurchasePriceLast_Result> StockPurchasePriceLast(Nullable<System.DateTime> dateTo)
+        {
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockPurchasePriceLast_Result>("[Entities].[StockPurchasePriceLast](@DateTo)", dateToParameter);
+        }
+    
+        [DbFunction("Entities", "StockPurchasePriceLastLocation")]
+        public virtual IQueryable<StockPurchasePriceLastLocation_Result> StockPurchasePriceLastLocation(Nullable<System.DateTime> dateTo, Nullable<int> stockLocationID)
+        {
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var stockLocationIDParameter = stockLocationID.HasValue ?
+                new ObjectParameter("StockLocationID", stockLocationID) :
+                new ObjectParameter("StockLocationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockPurchasePriceLastLocation_Result>("[Entities].[StockPurchasePriceLastLocation](@DateTo, @StockLocationID)", dateToParameter, stockLocationIDParameter);
+        }
+    
+        public virtual int StockQuantityDecrease(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockQuantityDecrease", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockQuantityIncrease(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockQuantityIncrease", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockRecipeList10OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockRecipeList10OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        [DbFunction("Entities", "StockReportBalanceByEntryType")]
+        public virtual IQueryable<StockReportBalanceByEntryType_Result> StockReportBalanceByEntryType(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo, string stockLocationGroupKey, string stockLocationKey, string stockItemGroupKey, string stockItemKey)
+        {
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var stockLocationGroupKeyParameter = stockLocationGroupKey != null ?
+                new ObjectParameter("StockLocationGroupKey", stockLocationGroupKey) :
+                new ObjectParameter("StockLocationGroupKey", typeof(string));
+    
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            var stockItemGroupKeyParameter = stockItemGroupKey != null ?
+                new ObjectParameter("StockItemGroupKey", stockItemGroupKey) :
+                new ObjectParameter("StockItemGroupKey", typeof(string));
+    
+            var stockItemKeyParameter = stockItemKey != null ?
+                new ObjectParameter("StockItemKey", stockItemKey) :
+                new ObjectParameter("StockItemKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportBalanceByEntryType_Result>("[Entities].[StockReportBalanceByEntryType](@DateFrom, @DateTo, @StockLocationGroupKey, @StockLocationKey, @StockItemGroupKey, @StockItemKey)", dateFromParameter, dateToParameter, stockLocationGroupKeyParameter, stockLocationKeyParameter, stockItemGroupKeyParameter, stockItemKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportBalanceByItem")]
+        public virtual IQueryable<StockReportBalanceByItem_Result> StockReportBalanceByItem(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo, string stockLocationGroupKey, string stockLocationKey, string stockItemGroupKey, string stockItemKey)
+        {
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var stockLocationGroupKeyParameter = stockLocationGroupKey != null ?
+                new ObjectParameter("StockLocationGroupKey", stockLocationGroupKey) :
+                new ObjectParameter("StockLocationGroupKey", typeof(string));
+    
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            var stockItemGroupKeyParameter = stockItemGroupKey != null ?
+                new ObjectParameter("StockItemGroupKey", stockItemGroupKey) :
+                new ObjectParameter("StockItemGroupKey", typeof(string));
+    
+            var stockItemKeyParameter = stockItemKey != null ?
+                new ObjectParameter("StockItemKey", stockItemKey) :
+                new ObjectParameter("StockItemKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportBalanceByItem_Result>("[Entities].[StockReportBalanceByItem](@DateFrom, @DateTo, @StockLocationGroupKey, @StockLocationKey, @StockItemGroupKey, @StockItemKey)", dateFromParameter, dateToParameter, stockLocationGroupKeyParameter, stockLocationKeyParameter, stockItemGroupKeyParameter, stockItemKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportBalanceByItemByOperation")]
+        public virtual IQueryable<StockReportBalanceByItemByOperation_Result> StockReportBalanceByItemByOperation(Nullable<System.DateTime> shellDateFrom, Nullable<System.DateTime> shellDateTo, string stockLocationGroupKey, string stockLocationKey, string stockItemGroupKey, string stockItemKey)
+        {
+            var shellDateFromParameter = shellDateFrom.HasValue ?
+                new ObjectParameter("ShellDateFrom", shellDateFrom) :
+                new ObjectParameter("ShellDateFrom", typeof(System.DateTime));
+    
+            var shellDateToParameter = shellDateTo.HasValue ?
+                new ObjectParameter("ShellDateTo", shellDateTo) :
+                new ObjectParameter("ShellDateTo", typeof(System.DateTime));
+    
+            var stockLocationGroupKeyParameter = stockLocationGroupKey != null ?
+                new ObjectParameter("StockLocationGroupKey", stockLocationGroupKey) :
+                new ObjectParameter("StockLocationGroupKey", typeof(string));
+    
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            var stockItemGroupKeyParameter = stockItemGroupKey != null ?
+                new ObjectParameter("StockItemGroupKey", stockItemGroupKey) :
+                new ObjectParameter("StockItemGroupKey", typeof(string));
+    
+            var stockItemKeyParameter = stockItemKey != null ?
+                new ObjectParameter("StockItemKey", stockItemKey) :
+                new ObjectParameter("StockItemKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportBalanceByItemByOperation_Result>("[Entities].[StockReportBalanceByItemByOperation](@ShellDateFrom, @ShellDateTo, @StockLocationGroupKey, @StockLocationKey, @StockItemGroupKey, @StockItemKey)", shellDateFromParameter, shellDateToParameter, stockLocationGroupKeyParameter, stockLocationKeyParameter, stockItemGroupKeyParameter, stockItemKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportBalanceByLocation")]
+        public virtual IQueryable<StockReportBalanceByLocation_Result> StockReportBalanceByLocation(Nullable<System.DateTime> shellDateFrom, Nullable<System.DateTime> shellDateTo)
+        {
+            var shellDateFromParameter = shellDateFrom.HasValue ?
+                new ObjectParameter("ShellDateFrom", shellDateFrom) :
+                new ObjectParameter("ShellDateFrom", typeof(System.DateTime));
+    
+            var shellDateToParameter = shellDateTo.HasValue ?
+                new ObjectParameter("ShellDateTo", shellDateTo) :
+                new ObjectParameter("ShellDateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportBalanceByLocation_Result>("[Entities].[StockReportBalanceByLocation](@ShellDateFrom, @ShellDateTo)", shellDateFromParameter, shellDateToParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportEntry")]
+        public virtual IQueryable<StockReportEntry_Result> StockReportEntry(Nullable<int> stockEntryID, string stockEntryKey)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            var stockEntryKeyParameter = stockEntryKey != null ?
+                new ObjectParameter("StockEntryKey", stockEntryKey) :
+                new ObjectParameter("StockEntryKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportEntry_Result>("[Entities].[StockReportEntry](@StockEntryID, @StockEntryKey)", stockEntryIDParameter, stockEntryKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportEntryI00")]
+        public virtual IQueryable<StockReportEntryI00_Result> StockReportEntryI00(Nullable<int> stockEntryID)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportEntryI00_Result>("[Entities].[StockReportEntryI00](@StockEntryID)", stockEntryIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportEntryM10")]
+        public virtual IQueryable<StockReportEntryM10_Result> StockReportEntryM10(Nullable<int> stockEntryID)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportEntryM10_Result>("[Entities].[StockReportEntryM10](@StockEntryID)", stockEntryIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportEntryR00")]
+        public virtual IQueryable<StockReportEntryR00_Result> StockReportEntryR00(Nullable<int> stockEntryID)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportEntryR00_Result>("[Entities].[StockReportEntryR00](@StockEntryID)", stockEntryIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportHeaderInfo")]
+        public virtual IQueryable<StockReportHeaderInfo_Result> StockReportHeaderInfo(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo, string companyGroupKey, string companyKey, string stockEntryStatusKey, string stockEntryTypeKey)
+        {
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var companyGroupKeyParameter = companyGroupKey != null ?
+                new ObjectParameter("CompanyGroupKey", companyGroupKey) :
+                new ObjectParameter("CompanyGroupKey", typeof(string));
+    
+            var companyKeyParameter = companyKey != null ?
+                new ObjectParameter("CompanyKey", companyKey) :
+                new ObjectParameter("CompanyKey", typeof(string));
+    
+            var stockEntryStatusKeyParameter = stockEntryStatusKey != null ?
+                new ObjectParameter("StockEntryStatusKey", stockEntryStatusKey) :
+                new ObjectParameter("StockEntryStatusKey", typeof(string));
+    
+            var stockEntryTypeKeyParameter = stockEntryTypeKey != null ?
+                new ObjectParameter("StockEntryTypeKey", stockEntryTypeKey) :
+                new ObjectParameter("StockEntryTypeKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportHeaderInfo_Result>("[Entities].[StockReportHeaderInfo](@DateFrom, @DateTo, @CompanyGroupKey, @CompanyKey, @StockEntryStatusKey, @StockEntryTypeKey)", dateFromParameter, dateToParameter, companyGroupKeyParameter, companyKeyParameter, stockEntryStatusKeyParameter, stockEntryTypeKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportHeaders")]
+        public virtual IQueryable<StockReportHeaders_Result> StockReportHeaders(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo, string shellUserKey, string stockEntryTypeKey, string stockLocationKey, string personKey, string companyKey)
+        {
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var shellUserKeyParameter = shellUserKey != null ?
+                new ObjectParameter("ShellUserKey", shellUserKey) :
+                new ObjectParameter("ShellUserKey", typeof(string));
+    
+            var stockEntryTypeKeyParameter = stockEntryTypeKey != null ?
+                new ObjectParameter("StockEntryTypeKey", stockEntryTypeKey) :
+                new ObjectParameter("StockEntryTypeKey", typeof(string));
+    
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            var personKeyParameter = personKey != null ?
+                new ObjectParameter("PersonKey", personKey) :
+                new ObjectParameter("PersonKey", typeof(string));
+    
+            var companyKeyParameter = companyKey != null ?
+                new ObjectParameter("CompanyKey", companyKey) :
+                new ObjectParameter("CompanyKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportHeaders_Result>("[Entities].[StockReportHeaders](@DateFrom, @DateTo, @ShellUserKey, @StockEntryTypeKey, @StockLocationKey, @PersonKey, @CompanyKey)", dateFromParameter, dateToParameter, shellUserKeyParameter, stockEntryTypeKeyParameter, stockLocationKeyParameter, personKeyParameter, companyKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportHeaders_GE")]
+        public virtual IQueryable<StockReportHeaders_GE_Result> StockReportHeaders_GE(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo, string shellUserKey, string stockEntryTypeKey, string stockLocationKey, string personKey, string companyKey)
+        {
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var shellUserKeyParameter = shellUserKey != null ?
+                new ObjectParameter("ShellUserKey", shellUserKey) :
+                new ObjectParameter("ShellUserKey", typeof(string));
+    
+            var stockEntryTypeKeyParameter = stockEntryTypeKey != null ?
+                new ObjectParameter("StockEntryTypeKey", stockEntryTypeKey) :
+                new ObjectParameter("StockEntryTypeKey", typeof(string));
+    
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            var personKeyParameter = personKey != null ?
+                new ObjectParameter("PersonKey", personKey) :
+                new ObjectParameter("PersonKey", typeof(string));
+    
+            var companyKeyParameter = companyKey != null ?
+                new ObjectParameter("CompanyKey", companyKey) :
+                new ObjectParameter("CompanyKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportHeaders_GE_Result>("[Entities].[StockReportHeaders_GE](@DateFrom, @DateTo, @ShellUserKey, @StockEntryTypeKey, @StockLocationKey, @PersonKey, @CompanyKey)", dateFromParameter, dateToParameter, shellUserKeyParameter, stockEntryTypeKeyParameter, stockLocationKeyParameter, personKeyParameter, companyKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportInventoryPlaning")]
+        public virtual IQueryable<StockReportInventoryPlaning_Result> StockReportInventoryPlaning(Nullable<System.DateTime> dateTo, string stockLocationGroupKey)
+        {
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var stockLocationGroupKeyParameter = stockLocationGroupKey != null ?
+                new ObjectParameter("StockLocationGroupKey", stockLocationGroupKey) :
+                new ObjectParameter("StockLocationGroupKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportInventoryPlaning_Result>("[Entities].[StockReportInventoryPlaning](@DateTo, @StockLocationGroupKey)", dateToParameter, stockLocationGroupKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportItemCard")]
+        public virtual IQueryable<StockReportItemCard_Result> StockReportItemCard(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo, string stockLocationGroupKey, string stockLocationKey, string stockItemGroupKey, string stockItemKey)
+        {
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var stockLocationGroupKeyParameter = stockLocationGroupKey != null ?
+                new ObjectParameter("StockLocationGroupKey", stockLocationGroupKey) :
+                new ObjectParameter("StockLocationGroupKey", typeof(string));
+    
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            var stockItemGroupKeyParameter = stockItemGroupKey != null ?
+                new ObjectParameter("StockItemGroupKey", stockItemGroupKey) :
+                new ObjectParameter("StockItemGroupKey", typeof(string));
+    
+            var stockItemKeyParameter = stockItemKey != null ?
+                new ObjectParameter("StockItemKey", stockItemKey) :
+                new ObjectParameter("StockItemKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportItemCard_Result>("[Entities].[StockReportItemCard](@DateFrom, @DateTo, @StockLocationGroupKey, @StockLocationKey, @StockItemGroupKey, @StockItemKey)", dateFromParameter, dateToParameter, stockLocationGroupKeyParameter, stockLocationKeyParameter, stockItemGroupKeyParameter, stockItemKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportItemWithoutSalesPrice")]
+        public virtual IQueryable<StockReportItemWithoutSalesPrice_Result> StockReportItemWithoutSalesPrice(Nullable<int> companyID, Nullable<int> companyID1)
+        {
+            var companyIDParameter = companyID.HasValue ?
+                new ObjectParameter("CompanyID", companyID) :
+                new ObjectParameter("CompanyID", typeof(int));
+    
+            var companyID1Parameter = companyID1.HasValue ?
+                new ObjectParameter("CompanyID1", companyID1) :
+                new ObjectParameter("CompanyID1", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportItemWithoutSalesPrice_Result>("[Entities].[StockReportItemWithoutSalesPrice](@CompanyID, @CompanyID1)", companyIDParameter, companyID1Parameter);
+        }
+    
+        [DbFunction("Entities", "StockReportPurchaseOrder")]
+        public virtual IQueryable<StockReportPurchaseOrder_Result> StockReportPurchaseOrder(Nullable<int> stockEntryID, string stockEntryKey)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            var stockEntryKeyParameter = stockEntryKey != null ?
+                new ObjectParameter("StockEntryKey", stockEntryKey) :
+                new ObjectParameter("StockEntryKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportPurchaseOrder_Result>("[Entities].[StockReportPurchaseOrder](@StockEntryID, @StockEntryKey)", stockEntryIDParameter, stockEntryKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportPurchasePriceList")]
+        public virtual IQueryable<StockReportPurchasePriceList_Result> StockReportPurchasePriceList(string stockItemKey, string companyKey)
+        {
+            var stockItemKeyParameter = stockItemKey != null ?
+                new ObjectParameter("StockItemKey", stockItemKey) :
+                new ObjectParameter("StockItemKey", typeof(string));
+    
+            var companyKeyParameter = companyKey != null ?
+                new ObjectParameter("CompanyKey", companyKey) :
+                new ObjectParameter("CompanyKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportPurchasePriceList_Result>("[Entities].[StockReportPurchasePriceList](@StockItemKey, @CompanyKey)", stockItemKeyParameter, companyKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportSalesPrice")]
+        public virtual IQueryable<StockReportSalesPrice_Result> StockReportSalesPrice(Nullable<int> companyID, Nullable<int> currencyID, Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo, string stockItemGroupKey)
+        {
+            var companyIDParameter = companyID.HasValue ?
+                new ObjectParameter("CompanyID", companyID) :
+                new ObjectParameter("CompanyID", typeof(int));
+    
+            var currencyIDParameter = currencyID.HasValue ?
+                new ObjectParameter("CurrencyID", currencyID) :
+                new ObjectParameter("CurrencyID", typeof(int));
+    
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var stockItemGroupKeyParameter = stockItemGroupKey != null ?
+                new ObjectParameter("StockItemGroupKey", stockItemGroupKey) :
+                new ObjectParameter("StockItemGroupKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportSalesPrice_Result>("[Entities].[StockReportSalesPrice](@CompanyID, @CurrencyID, @DateFrom, @DateTo, @StockItemGroupKey)", companyIDParameter, currencyIDParameter, dateFromParameter, dateToParameter, stockItemGroupKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportScaleItems")]
+        public virtual IQueryable<StockReportScaleItems_Result> StockReportScaleItems(Nullable<int> companyID, Nullable<int> currencyID, Nullable<System.DateTime> dateTo)
+        {
+            var companyIDParameter = companyID.HasValue ?
+                new ObjectParameter("CompanyID", companyID) :
+                new ObjectParameter("CompanyID", typeof(int));
+    
+            var currencyIDParameter = currencyID.HasValue ?
+                new ObjectParameter("CurrencyID", currencyID) :
+                new ObjectParameter("CurrencyID", typeof(int));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportScaleItems_Result>("[Entities].[StockReportScaleItems](@CompanyID, @CurrencyID, @DateTo)", companyIDParameter, currencyIDParameter, dateToParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportWayBill")]
+        public virtual IQueryable<StockReportWayBill_Result> StockReportWayBill(Nullable<int> stockEntryID)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportWayBill_Result>("[Entities].[StockReportWayBill](@StockEntryID)", stockEntryIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportWayBill_Base")]
+        public virtual IQueryable<StockReportWayBill_Base_Result> StockReportWayBill_Base(Nullable<int> stockEntryID)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportWayBill_Base_Result>("[Entities].[StockReportWayBill_Base](@StockEntryID)", stockEntryIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockReportWayBill_HList")]
+        public virtual IQueryable<StockReportWayBill_HList_Result> StockReportWayBill_HList(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo)
+        {
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockReportWayBill_HList_Result>("[Entities].[StockReportWayBill_HList](@DateFrom, @DateTo)", dateFromParameter, dateToParameter);
+        }
+    
+        [DbFunction("Entities", "StockRest")]
+        public virtual IQueryable<StockRest_Result> StockRest(Nullable<System.DateTime> stockEntryDate, Nullable<int> stockEntryID)
+        {
+            var stockEntryDateParameter = stockEntryDate.HasValue ?
+                new ObjectParameter("StockEntryDate", stockEntryDate) :
+                new ObjectParameter("StockEntryDate", typeof(System.DateTime));
+    
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockRest_Result>("[Entities].[StockRest](@StockEntryDate, @StockEntryID)", stockEntryDateParameter, stockEntryIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockRest2")]
+        public virtual IQueryable<StockRest2_Result> StockRest2(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo)
+        {
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockRest2_Result>("[Entities].[StockRest2](@DateFrom, @DateTo)", dateFromParameter, dateToParameter);
+        }
+    
+        [DbFunction("Entities", "StockRestBySupplier")]
+        public virtual IQueryable<StockRestBySupplier_Result> StockRestBySupplier(Nullable<System.DateTime> stockEntryDateTo, Nullable<int> stockSupplierID)
+        {
+            var stockEntryDateToParameter = stockEntryDateTo.HasValue ?
+                new ObjectParameter("StockEntryDateTo", stockEntryDateTo) :
+                new ObjectParameter("StockEntryDateTo", typeof(System.DateTime));
+    
+            var stockSupplierIDParameter = stockSupplierID.HasValue ?
+                new ObjectParameter("StockSupplierID", stockSupplierID) :
+                new ObjectParameter("StockSupplierID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockRestBySupplier_Result>("[Entities].[StockRestBySupplier](@StockEntryDateTo, @StockSupplierID)", stockEntryDateToParameter, stockSupplierIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockRestBySupplier_Detailed")]
+        public virtual IQueryable<StockRestBySupplier_Detailed_Result> StockRestBySupplier_Detailed(Nullable<System.DateTime> stockEntryDateTo, Nullable<int> stockLocationID, Nullable<int> stockSupplierID)
+        {
+            var stockEntryDateToParameter = stockEntryDateTo.HasValue ?
+                new ObjectParameter("StockEntryDateTo", stockEntryDateTo) :
+                new ObjectParameter("StockEntryDateTo", typeof(System.DateTime));
+    
+            var stockLocationIDParameter = stockLocationID.HasValue ?
+                new ObjectParameter("StockLocationID", stockLocationID) :
+                new ObjectParameter("StockLocationID", typeof(int));
+    
+            var stockSupplierIDParameter = stockSupplierID.HasValue ?
+                new ObjectParameter("StockSupplierID", stockSupplierID) :
+                new ObjectParameter("StockSupplierID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockRestBySupplier_Detailed_Result>("[Entities].[StockRestBySupplier_Detailed](@StockEntryDateTo, @StockLocationID, @StockSupplierID)", stockEntryDateToParameter, stockLocationIDParameter, stockSupplierIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockRestBySupplier_Detailed_A")]
+        public virtual IQueryable<StockRestBySupplier_Detailed_A_Result> StockRestBySupplier_Detailed_A(Nullable<System.DateTime> stockEntryDateTo, Nullable<int> stockLocationID, Nullable<int> stockSupplierID)
+        {
+            var stockEntryDateToParameter = stockEntryDateTo.HasValue ?
+                new ObjectParameter("StockEntryDateTo", stockEntryDateTo) :
+                new ObjectParameter("StockEntryDateTo", typeof(System.DateTime));
+    
+            var stockLocationIDParameter = stockLocationID.HasValue ?
+                new ObjectParameter("StockLocationID", stockLocationID) :
+                new ObjectParameter("StockLocationID", typeof(int));
+    
+            var stockSupplierIDParameter = stockSupplierID.HasValue ?
+                new ObjectParameter("StockSupplierID", stockSupplierID) :
+                new ObjectParameter("StockSupplierID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockRestBySupplier_Detailed_A_Result>("[Entities].[StockRestBySupplier_Detailed_A](@StockEntryDateTo, @StockLocationID, @StockSupplierID)", stockEntryDateToParameter, stockLocationIDParameter, stockSupplierIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockRestBySupplier_Detailed_B")]
+        public virtual IQueryable<StockRestBySupplier_Detailed_B_Result> StockRestBySupplier_Detailed_B(Nullable<System.DateTime> stockEntryDateTo, Nullable<int> stockLocationID, Nullable<int> stockSupplierID)
+        {
+            var stockEntryDateToParameter = stockEntryDateTo.HasValue ?
+                new ObjectParameter("StockEntryDateTo", stockEntryDateTo) :
+                new ObjectParameter("StockEntryDateTo", typeof(System.DateTime));
+    
+            var stockLocationIDParameter = stockLocationID.HasValue ?
+                new ObjectParameter("StockLocationID", stockLocationID) :
+                new ObjectParameter("StockLocationID", typeof(int));
+    
+            var stockSupplierIDParameter = stockSupplierID.HasValue ?
+                new ObjectParameter("StockSupplierID", stockSupplierID) :
+                new ObjectParameter("StockSupplierID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockRestBySupplier_Detailed_B_Result>("[Entities].[StockRestBySupplier_Detailed_B](@StockEntryDateTo, @StockLocationID, @StockSupplierID)", stockEntryDateToParameter, stockLocationIDParameter, stockSupplierIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockRestBySupplier_PurchaseLIFO")]
+        public virtual IQueryable<StockRestBySupplier_PurchaseLIFO_Result> StockRestBySupplier_PurchaseLIFO(Nullable<System.DateTime> stockEntryDateTo, Nullable<int> stockLocationID)
+        {
+            var stockEntryDateToParameter = stockEntryDateTo.HasValue ?
+                new ObjectParameter("StockEntryDateTo", stockEntryDateTo) :
+                new ObjectParameter("StockEntryDateTo", typeof(System.DateTime));
+    
+            var stockLocationIDParameter = stockLocationID.HasValue ?
+                new ObjectParameter("StockLocationID", stockLocationID) :
+                new ObjectParameter("StockLocationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockRestBySupplier_PurchaseLIFO_Result>("[Entities].[StockRestBySupplier_PurchaseLIFO](@StockEntryDateTo, @StockLocationID)", stockEntryDateToParameter, stockLocationIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockRestBySupplier_PurchaseTransferLIFO")]
+        public virtual IQueryable<StockRestBySupplier_PurchaseTransferLIFO_Result> StockRestBySupplier_PurchaseTransferLIFO(Nullable<System.DateTime> stockEntryDateTo, Nullable<int> stockLocationID)
+        {
+            var stockEntryDateToParameter = stockEntryDateTo.HasValue ?
+                new ObjectParameter("StockEntryDateTo", stockEntryDateTo) :
+                new ObjectParameter("StockEntryDateTo", typeof(System.DateTime));
+    
+            var stockLocationIDParameter = stockLocationID.HasValue ?
+                new ObjectParameter("StockLocationID", stockLocationID) :
+                new ObjectParameter("StockLocationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockRestBySupplier_PurchaseTransferLIFO_Result>("[Entities].[StockRestBySupplier_PurchaseTransferLIFO](@StockEntryDateTo, @StockLocationID)", stockEntryDateToParameter, stockLocationIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockRestCurrent")]
+        public virtual IQueryable<StockRestCurrent_Result> StockRestCurrent(Nullable<int> stocklocationID, Nullable<int> stockEntryID)
+        {
+            var stocklocationIDParameter = stocklocationID.HasValue ?
+                new ObjectParameter("StocklocationID", stocklocationID) :
+                new ObjectParameter("StocklocationID", typeof(int));
+    
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockRestCurrent_Result>("[Entities].[StockRestCurrent](@StocklocationID, @StockEntryID)", stocklocationIDParameter, stockEntryIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockRestToDate")]
+        public virtual IQueryable<StockRestToDate_Result> StockRestToDate(Nullable<System.DateTime> stockEntryDate, Nullable<int> stockLocationID, Nullable<int> stockEntryID)
+        {
+            var stockEntryDateParameter = stockEntryDate.HasValue ?
+                new ObjectParameter("StockEntryDate", stockEntryDate) :
+                new ObjectParameter("StockEntryDate", typeof(System.DateTime));
+    
+            var stockLocationIDParameter = stockLocationID.HasValue ?
+                new ObjectParameter("StockLocationID", stockLocationID) :
+                new ObjectParameter("StockLocationID", typeof(int));
+    
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockRestToDate_Result>("[Entities].[StockRestToDate](@StockEntryDate, @StockLocationID, @StockEntryID)", stockEntryDateParameter, stockLocationIDParameter, stockEntryIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockRxx")]
+        public virtual IQueryable<StockRxx_Result> StockRxx(Nullable<System.DateTime> stockEntryDate, Nullable<int> stockLocationID, Nullable<int> stockEntryID)
+        {
+            var stockEntryDateParameter = stockEntryDate.HasValue ?
+                new ObjectParameter("StockEntryDate", stockEntryDate) :
+                new ObjectParameter("StockEntryDate", typeof(System.DateTime));
+    
+            var stockLocationIDParameter = stockLocationID.HasValue ?
+                new ObjectParameter("StockLocationID", stockLocationID) :
+                new ObjectParameter("StockLocationID", typeof(int));
+    
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockRxx_Result>("[Entities].[StockRxx](@StockEntryDate, @StockLocationID, @StockEntryID)", stockEntryDateParameter, stockLocationIDParameter, stockEntryIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockS00Info")]
+        public virtual IQueryable<StockS00Info_Result> StockS00Info(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo, string companyGroupKey, string companyKey, string stockLocationKey)
+        {
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var companyGroupKeyParameter = companyGroupKey != null ?
+                new ObjectParameter("CompanyGroupKey", companyGroupKey) :
+                new ObjectParameter("CompanyGroupKey", typeof(string));
+    
+            var companyKeyParameter = companyKey != null ?
+                new ObjectParameter("CompanyKey", companyKey) :
+                new ObjectParameter("CompanyKey", typeof(string));
+    
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockS00Info_Result>("[Entities].[StockS00Info](@DateFrom, @DateTo, @CompanyGroupKey, @CompanyKey, @StockLocationKey)", dateFromParameter, dateToParameter, companyGroupKeyParameter, companyKeyParameter, stockLocationKeyParameter);
+        }
+    
+        public virtual int StockSales00OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockSales00OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockSales00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockSales00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockSales10OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockSales10OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockSales10OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockSales10OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockSales20OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockSales20OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockSales20OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockSales20OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockSalesDiscountUpdate(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockSalesDiscountUpdate", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        [DbFunction("Entities", "StockSalesPrice")]
+        public virtual IQueryable<StockSalesPrice_Result> StockSalesPrice(Nullable<int> companyID, Nullable<int> currencyID, Nullable<System.DateTime> dateTo)
+        {
+            var companyIDParameter = companyID.HasValue ?
+                new ObjectParameter("CompanyID", companyID) :
+                new ObjectParameter("CompanyID", typeof(int));
+    
+            var currencyIDParameter = currencyID.HasValue ?
+                new ObjectParameter("CurrencyID", currencyID) :
+                new ObjectParameter("CurrencyID", typeof(int));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockSalesPrice_Result>("[Entities].[StockSalesPrice](@CompanyID, @CurrencyID, @DateTo)", companyIDParameter, currencyIDParameter, dateToParameter);
+        }
+    
+        [DbFunction("Entities", "StockSalesPrice_Oldset")]
+        public virtual IQueryable<StockSalesPrice_Oldset_Result> StockSalesPrice_Oldset(Nullable<int> companyID, Nullable<int> currencyID, Nullable<System.DateTime> stockDateFrom, Nullable<System.DateTime> stockDateTo, Nullable<int> dataSortID)
+        {
+            var companyIDParameter = companyID.HasValue ?
+                new ObjectParameter("CompanyID", companyID) :
+                new ObjectParameter("CompanyID", typeof(int));
+    
+            var currencyIDParameter = currencyID.HasValue ?
+                new ObjectParameter("CurrencyID", currencyID) :
+                new ObjectParameter("CurrencyID", typeof(int));
+    
+            var stockDateFromParameter = stockDateFrom.HasValue ?
+                new ObjectParameter("StockDateFrom", stockDateFrom) :
+                new ObjectParameter("StockDateFrom", typeof(System.DateTime));
+    
+            var stockDateToParameter = stockDateTo.HasValue ?
+                new ObjectParameter("StockDateTo", stockDateTo) :
+                new ObjectParameter("StockDateTo", typeof(System.DateTime));
+    
+            var dataSortIDParameter = dataSortID.HasValue ?
+                new ObjectParameter("DataSortID", dataSortID) :
+                new ObjectParameter("DataSortID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockSalesPrice_Oldset_Result>("[Entities].[StockSalesPrice_Oldset](@CompanyID, @CurrencyID, @StockDateFrom, @StockDateTo, @DataSortID)", companyIDParameter, currencyIDParameter, stockDateFromParameter, stockDateToParameter, dataSortIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockSalesPriceByDate")]
+        public virtual IQueryable<StockSalesPriceByDate_Result> StockSalesPriceByDate(Nullable<int> companyID, Nullable<int> currencyID, Nullable<System.DateTime> stockDateFrom, Nullable<System.DateTime> stockDateTo)
+        {
+            var companyIDParameter = companyID.HasValue ?
+                new ObjectParameter("CompanyID", companyID) :
+                new ObjectParameter("CompanyID", typeof(int));
+    
+            var currencyIDParameter = currencyID.HasValue ?
+                new ObjectParameter("CurrencyID", currencyID) :
+                new ObjectParameter("CurrencyID", typeof(int));
+    
+            var stockDateFromParameter = stockDateFrom.HasValue ?
+                new ObjectParameter("StockDateFrom", stockDateFrom) :
+                new ObjectParameter("StockDateFrom", typeof(System.DateTime));
+    
+            var stockDateToParameter = stockDateTo.HasValue ?
+                new ObjectParameter("StockDateTo", stockDateTo) :
+                new ObjectParameter("StockDateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockSalesPriceByDate_Result>("[Entities].[StockSalesPriceByDate](@CompanyID, @CurrencyID, @StockDateFrom, @StockDateTo)", companyIDParameter, currencyIDParameter, stockDateFromParameter, stockDateToParameter);
+        }
+    
+        public virtual int StockSalesPriceUpdate(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockSalesPriceUpdate", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        [DbFunction("Entities", "StockScaleFileTable_BCII")]
+        public virtual IQueryable<StockScaleFileTable_BCII_Result> StockScaleFileTable_BCII(string stockLocationKey)
+        {
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockScaleFileTable_BCII_Result>("[Entities].[StockScaleFileTable_BCII](@StockLocationKey)", stockLocationKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockScaleFileTable2")]
+        public virtual IQueryable<StockScaleFileTable2_Result> StockScaleFileTable2(string stockLocationKey)
+        {
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockScaleFileTable2_Result>("[Entities].[StockScaleFileTable2](@StockLocationKey)", stockLocationKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockScaleFileTableDigi")]
+        public virtual IQueryable<StockScaleFileTableDigi_Result> StockScaleFileTableDigi(string stockLocationKey)
+        {
+            var stockLocationKeyParameter = stockLocationKey != null ?
+                new ObjectParameter("StockLocationKey", stockLocationKey) :
+                new ObjectParameter("StockLocationKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockScaleFileTableDigi_Result>("[Entities].[StockScaleFileTableDigi](@StockLocationKey)", stockLocationKeyParameter);
+        }
+    
+        [DbFunction("Entities", "StockScaleTag")]
+        public virtual IQueryable<StockScaleTag_Result> StockScaleTag(string itemBarCode)
+        {
+            var itemBarCodeParameter = itemBarCode != null ?
+                new ObjectParameter("ItemBarCode", itemBarCode) :
+                new ObjectParameter("ItemBarCode", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockScaleTag_Result>("[Entities].[StockScaleTag](@ItemBarCode)", itemBarCodeParameter);
+        }
+    
+        [DbFunction("Entities", "StockScaleTag2")]
+        public virtual IQueryable<StockScaleTag2_Result> StockScaleTag2(Nullable<int> shellUserID, Nullable<int> shellOperationID, Nullable<int> shellWorkPageID, Nullable<int> shellWorkPageLineID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellWorkPageIDParameter = shellWorkPageID.HasValue ?
+                new ObjectParameter("ShellWorkPageID", shellWorkPageID) :
+                new ObjectParameter("ShellWorkPageID", typeof(int));
+    
+            var shellWorkPageLineIDParameter = shellWorkPageLineID.HasValue ?
+                new ObjectParameter("ShellWorkPageLineID", shellWorkPageLineID) :
+                new ObjectParameter("ShellWorkPageLineID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockScaleTag2_Result>("[Entities].[StockScaleTag2](@ShellUserID, @ShellOperationID, @ShellWorkPageID, @ShellWorkPageLineID)", shellUserIDParameter, shellOperationIDParameter, shellWorkPageIDParameter, shellWorkPageLineIDParameter);
+        }
+    
+        [DbFunction("Entities", "StockSupplierGroupHList")]
+        public virtual IQueryable<StockSupplierGroupHList_Result> StockSupplierGroupHList()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockSupplierGroupHList_Result>("[Entities].[StockSupplierGroupHList]()");
+        }
+    
+        [DbFunction("Entities", "StockSupplierGroupList")]
+        public virtual IQueryable<StockSupplierGroupList_Result> StockSupplierGroupList(Nullable<int> iD)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockSupplierGroupList_Result>("[Entities].[StockSupplierGroupList](@ID)", iDParameter);
+        }
+    
+        public virtual int StockUpdateSalesStatistic(Nullable<System.DateTime> dateFrom, Nullable<System.DateTime> dateTo, string stockItemGroupKey, string stockItemGroupKey2, ObjectParameter shellMessageID)
+        {
+            var dateFromParameter = dateFrom.HasValue ?
+                new ObjectParameter("DateFrom", dateFrom) :
+                new ObjectParameter("DateFrom", typeof(System.DateTime));
+    
+            var dateToParameter = dateTo.HasValue ?
+                new ObjectParameter("DateTo", dateTo) :
+                new ObjectParameter("DateTo", typeof(System.DateTime));
+    
+            var stockItemGroupKeyParameter = stockItemGroupKey != null ?
+                new ObjectParameter("StockItemGroupKey", stockItemGroupKey) :
+                new ObjectParameter("StockItemGroupKey", typeof(string));
+    
+            var stockItemGroupKey2Parameter = stockItemGroupKey2 != null ?
+                new ObjectParameter("StockItemGroupKey2", stockItemGroupKey2) :
+                new ObjectParameter("StockItemGroupKey2", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockUpdateSalesStatistic", dateFromParameter, dateToParameter, stockItemGroupKeyParameter, stockItemGroupKey2Parameter, shellMessageID);
+        }
+    
+        public virtual int StockValuation_CalcCostPrice(Nullable<int> shellUserID, Nullable<int> shellOperationID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockValuation_CalcCostPrice", shellUserIDParameter, shellOperationIDParameter);
+        }
+    
+        public virtual int StockValuation_LoadW(Nullable<int> shellUserID, Nullable<int> shellOperationID, Nullable<System.DateTime> shellDateFrom, Nullable<System.DateTime> shellDateTo, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellDateFromParameter = shellDateFrom.HasValue ?
+                new ObjectParameter("ShellDateFrom", shellDateFrom) :
+                new ObjectParameter("ShellDateFrom", typeof(System.DateTime));
+    
+            var shellDateToParameter = shellDateTo.HasValue ?
+                new ObjectParameter("ShellDateTo", shellDateTo) :
+                new ObjectParameter("ShellDateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockValuation_LoadW", shellUserIDParameter, shellOperationIDParameter, shellDateFromParameter, shellDateToParameter, shellMessageID);
+        }
+    
+        public virtual int StockValuation_UpdateW_201x202x301x401x402(Nullable<int> shellUserID, Nullable<int> shellOperationID, Nullable<System.DateTime> shellDateFrom, Nullable<System.DateTime> shellDateTo, ObjectParameter shellRecordCount, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellDateFromParameter = shellDateFrom.HasValue ?
+                new ObjectParameter("ShellDateFrom", shellDateFrom) :
+                new ObjectParameter("ShellDateFrom", typeof(System.DateTime));
+    
+            var shellDateToParameter = shellDateTo.HasValue ?
+                new ObjectParameter("ShellDateTo", shellDateTo) :
+                new ObjectParameter("ShellDateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockValuation_UpdateW_201x202x301x401x402", shellUserIDParameter, shellOperationIDParameter, shellDateFromParameter, shellDateToParameter, shellRecordCount, shellMessageID);
+        }
+    
+        public virtual int StockValuation_UpdateW_501x502x601x602x701x702(Nullable<int> shellUserID, Nullable<int> shellOperationID, Nullable<System.DateTime> shellDateFrom, Nullable<System.DateTime> shellDateTo, ObjectParameter shellRecordCount, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellDateFromParameter = shellDateFrom.HasValue ?
+                new ObjectParameter("ShellDateFrom", shellDateFrom) :
+                new ObjectParameter("ShellDateFrom", typeof(System.DateTime));
+    
+            var shellDateToParameter = shellDateTo.HasValue ?
+                new ObjectParameter("ShellDateTo", shellDateTo) :
+                new ObjectParameter("ShellDateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockValuation_UpdateW_501x502x601x602x701x702", shellUserIDParameter, shellOperationIDParameter, shellDateFromParameter, shellDateToParameter, shellRecordCount, shellMessageID);
+        }
+    
+        public virtual int StockValuation00_10(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, Nullable<System.DateTime> shellDateFrom, Nullable<System.DateTime> shellDateTo)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellDateFromParameter = shellDateFrom.HasValue ?
+                new ObjectParameter("ShellDateFrom", shellDateFrom) :
+                new ObjectParameter("ShellDateFrom", typeof(System.DateTime));
+    
+            var shellDateToParameter = shellDateTo.HasValue ?
+                new ObjectParameter("ShellDateTo", shellDateTo) :
+                new ObjectParameter("ShellDateTo", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockValuation00_10", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellDateFromParameter, shellDateToParameter);
+        }
+    
+        public virtual int StockValuation00OnFill(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockValuation00OnFill", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockValuation00OnProcess(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockValuation00OnProcess", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockValuationOnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockValuationOnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        [DbFunction("Entities", "StockWayBill_Page")]
+        public virtual IQueryable<StockWayBill_Page_Result> StockWayBill_Page(Nullable<int> stockEntryID)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<StockWayBill_Page_Result>("[Entities].[StockWayBill_Page](@StockEntryID)", stockEntryIDParameter);
+        }
+    
+        public virtual int StockWork_QuantityDecrease(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork_QuantityDecrease", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockWork_QuantityIncrease(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork_QuantityIncrease", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockWork_Sort(Nullable<int> shellUserID, Nullable<int> shellOperationID, Nullable<int> shellWorkPageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellWorkPageIDParameter = shellWorkPageID.HasValue ?
+                new ObjectParameter("ShellWorkPageID", shellWorkPageID) :
+                new ObjectParameter("ShellWorkPageID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork_Sort", shellUserIDParameter, shellOperationIDParameter, shellWorkPageIDParameter);
+        }
+    
+        public virtual int StockWork_TriggerOff(Nullable<int> shellUserID, Nullable<int> shellOperationID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork_TriggerOff", shellUserIDParameter, shellOperationIDParameter);
+        }
+    
+        public virtual int StockWork_TriggerOn(Nullable<int> shellUserID, Nullable<int> shellOperationID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork_TriggerOn", shellUserIDParameter, shellOperationIDParameter);
+        }
+    
+        public virtual int StockWork2110_OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2110_OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork2110_OnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2110_OnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> StockWork2110_OnSave(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("StockWork2110_OnSave", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork2110_OnScanner(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, Nullable<int> shellWorkPageID, ObjectParameter shellWorkPageLineID, string scannedKey, ObjectParameter scannedItemID, ObjectParameter scannedItemKey, ObjectParameter scannedQuantity, ObjectParameter scannedDateTime)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellWorkPageIDParameter = shellWorkPageID.HasValue ?
+                new ObjectParameter("ShellWorkPageID", shellWorkPageID) :
+                new ObjectParameter("ShellWorkPageID", typeof(int));
+    
+            var scannedKeyParameter = scannedKey != null ?
+                new ObjectParameter("ScannedKey", scannedKey) :
+                new ObjectParameter("ScannedKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2110_OnScanner", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkPageIDParameter, shellWorkPageLineID, scannedKeyParameter, scannedItemID, scannedItemKey, scannedQuantity, scannedDateTime);
+        }
+    
+        public virtual int StockWork2110_QuantityDecrease(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2110_QuantityDecrease", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockWork2110_QuantityIncrease(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2110_QuantityIncrease", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockWork2120_OnAccept(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2120_OnAccept", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork2120_OnAccept_BOM(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2120_OnAccept_BOM", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork2120_OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2120_OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork2120_OnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2120_OnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork2120_OnOpen(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2120_OnOpen", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork2120_OnReject(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2120_OnReject", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> StockWork2120_OnSave(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("StockWork2120_OnSave", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork2120_OnScanner(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, Nullable<int> shellWorkPageID, ObjectParameter shellWorkPageLineID, string scannedKey, ObjectParameter scannedItemID, ObjectParameter scannedItemKey, ObjectParameter scannedQuantity, ObjectParameter scannedDateTime)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellWorkPageIDParameter = shellWorkPageID.HasValue ?
+                new ObjectParameter("ShellWorkPageID", shellWorkPageID) :
+                new ObjectParameter("ShellWorkPageID", typeof(int));
+    
+            var scannedKeyParameter = scannedKey != null ?
+                new ObjectParameter("ScannedKey", scannedKey) :
+                new ObjectParameter("ScannedKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2120_OnScanner", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkPageIDParameter, shellWorkPageLineID, scannedKeyParameter, scannedItemID, scannedItemKey, scannedQuantity, scannedDateTime);
+        }
+    
+        public virtual int StockWork2120_QuantityDecrease(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2120_QuantityDecrease", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockWork2120_QuantityIncrease(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2120_QuantityIncrease", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockWork2120_QuantityReorder(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2120_QuantityReorder", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockWork2130_OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2130_OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork2130_OnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2130_OnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> StockWork2130_OnSave(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("StockWork2130_OnSave", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork2130_OnScanner(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, Nullable<int> shellWorkPageID, ObjectParameter shellWorkPageLineID, string scannedKey, ObjectParameter scannedItemID, ObjectParameter scannedItemKey, ObjectParameter scannedQuantity, ObjectParameter scannedDateTime)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellWorkPageIDParameter = shellWorkPageID.HasValue ?
+                new ObjectParameter("ShellWorkPageID", shellWorkPageID) :
+                new ObjectParameter("ShellWorkPageID", typeof(int));
+    
+            var scannedKeyParameter = scannedKey != null ?
+                new ObjectParameter("ScannedKey", scannedKey) :
+                new ObjectParameter("ScannedKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2130_OnScanner", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkPageIDParameter, shellWorkPageLineID, scannedKeyParameter, scannedItemID, scannedItemKey, scannedQuantity, scannedDateTime);
+        }
+    
+        public virtual int StockWork2130_QuantityDecrease(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2130_QuantityDecrease", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockWork2130_QuantityFactorDecrease(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2130_QuantityFactorDecrease", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockWork2130_QuantityFactorIncrease(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2130_QuantityFactorIncrease", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockWork2130_QuantityIncrease(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2130_QuantityIncrease", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockWork2140_OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2140_OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork2140_OnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2140_OnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> StockWork2140_OnSave(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("StockWork2140_OnSave", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork2140_OnScanner(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, Nullable<int> shellWorkPageID, ObjectParameter shellWorkPageLineID, string scannedKey, ObjectParameter scannedItemID, ObjectParameter scannedItemKey, ObjectParameter scannedQuantity, ObjectParameter scannedDateTime)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellWorkPageIDParameter = shellWorkPageID.HasValue ?
+                new ObjectParameter("ShellWorkPageID", shellWorkPageID) :
+                new ObjectParameter("ShellWorkPageID", typeof(int));
+    
+            var scannedKeyParameter = scannedKey != null ?
+                new ObjectParameter("ScannedKey", scannedKey) :
+                new ObjectParameter("ScannedKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2140_OnScanner", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkPageIDParameter, shellWorkPageLineID, scannedKeyParameter, scannedItemID, scannedItemKey, scannedQuantity, scannedDateTime);
+        }
+    
+        public virtual int StockWork2140_QuantityDecrease(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2140_QuantityDecrease", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockWork2140_QuantityIncrease(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork2140_QuantityIncrease", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockWork21xZ_OnAccept(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork21xZ_OnAccept", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork21xZ_OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork21xZ_OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> StockWork21xZ_OnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("StockWork21xZ_OnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork21xZ_OnOpen(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork21xZ_OnOpen", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork21xZ_OnSave(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork21xZ_OnSave", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork6300_OnCheck(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork6300_OnCheck", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWork6300_OnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWork6300_OnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkBudget0Message(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkBudget0Message", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkBudgetMessage(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkBudgetMessage", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkBudgetOnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkBudgetOnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkCheck_00(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkCheck_00", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkCheck_01(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkCheck_01", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkCheck_10(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkCheck_10", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkCheck_20(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkCheck_20", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkCheck_30(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkCheck_30", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkCheck_31(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkCheck_31", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkCheck_32(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkCheck_32", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkCheck_40(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkCheck_40", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkCheck_50(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkCheck_50", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkCheck_51(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkCheck_51", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkCheck_60(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkCheck_60", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkI12_OnScanner(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, Nullable<int> shellWorkPageID, ObjectParameter shellWorkPageLineID, string scannedKey, ObjectParameter scannedItemID, ObjectParameter scannedItemKey, ObjectParameter scannedQuantity, ObjectParameter scannedDateTime)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellWorkPageIDParameter = shellWorkPageID.HasValue ?
+                new ObjectParameter("ShellWorkPageID", shellWorkPageID) :
+                new ObjectParameter("ShellWorkPageID", typeof(int));
+    
+            var scannedKeyParameter = scannedKey != null ?
+                new ObjectParameter("ScannedKey", scannedKey) :
+                new ObjectParameter("ScannedKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkI12_OnScanner", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkPageIDParameter, shellWorkPageLineID, scannedKeyParameter, scannedItemID, scannedItemKey, scannedQuantity, scannedDateTime);
+        }
+    
+        public virtual int StockWorkI12_OnScanner2(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, Nullable<int> shellWorkPageID, ObjectParameter shellWorkPageLineID, string scannedKey, ObjectParameter scannedItemID, ObjectParameter scannedItemKey, ObjectParameter scannedQuantity, ObjectParameter scannedDateTime)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            var shellWorkPageIDParameter = shellWorkPageID.HasValue ?
+                new ObjectParameter("ShellWorkPageID", shellWorkPageID) :
+                new ObjectParameter("ShellWorkPageID", typeof(int));
+    
+            var scannedKeyParameter = scannedKey != null ?
+                new ObjectParameter("ScannedKey", scannedKey) :
+                new ObjectParameter("ScannedKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkI12_OnScanner2", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkPageIDParameter, shellWorkPageLineID, scannedKeyParameter, scannedItemID, scannedItemKey, scannedQuantity, scannedDateTime);
+        }
+    
+        public virtual int StockWorkLive0Message(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkLive0Message", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkLiveMessage(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkLiveMessage", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkLiveOnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkLiveOnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkMessage(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkMessage", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> StockWorkMoveDown(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("StockWorkMoveDown", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockWorkMoveUp(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellDataID, ObjectParameter shellDataValueID, ObjectParameter shellMessageID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkMoveUp", shellUserIDParameter, shellOperationIDParameter, shellDataID, shellDataValueID, shellMessageID);
+        }
+    
+        public virtual int StockWorkOnAccept(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkOnAccept", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkOnDelete(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkOnDelete", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkOnNew(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkOnNew", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkOnNewR(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkOnNewR", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkOnOpen(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkOnOpen", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkOnReject(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkOnReject", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkOnReject_S13(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkOnReject_S13", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkOnReject_T13(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkOnReject_T13", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> StockWorkOnSave(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("StockWorkOnSave", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> StockWorkSave_00(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("StockWorkSave_00", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkSave_10(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkSave_10", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int StockWorkSave_90(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("StockWorkSave_90", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> SyncEntryDataImport(ObjectParameter xmlData, ObjectParameter shellMessageID)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("SyncEntryDataImport", xmlData, shellMessageID);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> SyncEntryDataImport_Stock(ObjectParameter xmlData, ObjectParameter shellMessageID)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("SyncEntryDataImport_Stock", xmlData, shellMessageID);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> SyncEntryDataImportProcess(ObjectParameter shellMessageID)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("SyncEntryDataImportProcess", shellMessageID);
+        }
+    
+        public virtual ObjectResult<SyncMasterDataExport_Result> SyncMasterDataExport(string shellEntityKey, ObjectParameter xmlData, ObjectParameter shellMessageID)
+        {
+            var shellEntityKeyParameter = shellEntityKey != null ?
+                new ObjectParameter("ShellEntityKey", shellEntityKey) :
+                new ObjectParameter("ShellEntityKey", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SyncMasterDataExport_Result>("SyncMasterDataExport", shellEntityKeyParameter, xmlData, shellMessageID);
+        }
+    
+        public virtual ObjectResult<SyncShellData_Result> SyncShellData(ObjectParameter xmlData)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SyncShellData_Result>("SyncShellData", xmlData);
+        }
+    
+        public virtual int SyncShellData_StockEntry2140(ObjectParameter xmlData, ObjectParameter shellMessageID, ObjectParameter shellMessageName, Nullable<int> shellUserID, Nullable<int> shellDataID, string shellDataKey, Nullable<int> shellDataCommandID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellDataIDParameter = shellDataID.HasValue ?
+                new ObjectParameter("ShellDataID", shellDataID) :
+                new ObjectParameter("ShellDataID", typeof(int));
+    
+            var shellDataKeyParameter = shellDataKey != null ?
+                new ObjectParameter("ShellDataKey", shellDataKey) :
+                new ObjectParameter("ShellDataKey", typeof(string));
+    
+            var shellDataCommandIDParameter = shellDataCommandID.HasValue ?
+                new ObjectParameter("ShellDataCommandID", shellDataCommandID) :
+                new ObjectParameter("ShellDataCommandID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SyncShellData_StockEntry2140", xmlData, shellMessageID, shellMessageName, shellUserIDParameter, shellDataIDParameter, shellDataKeyParameter, shellDataCommandIDParameter);
+        }
+    
+        public virtual int SyncShellData_StockEntry6300(ObjectParameter xmlData, ObjectParameter shellMessageID, ObjectParameter shellMessageName, Nullable<int> shellUserID, Nullable<int> shellDataID, string shellDataKey, Nullable<int> shellDataCommandID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellDataIDParameter = shellDataID.HasValue ?
+                new ObjectParameter("ShellDataID", shellDataID) :
+                new ObjectParameter("ShellDataID", typeof(int));
+    
+            var shellDataKeyParameter = shellDataKey != null ?
+                new ObjectParameter("ShellDataKey", shellDataKey) :
+                new ObjectParameter("ShellDataKey", typeof(string));
+    
+            var shellDataCommandIDParameter = shellDataCommandID.HasValue ?
+                new ObjectParameter("ShellDataCommandID", shellDataCommandID) :
+                new ObjectParameter("ShellDataCommandID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SyncShellData_StockEntry6300", xmlData, shellMessageID, shellMessageName, shellUserIDParameter, shellDataIDParameter, shellDataKeyParameter, shellDataCommandIDParameter);
+        }
+    
+        public virtual int SyncStockCompany(ObjectParameter shellMessageID)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SyncStockCompany", shellMessageID);
+        }
+    
+        public virtual int SyncStockGLAccount(ObjectParameter shellMessageID)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SyncStockGLAccount", shellMessageID);
+        }
+    
+        public virtual int SyncStockItem(ObjectParameter shellMessageID)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SyncStockItem", shellMessageID);
+        }
+    
+        public virtual int SyncStockLocation(ObjectParameter shellMessageID)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SyncStockLocation", shellMessageID);
+        }
+    
+        public virtual int SyncStockPerson(ObjectParameter shellMessageID)
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SyncStockPerson", shellMessageID);
+        }
+    
+        public virtual ObjectResult<testProc_Result> testProc()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<testProc_Result>("testProc");
+        }
+    
+        [DbFunction("Entities", "TransferAndSalesReport")]
+        public virtual IQueryable<Nullable<int>> TransferAndSalesReport(Nullable<int> stockEntryTypeID, Nullable<System.DateTime> stockEntryDateFrom, Nullable<System.DateTime> stockEntryDateTo, Nullable<int> stockLocationID1, Nullable<int> stockLocationID2, Nullable<int> stockCustomerID, Nullable<int> stockCustomerGroupID, Nullable<int> stockItemID, Nullable<int> stockItemGroupID)
+        {
+            var stockEntryTypeIDParameter = stockEntryTypeID.HasValue ?
+                new ObjectParameter("StockEntryTypeID", stockEntryTypeID) :
+                new ObjectParameter("StockEntryTypeID", typeof(int));
+    
+            var stockEntryDateFromParameter = stockEntryDateFrom.HasValue ?
+                new ObjectParameter("StockEntryDateFrom", stockEntryDateFrom) :
+                new ObjectParameter("StockEntryDateFrom", typeof(System.DateTime));
+    
+            var stockEntryDateToParameter = stockEntryDateTo.HasValue ?
+                new ObjectParameter("StockEntryDateTo", stockEntryDateTo) :
+                new ObjectParameter("StockEntryDateTo", typeof(System.DateTime));
+    
+            var stockLocationID1Parameter = stockLocationID1.HasValue ?
+                new ObjectParameter("StockLocationID1", stockLocationID1) :
+                new ObjectParameter("StockLocationID1", typeof(int));
+    
+            var stockLocationID2Parameter = stockLocationID2.HasValue ?
+                new ObjectParameter("StockLocationID2", stockLocationID2) :
+                new ObjectParameter("StockLocationID2", typeof(int));
+    
+            var stockCustomerIDParameter = stockCustomerID.HasValue ?
+                new ObjectParameter("StockCustomerID", stockCustomerID) :
+                new ObjectParameter("StockCustomerID", typeof(int));
+    
+            var stockCustomerGroupIDParameter = stockCustomerGroupID.HasValue ?
+                new ObjectParameter("StockCustomerGroupID", stockCustomerGroupID) :
+                new ObjectParameter("StockCustomerGroupID", typeof(int));
+    
+            var stockItemIDParameter = stockItemID.HasValue ?
+                new ObjectParameter("StockItemID", stockItemID) :
+                new ObjectParameter("StockItemID", typeof(int));
+    
+            var stockItemGroupIDParameter = stockItemGroupID.HasValue ?
+                new ObjectParameter("StockItemGroupID", stockItemGroupID) :
+                new ObjectParameter("StockItemGroupID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<Nullable<int>>("[Entities].[TransferAndSalesReport](@StockEntryTypeID, @StockEntryDateFrom, @StockEntryDateTo, @StockLocationID1, @StockLocationID2, @StockCustomerID, @StockCustomerGroupID, @StockItemID, @StockItemGroupID)", stockEntryTypeIDParameter, stockEntryDateFromParameter, stockEntryDateToParameter, stockLocationID1Parameter, stockLocationID2Parameter, stockCustomerIDParameter, stockCustomerGroupIDParameter, stockItemIDParameter, stockItemGroupIDParameter);
+        }
+    
+        public virtual int VoidEntry(Nullable<int> stockEntryID)
+        {
+            var stockEntryIDParameter = stockEntryID.HasValue ?
+                new ObjectParameter("StockEntryID", stockEntryID) :
+                new ObjectParameter("StockEntryID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("VoidEntry", stockEntryIDParameter);
+        }
+    
+        public virtual int WebFunctionExecuter(string functionName)
+        {
+            var functionNameParameter = functionName != null ?
+                new ObjectParameter("FunctionName", functionName) :
+                new ObjectParameter("FunctionName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebFunctionExecuter", functionNameParameter);
+        }
+    
+        public virtual int WebFunctionExecutertest(string functionName, Nullable<int> operationID)
+        {
+            var functionNameParameter = functionName != null ?
+                new ObjectParameter("FunctionName", functionName) :
+                new ObjectParameter("FunctionName", typeof(string));
+    
+            var operationIDParameter = operationID.HasValue ?
+                new ObjectParameter("OperationID", operationID) :
+                new ObjectParameter("OperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebFunctionExecutertest", functionNameParameter, operationIDParameter);
+        }
+    
+        public virtual int WebFunctionExecutertest1(string functionName, Nullable<int> operationID)
+        {
+            var functionNameParameter = functionName != null ?
+                new ObjectParameter("FunctionName", functionName) :
+                new ObjectParameter("FunctionName", typeof(string));
+    
+            var operationIDParameter = operationID.HasValue ?
+                new ObjectParameter("OperationID", operationID) :
+                new ObjectParameter("OperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebFunctionExecutertest1", functionNameParameter, operationIDParameter);
+        }
+    
+        public virtual int WebFunctionExecutertest2(string functionName, string operationID)
+        {
+            var functionNameParameter = functionName != null ?
+                new ObjectParameter("FunctionName", functionName) :
+                new ObjectParameter("FunctionName", typeof(string));
+    
+            var operationIDParameter = operationID != null ?
+                new ObjectParameter("OperationID", operationID) :
+                new ObjectParameter("OperationID", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebFunctionExecutertest2", functionNameParameter, operationIDParameter);
+        }
+    
+        public virtual int WebGroupKeyAndName(string tableName)
+        {
+            var tableNameParameter = tableName != null ?
+                new ObjectParameter("TableName", tableName) :
+                new ObjectParameter("TableName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebGroupKeyAndName", tableNameParameter);
+        }
+    
+        public virtual int WebGroupKeyAndNameSelector(string tableName)
+        {
+            var tableNameParameter = tableName != null ?
+                new ObjectParameter("TableName", tableName) :
+                new ObjectParameter("TableName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebGroupKeyAndNameSelector", tableNameParameter);
+        }
+    
+        public virtual int WebGroupKeysAndName(string tableName)
+        {
+            var tableNameParameter = tableName != null ?
+                new ObjectParameter("TableName", tableName) :
+                new ObjectParameter("TableName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebGroupKeysAndName", tableNameParameter);
+        }
+    
+        public virtual int WebGroupsKeyAndName(string tableName)
+        {
+            var tableNameParameter = tableName != null ?
+                new ObjectParameter("TableName", tableName) :
+                new ObjectParameter("TableName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebGroupsKeyAndName", tableNameParameter);
+        }
+    
+        public virtual int WebGroupsKeyAndNameSelector(string tableName)
+        {
+            var tableNameParameter = tableName != null ?
+                new ObjectParameter("TableName", tableName) :
+                new ObjectParameter("TableName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebGroupsKeyAndNameSelector", tableNameParameter);
+        }
+    
+        public virtual int WebGroupsKeyAndNameSelector1(string tableName)
+        {
+            var tableNameParameter = tableName != null ?
+                new ObjectParameter("TableName", tableName) :
+                new ObjectParameter("TableName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("WebGroupsKeyAndNameSelector1", tableNameParameter);
+        }
+    
+        public virtual int zPOSWork_OnAccept_Z00(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("zPOSWork_OnAccept_Z00", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> zPOSWork_OnNew_Z00(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("zPOSWork_OnNew_Z00", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int zPOSWork_OnOpen_Z00(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("zPOSWork_OnOpen_Z00", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
+        }
+    
+        public virtual int zPOSWork_OnSave_Z00(Nullable<int> shellUserID, Nullable<int> shellOperationID, ObjectParameter shellMessageID, ObjectParameter shellWorkStatusID, ObjectParameter shellWorkEntryID)
+        {
+            var shellUserIDParameter = shellUserID.HasValue ?
+                new ObjectParameter("ShellUserID", shellUserID) :
+                new ObjectParameter("ShellUserID", typeof(int));
+    
+            var shellOperationIDParameter = shellOperationID.HasValue ?
+                new ObjectParameter("ShellOperationID", shellOperationID) :
+                new ObjectParameter("ShellOperationID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("zPOSWork_OnSave_Z00", shellUserIDParameter, shellOperationIDParameter, shellMessageID, shellWorkStatusID, shellWorkEntryID);
         }
     }
 }

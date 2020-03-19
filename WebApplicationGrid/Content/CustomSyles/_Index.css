@@ -13,13 +13,14 @@
     padding-left: 10px;
 }
 
-#leftSideManu {
+/*#leftSideManu {
     float: left;
-}
+}*/
 
 #MainListView {
     width: 800px;
     float: left;
+    overflow:hidden;
 }
 
 .dropdown-submenu {
@@ -108,9 +109,6 @@ panel-body:before, .row:after, .row:before {
     border: none;
 }
 
-#TopFiltersGroup {
-    background-color: #D3D2D9 !important;
-}
 
 #topfiltersNavBar {
     background-color: #D3D2D9 !important;

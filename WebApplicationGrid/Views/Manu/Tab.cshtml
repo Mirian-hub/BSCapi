@@ -1,38 +1,149 @@
 ﻿@model  IList<WebApplicationGrid.ViewModels.HelperModels.DropDownModel>
-<div id="MainListView">
-    <div id="TopFiltersGroup">
-        @Html.Partial("_Filters")
+<script src="~/Scripts/mainJSTab.js"></script>
 
+<link href="~/Content/Tab.css" rel="stylesheet" />
+
+<script> 
+    $('#dataTable thead th').each(function () {
+        var title = $(this).text();
+        $(this).html('<input type="text"  placeholder="Search ' + title + '" />');
+    });
+
+
+    var table = $('#dataTable').DataTable();
+    table.columns().every(function () {
+        var that = this;
+        $('input', this.header()).on('keyup change clear click', function (event) {
+            debugger;
+            if (event.type == 'click') {
+                event.stopPropagation();
+                event.preventDefault();
+                debugger;
+            }
+            if (that.search() !== this.value) {
+                that.search(this.value).draw();
+            }
+            
+
+
+        });
+    });
+
+
+
+
+
+
+    $('#dataTableGroup thead th').each(function () {
+        var title = $(this).text();
+        $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+    });
+    // DataTable
+    var table = $('#dataTableGroup').DataTable();
+
+    // Apply the search
+    table.columns().every(function () {
+        var that = this;
+        $('input', this.footer()).on('keyup change clear', function () {
+            if (that.search() !== this.value) {
+                that.search(this.value).draw(); 
+            }
+        });
+    });
+
+</script>
+
+<div id="MainListView">
+    @*<p id="testId"> here i go </p>*@
+    <div id="TopFiltersGroup">
+        @Html.Partial("_Filters", Model)
     </div>
+
     <div id="topButtons">
         @Html.Partial("_TopButtons")
     </div>
+    <div id="mainContentContainer">
 
-    <div id="leftSideManu">
+        <div id="leftSideManu">
+            <div class="container py-4">
+                <div id="dataTable_wrapper_group"></div>
+                <table id="dataTableGroup" class="table table-bordered table-striped group" style="display:none ">
+                    <thead>
+                        <tr>
+                            <th > Key </th>
+                            <th > დასახელება</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th> Key </th>
+                            <th> დასახელება</th>
+                        </tr>
+                    </tfoot>
+                </table>
 
-        @Html.Partial("_LeftManu")
+                <table id="dataTableGroup2" class="table table-bordered table-striped group2" style="display:none ">
+                    <thead>
+                        <tr>
+                            <th> Key </th>
+                            <th> დასახელება</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th> Key </th>
+                            <th> დასახელება</th>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+
+        <div id="mainListViewD" class="PageMainContent">
+            <div class="container py-4">
+                <div id="dataTable_wrapper"></div>
+                <table id="dataTable" class="table table-bordered table-striped list" style="display:none ">
+                    <thead>
+                        <tr>
+                            <th>თერმის კოდი</th>
+                            <th> თერმის დასახელება</th>
+                            <th>თერმი კოდ.</th>
+                            <th>ფორმატი</th>
+                            <th>ტექსტი</th>
+                            <th> ჯგუფი ნომერი </th>
+                        </tr>
+                    </thead>
+
+
+                    <tfoot>
+                        <tr>
+                            <th>თერმის კოდი</th>
+                            <th> თერმის დასახელება</th>
+                            <th>თერმი კოდ.</th>
+                            <th>ფორმატი</th>
+                            <th>ტექსტი</th>
+                            <th> ჯგუფი ნომერი </th>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <table id="dataTable2" class="table table-bordered table-striped list2" style="display:none ">
+                    <thead>
+                        <tr>
+                            <th>თერმის კოდი</th>
+                            <th> თერმის დასახელება</th>
+                            <th>თერმი კოდ.</th>
+                            <th>ფორმატი</th>
+                            <th>ტექსტი</th>
+                            <th style="display:none"> ჯგუფი ნომერი </th>
+
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+
     </div>
-    @foreach (var item in Model)
-    {
-        
-        <h1>  @item.test  </h1>
 
-    }
-
-    <div>
-        @{
-            var res = Model.Where(c => c.test != null).FirstOrDefault();
-            if (res != null)
-            {
-                <div>
-                    <h1> @res.test </h1>
-                </div>
-            }
-
-        }
-
-    </div>
-    @*<div id="listView">
-            @Html.Partial("_MainListView")
-        </div>*@
 </div>

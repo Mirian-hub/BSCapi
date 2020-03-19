@@ -123,8 +123,6 @@ namespace WebApplicationGrid.Controllers
             {
                 var propName = prop.PropertyType.FullName;
                 int counterInt = 0;
-
-
                 // Nullable Int64  
                 if (propName.Contains("Int64") && propName.Contains("Null"))
                 {

@@ -1,11 +1,58 @@
-﻿
+﻿$(function (e) {
+    //$("#ajaxCallTest").on("click", function () {
+        $('#dataTable').DataTable({
+            "ajax": {
+                "url": "/Manu/GetListView",
+                "type": "GET",
+                "datatype": "json"
+            },
+            "columns": [
+                { "data": "Id" },
+                { "data": "Name" },
+                { "data": "Format" },
+                { "data": "Key" },
+                { "data": "Code" }
+            ]
+    });
+    $('#dataTableGroup').DataTable({
+            "ajax": {
+                "url": "/Manu/GetGroupList",
+                "type": "GET",
+                "datatype": "json"
+            },
+            "columns": [
+                { "data": "Key" },
+                { "data": "Name" },
+            ]
+        });
+    //});     
+    var atrgetEl = $(this);
+   
 
+    var targetDoc = document.getElementsByClassName("btn btn-primary target-");
+    var secondLecBtns = document.getElementsByClassName("second-level-btn target-");
+    var thirdLecBtns = document.getElementsByClassName("second-level-btn target-third");
 
-$(function () {
-    var response;
-    var targetClasses = ["dLabel", "topManubarBtn"]
-    $.each(targetClasses, function (index, value) {
-        $("#"+ value).on("click", function () {
+    //targetDoc.append(secondLecBtns);
+    //targetDoc.append(thirdLecBtns);
+
+    for (let item of targetDoc) {
+        item.addEventListener("click", function () {
+            var id = $(this).find("input[type='hidden']").val();
+            $.ajax({
+                url: "/Manu/Tab?name" + id,
+                method: "post",
+                async: false,
+                data: { id: id },
+                success: function (text) {
+                    response = text;
+                }
+            })
+        })
+    }
+
+    for (let item of secondLecBtns) {
+        item.addEventListener("click", function () {
             var id = $(this).find("input[type='hidden']").val();
             debugger;
             $.ajax({
@@ -15,26 +62,26 @@ $(function () {
                 data: { id: id },
                 success: function (text) {
                     response = text;
-                    debugger;
                 }
             })
         })
-        }
-    )
-    //$("#dLabel").on("click", function () {
-    //    var id = $(this).find("input[type='hidden']").val();
-    //    debugger;
-    //    $.ajax({
-    //        url: "/Manu/Tab?name" + id,
-    //        method: "post",
-    //        async: false    ,
-    //        data: { id: id },
-    //        success: function (text) {
-    //            response = text;
-    //            debugger;
-    //        }
-    //    })
-    //})
+    }
+
+    for (let item of thirdLecBtns) {
+        item.addEventListener("click", function () {
+            var id = $(this).find("input[type='hidden']").val();
+            $.ajax({
+                url: "/Manu/Tab?name" + id,
+                method: "post",
+                async: false,
+                data: { id: id },
+                success: function (text) {
+                    response = text;
+                }
+            })
+        })
+    }
+      
 
 
 
@@ -70,34 +117,106 @@ $(function () {
             //});
 
             // $("#dLabel").on("click()", addTab());
-            ;
+            
+
+
+
+    //function clickFunc(ids) {
+    //    this.on("click", function () {
+    //        $.ajax({
+    //            url: "/Manu/Tab?name" + id,
+    //            method: "post",
+    //            async: false,
+    //            data: { id: id },
+    //            success: function (text) {
+    //                response = text;
+    //            }
+    //        })
+    //    });
+
+    //    this.on("click", function addTab() {
+    //        var label = tabTitle.val() || "Tab " + tabCounter + $('#dLabel').text(),
+    //            ids = "tabs-" + tabCounter,
+    //            li = $(tabTemplate.replace(/#\{href\}/g, "#" + ids).replace(/#\{label\}/g, label)),
+    //            tabContentHtml = tabContent.val() || "Tab " + tabCounter + " content.";
+
+    //        tabs.find(".ui-tabs-nav").append(li);
+    //        tabs.append("<div id='" + ids + "'>" + response + "  </div>");
+    //        tabs.tabs("refresh");
+    //        tabCounter++;
+    //    });
+
+    //    debugger;
+
+    //}
+
+
+    for (let item of targetDoc) {
+        item.addEventListener("click", function addTab() {
+           var label =  item.text,
+               id = "tabs-" + tabCounter,
+               li = $(tabTemplate.replace(/#\{href\}/g, "#" + id).replace(/#\{label\}/g, label)),
+               tabContentHtml = tabContent.val() || "Tab " + tabCounter + " content.";
+
+           tabs.find(".ui-tabs-nav").append(li);
+           tabs.append("<div id='" + id + "'>" + response + "  </div>");
+           tabs.tabs("refresh");
+           tabCounter++;
+       });
+    }
+    for (let item of secondLecBtns) {
+        item.addEventListener("click", function addTab() {
+           var label =  item.text,
+               id = "tabs-" + tabCounter,
+               li = $(tabTemplate.replace(/#\{href\}/g, "#" + id).replace(/#\{label\}/g, label)),
+               tabContentHtml = tabContent.val() || "Tab " + tabCounter + " content.";
+
+           tabs.find(".ui-tabs-nav").append(li);
+           tabs.append("<div id='" + id + "'>" + response + "  </div>");    
+           tabs.tabs("refresh");
+           tabCounter++;
+       });
+    }   
+    for (let item of thirdLecBtns) {
+        item.addEventListener("click", function addTab() {
+           var label =  item.text,
+               id = "tabs-" + tabCounter,
+               li = $(tabTemplate.replace(/#\{href\}/g, "#" + id).replace(/#\{label\}/g, label)),
+               tabContentHtml = tabContent.val() || "Tab " + tabCounter + " content.";
+
+           tabs.find(".ui-tabs-nav").append(li);
+           tabs.append("<div id='" + id + "'>" + response + "  </div>");
+           tabs.tabs("refresh");
+           tabCounter++;
+       });
+    }
 
 
     
-    $('#dLabel').on("click", function addTab() {
-        var label = tabTitle.val() || "Tab " + tabCounter + $('#dLabel').text(),
-            id = "tabs-" + tabCounter,
-            li = $(tabTemplate.replace(/#\{href\}/g, "#" + id).replace(/#\{label\}/g, label)),
-            tabContentHtml = tabContent.val() || "Tab " + tabCounter + " content.";
+    //$('.btn btn-primary target-')[0].on("click", function addTab() {
+    //    var label = tabTitle.val() || "Tab " + tabCounter + $('#dLabel').text(),
+    //        id = "tabs-" + tabCounter,
+    //        li = $(tabTemplate.replace(/#\{href\}/g, "#" + id).replace(/#\{label\}/g, label)),
+    //        tabContentHtml = tabContent.val() || "Tab " + tabCounter + " content.";
         
-        tabs.find(".ui-tabs-nav").append(li);
-        tabs.append("<div id='" + id + "'>" + response + "  </div>");
-        tabs.tabs("refresh");
-        tabCounter++;
-    });
+    //    tabs.find(".ui-tabs-nav").append(li);
+    //    tabs.append("<div id='" + id + "'>" + response + "  </div>");
+    //    tabs.tabs("refresh");
+    //    tabCounter++;
+    //});
         // Actual addTab function: adds new tab using the input from the form above
-    //function addTab() {
-    //        var label = tabTitle.val() || "Tab " + tabCounter,
-    //            id = "tabs-" + tabCounter,
-    //            li = $(tabTemplate.replace(/#\{href\}/g, "#" + id).replace(/#\{label\}/g, label)),
-    //            tabContentHtml = tabContent.val() || "Tab " + tabCounter + " content.";
-    //        debugger;
+    function addTab() {
+            var label = tabTitle.val() || "Tab " + tabCounter,
+                id = "tabs-" + tabCounter,
+                li = $(tabTemplate.replace(/#\{href\}/g, "#" + id).replace(/#\{label\}/g, label)),
+                tabContentHtml = tabContent.val() || "Tab " + tabCounter + " content.";
+            debugger;
 
-    //        tabs.find(".ui-tabs-nav").append(li);
-    //        tabs.append("<div id='" + id + "'><p>" + tabContentHtml + "</p></div>");
-    //        tabs.tabs("refresh");
-    //        tabCounter++;
-    //    }
+            tabs.find(".ui-tabs-nav").append(li);
+            tabs.append("<div id='" + id + "'><p>" + tabContentHtml + "</p></div>");
+            tabs.tabs("refresh");
+            tabCounter++;
+        }
 
             // AddTab button: just opens the dialog
             $("#add_tab")

@@ -18,6 +18,9 @@
        float:left;
     }
     #MainListView {
+        overflow: hidden !important;
+        border: 2px solid #007fff;
+        box-shadow: 0 0 5px #007FFF;
     }
     .dropdown-submenu {
         position: relative;
@@ -101,6 +104,8 @@
 
     #TopFiltersGroup {
         background-color: #D3D2D9 !important;
+        overflow:hidden !important;
+        margin-bottom:5px;
     }
     #topfiltersNavBar {
         background-color: #D3D2D9 !important;
@@ -146,8 +151,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Paging/1.2.0/jquery.paging.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+
     <title>Index</title>
     <script src="~/Scripts/mainJS.js"></script>
+
+    <script>
+        var targetId;
+        function getTagretId(item) {
+            debugger;
+            return targetId = item.children[0].value
+;
+        };
+    </script>
+
+
 </head>
 <body id="firstPageBody">
 
@@ -159,15 +179,15 @@
                 <div class="dropdown" id="manuBarDropdowns">
                     @if (item.FirstLevel.HasChild)
                     {
-                    <a id="dLabel" role="button" data-toggle="dropdown" class="btn btn-primary" data-target="#" href="/page.html">
-                        @item.FirstLevel.Name <span class="caret"></span>
-                        <input type="hidden" id="hiddenField" value=@item.FirstLevel.Id.ToString() />
+                        <a id="dLabel" role="button" data-toggle="dropdown" class="btn btn-primary" data-target="#" href="/page.html">
+                            @item.FirstLevel.Name <span class="caret"></span>
+                            <input type="hidden" id="hiddenField" value=@item.FirstLevel.Id.ToString() />
 
-                    </a>
+                        </a>
                     }
                     else
                     {
-                        <a id="dLabel" role="button" class="btn btn-primary" data-target="#" @*onclick="location.href='@Url.Action("LoadMainPanel", "LoadPanel")'"*@>
+                        <a id="dLabel" role="button" class="btn btn-primary target-" data-target="#" onclick="getTagretId(this)">
                             @item.FirstLevel.Name
                             <input type="hidden" id="hiddenField" value=@item.FirstLevel.Id.ToString() />
                         </a>
@@ -177,15 +197,17 @@
 
                         @foreach (var dd in item.SecondLevel)
                         {
-                            if (!dd.HasChild)
+                            if (!dd.HasChild && dd.IsGroup == false)
                             {
-                                <li> <a href="#" id="topManubarBtn">
-                                        @dd.Name 
-                                      <input type="hidden" id="hiddenField" value=@dd.Id.ToString() />
+                                <li>
+                                    <a href="#" id="topManubarBtn" class="second-level-btn target-" onclick="getTagretId(this)">
+                                        @dd.Name
+                                        <input type="hidden" id="hiddenField" value=@dd.Id.ToString()  />
 
-                                    </a>  </li>
+                                    </a>
+                                </li>
                             }
-                            else
+                            if (dd.HasChild)
                             {
                                 <li class="dropdown-submenu">
                                     <a tabindex="-1" href="#">@dd.Name</a>
@@ -196,11 +218,12 @@
                                             {
                                                 foreach (var tlvalue in tl.Value)
                                                 {
-                                                    <li><a tabindex="-1" href="#" id="topManubarBtn">
-                                                        @tlvalue.Name
-                                                        <input type="hidden" id="hiddenField" value=@tlvalue.Id.ToString() />
-
-                                                    </a></li>
+                                                    <li>
+                                                        <a tabindex="-1" href="#" id="topManubarBtn" class="second-level-btn target-third" onclick="getTagretId(this)">
+                                                            @tlvalue.Name
+                                                            <input type="hidden" id="hiddenField" value=@tlvalue.Id.ToString()>
+                                                        </a>
+                                                    </li>
                                                 }
                                             }
                                         }
@@ -221,17 +244,17 @@
 
 
     <div id="mainContent">
-            <div id="tabs">
-                <ul>
-                    <li><a href="#tabs-1">Nunc tincidunt</a> <span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>
-                </ul>
-                @*<div id="tabs-1">
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Nunc tincidunt</a> <span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>
+            </ul>
+            @*<div id="tabs-1">
                     @Html.Partial("Tab")
                 </div>*@
-            </div>
+        </div>
     </div>
 
-
+    
 
 </body>
 </html>

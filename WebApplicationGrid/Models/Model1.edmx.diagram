@@ -4,7 +4,843 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="6ee1d9f9285649f28bae5ed2a231dba1" Name="Diagram1" />
+      <Diagram DiagramId="6ee1d9f9285649f28bae5ed2a231dba1" Name="Diagram1" >
+        <EntityTypeShape EntityType="Model.CashEntryLineStatusTable" Width="1.5" PointX="18.75" PointY="39.625" />
+        <EntityTypeShape EntityType="Model.CashEntryLineTable" Width="1.5" PointX="21" PointY="35.5" />
+        <EntityTypeShape EntityType="Model.CashEntryLineTypeTable" Width="1.5" PointX="18.75" PointY="36.625" />
+        <EntityTypeShape EntityType="Model.CashEntryStatusTable" Width="1.5" PointX="32.75" PointY="24.75" />
+        <EntityTypeShape EntityType="Model.CashEntryTable" Width="1.5" PointX="35" PointY="22.625" />
+        <EntityTypeShape EntityType="Model.CashEntryTypeTable" Width="1.5" PointX="32.75" PointY="27.75" />
+        <EntityTypeShape EntityType="Model.CashLocationGLAccountTable" Width="1.5" PointX="7.75" PointY="7.25" />
+        <EntityTypeShape EntityType="Model.CashLocationGroupTable" Width="1.5" PointX="29.75" PointY="31" />
+        <EntityTypeShape EntityType="Model.CashLocationStatusTable" Width="1.5" PointX="29.75" PointY="18.875" />
+        <EntityTypeShape EntityType="Model.CashLocationTable" Width="1.5" PointX="32" PointY="18.375" />
+        <EntityTypeShape EntityType="Model.CashLocationTypeTable" Width="1.5" PointX="29.75" PointY="28.25" />
+        <EntityTypeShape EntityType="Model.CashWorkLiveTable" Width="1.5" PointX="0.75" PointY="35.25" />
+        <EntityTypeShape EntityType="Model.CashWorkTable" Width="1.5" PointX="34.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.DeliveryGraphTable" Width="1.5" PointX="7.75" PointY="10.25" />
+        <EntityTypeShape EntityType="Model.RSLogTable" Width="1.5" PointX="9.75" PointY="7.25" />
+        <EntityTypeShape EntityType="Model.RSMessageGroupTable" Width="1.5" PointX="29.75" PointY="11.5" />
+        <EntityTypeShape EntityType="Model.RSMessageStatusTable" Width="1.5" PointX="29.75" PointY="15" />
+        <EntityTypeShape EntityType="Model.RSMessageTable" Width="1.5" PointX="32" PointY="7.5" />
+        <EntityTypeShape EntityType="Model.RSMessageTypeTable" Width="1.5" PointX="29.75" PointY="8.25" />
+        <EntityTypeShape EntityType="Model.RSSyncProcessTable" Width="1.5" PointX="10.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.RsWaybillConfirmationStatusTable" Width="1.5" PointX="11.75" PointY="5.25" />
+        <EntityTypeShape EntityType="Model.RsWaybillLineTable" Width="1.5" PointX="33.75" PointY="37.25" />
+        <EntityTypeShape EntityType="Model.RsWaybillStatusTable" Width="1.5" PointX="12.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.RsWaybillTable" Width="1.5" PointX="35.75" PointY="37.25" />
+        <EntityTypeShape EntityType="Model.RsWaybillTypeTable" Width="1.5" PointX="7.75" PointY="14.25" />
+        <EntityTypeShape EntityType="Model.RSWaybillWorkTable" Width="1.5" PointX="36.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.ShellComputerGroupTable" Width="1.5" PointX="11.25" PointY="45.75" />
+        <EntityTypeShape EntityType="Model.ShellComputerStatusTable" Width="1.5" PointX="11.25" PointY="51.375" />
+        <EntityTypeShape EntityType="Model.ShellComputerTable" Width="1.5" PointX="13.5" PointY="33.625" />
+        <EntityTypeShape EntityType="Model.ShellComputerTypeTable" Width="1.5" PointX="11.25" PointY="48.875" />
+        <EntityTypeShape EntityType="Model.ShellComputerUserTable" Width="1.5" PointX="15.75" PointY="48.5" />
+        <EntityTypeShape EntityType="Model.ShellDataGroupTable" Width="1.5" PointX="15.75" PointY="2.5" />
+        <EntityTypeShape EntityType="Model.ShellDataRightTable" Width="1.5" PointX="20.25" PointY="9.375" />
+        <EntityTypeShape EntityType="Model.ShellDataSearchTable" Width="1.5" PointX="20.25" PointY="2.75" />
+        <EntityTypeShape EntityType="Model.ShellDataSortTable" Width="1.5" PointX="20.25" PointY="6" />
+        <EntityTypeShape EntityType="Model.ShellDataStatusTable" Width="1.5" PointX="15.75" PointY="6.125" />
+        <EntityTypeShape EntityType="Model.ShellDataTable" Width="1.5" PointX="18" PointY="4.625" />
+        <EntityTypeShape EntityType="Model.ShellDataTypeTable" Width="1.5" PointX="15.75" PointY="8.625" />
+        <EntityTypeShape EntityType="Model.ShellDiagnoseGroupTable" Width="1.5" PointX="27.75" PointY="6.125" />
+        <EntityTypeShape EntityType="Model.ShellDiagnoseStatusTable" Width="1.5" PointX="27.75" PointY="18.25" />
+        <EntityTypeShape EntityType="Model.ShellDiagnoseTable" Width="1.5" PointX="30" PointY="2.5" />
+        <EntityTypeShape EntityType="Model.ShellDiagnoseTypeTable" Width="1.5" PointX="27.75" PointY="3.125" />
+        <EntityTypeShape EntityType="Model.ShellDLLGroupTable" Width="1.5" PointX="24.75" PointY="16.375" />
+        <EntityTypeShape EntityType="Model.ShellDLLLanguageTable" Width="1.5" PointX="29.25" PointY="37.875" />
+        <EntityTypeShape EntityType="Model.ShellDLLStatusTable" Width="1.5" PointX="24.75" PointY="13.75" />
+        <EntityTypeShape EntityType="Model.ShellDLLTable" Width="1.5" PointX="27" PointY="9.5" />
+        <EntityTypeShape EntityType="Model.ShellDLLTypeTable" Width="1.5" PointX="24.75" PointY="10.5" />
+        <EntityTypeShape EntityType="Model.ShellImportExcelTable" Width="1.5" PointX="37.75" PointY="18.25" />
+        <EntityTypeShape EntityType="Model.ShellLanguageStatusTable" Width="1.5" PointX="1.5" PointY="67.125" />
+        <EntityTypeShape EntityType="Model.ShellLanguageTable" Width="1.5" PointX="3.75" PointY="65.125" />
+        <EntityTypeShape EntityType="Model.ShellLanguageTypeTable" Width="1.5" PointX="1.5" PointY="64.625" />
+        <EntityTypeShape EntityType="Model.ShellLogTable" Width="1.5" PointX="12.75" PointY="24.25" />
+        <EntityTypeShape EntityType="Model.ShellMessageGroupTable" Width="1.5" PointX="24.75" PointY="33.5" />
+        <EntityTypeShape EntityType="Model.ShellMessageStatusTable" Width="1.5" PointX="24.75" PointY="42.625" />
+        <EntityTypeShape EntityType="Model.ShellMessageTable" Width="1.5" PointX="27" PointY="28.375" />
+        <EntityTypeShape EntityType="Model.ShellMessageTypeTable" Width="1.5" PointX="24.75" PointY="29" />
+        <EntityTypeShape EntityType="Model.ShellOperationGroupTable" Width="1.5" PointX="22.75" PointY="27.5" />
+        <EntityTypeShape EntityType="Model.ShellOperationLineTable" Width="1.5" PointX="27.25" PointY="23.75" />
+        <EntityTypeShape EntityType="Model.ShellOperationStatusTable" Width="1.5" PointX="22.75" PointY="24.125" />
+        <EntityTypeShape EntityType="Model.ShellOperationTable" Width="1.5" PointX="25" PointY="22.5" />
+        <EntityTypeShape EntityType="Model.ShellOperationTypeTable" Width="1.5" PointX="22.75" PointY="30.625" />
+        <EntityTypeShape EntityType="Model.ShellReportFilterStatusTable" Width="1.5" PointX="20" PointY="19.125" />
+        <EntityTypeShape EntityType="Model.ShellReportFilterTable" Width="1.5" PointX="22.25" PointY="14" />
+        <EntityTypeShape EntityType="Model.ShellReportFilterTypeTable" Width="1.5" PointX="20" PointY="21.625" />
+        <EntityTypeShape EntityType="Model.ShellReportFilterValueTable" Width="1.5" PointX="24.5" PointY="38.5" />
+        <EntityTypeShape EntityType="Model.ShellReportFormTable" Width="1.5" PointX="22.25" PointY="18.375" />
+        <EntityTypeShape EntityType="Model.ShellReportGroupTable" Width="1.5" PointX="17.75" PointY="23.75" />
+        <EntityTypeShape EntityType="Model.ShellReportStatusTable" Width="1.5" PointX="17.75" PointY="14.75" />
+        <EntityTypeShape EntityType="Model.ShellReportTable" Width="1.5" PointX="20" PointY="13.875" />
+        <EntityTypeShape EntityType="Model.ShellReportTypeTable" Width="1.5" PointX="17.75" PointY="12.125" />
+        <EntityTypeShape EntityType="Model.ShellSchedulerGroupTable" Width="1.5" PointX="22.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.ShellSchedulerLanguageTable" Width="1.5" PointX="27.25" PointY="34.5" />
+        <EntityTypeShape EntityType="Model.ShellSchedulerStatusTable" Width="1.5" PointX="22.75" PointY="7.25" />
+        <EntityTypeShape EntityType="Model.ShellSchedulerTable" Width="1.5" PointX="25" PointY="2.625" />
+        <EntityTypeShape EntityType="Model.ShellSchedulerTypeTable" Width="1.5" PointX="22.75" PointY="4.5" />
+        <EntityTypeShape EntityType="Model.ShellSettingGroupTable" Width="1.5" PointX="5.75" PointY="6.25" />
+        <EntityTypeShape EntityType="Model.ShellSettingStatusTable" Width="1.5" PointX="5.75" PointY="3.25" />
+        <EntityTypeShape EntityType="Model.ShellSettingTable" Width="1.5" PointX="8" PointY="2.5" />
+        <EntityTypeShape EntityType="Model.ShellSettingTypeTable" Width="1.5" PointX="5.75" PointY="44.375" />
+        <EntityTypeShape EntityType="Model.ShellSettingValueTable" Width="1.5" PointX="14.25" PointY="29.875" />
+        <EntityTypeShape EntityType="Model.ShellTermGroupTable" Width="1.5" PointX="0.75" PointY="6.25" />
+        <EntityTypeShape EntityType="Model.ShellTermNameTable" Width="1.5" PointX="13" PointY="38.375" />
+        <EntityTypeShape EntityType="Model.ShellTermStatusTable" Width="1.5" PointX="0.75" PointY="27.375" />
+        <EntityTypeShape EntityType="Model.ShellTermTable" Width="1.5" PointX="3" PointY="2.5" />
+        <EntityTypeShape EntityType="Model.ShellTermTypeTable" Width="1.5" PointX="0.75" PointY="3.25" />
+        <EntityTypeShape EntityType="Model.ShellUserGroupTable" Width="1.5" PointX="3.75" PointY="61.5" />
+        <EntityTypeShape EntityType="Model.ShellUserStatusTable" Width="1.5" PointX="3.75" PointY="58.875" />
+        <EntityTypeShape EntityType="Model.ShellUserTable" Width="1.5" PointX="6" PointY="59.75" />
+        <EntityTypeShape EntityType="Model.ShellUserTypeTable" Width="1.5" PointX="3.75" PointY="56.125" />
+        <EntityTypeShape EntityType="Model.ShellWorkStatusTable" Width="1.5" PointX="14.75" PointY="24.25" />
+        <EntityTypeShape EntityType="Model.StockAgingGraphTable" Width="1.5" PointX="19.75" PointY="25.25" />
+        <EntityTypeShape EntityType="Model.StockAllocationBaseTable" Width="1.5" PointX="18.75" PointY="28.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanGroupTable" Width="1.5" PointX="11.25" PointY="32.625" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanLineStatusTable" Width="1.5" PointX="13.5" PointY="14.5" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanLineTable" Width="1.5" PointX="15.75" PointY="19.625" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanLineTypeTable" Width="1.5" PointX="13.5" PointY="11.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanStatusTable" Width="1.5" PointX="11.25" PointY="10.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanTable" Width="1.5" PointX="13.5" PointY="19.125" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanTypeTable" Width="1.5" PointX="11.25" PointY="30" />
+        <EntityTypeShape EntityType="Model.StockBudgetTypeTable" Width="1.5" PointX="2.75" PointY="35.25" />
+        <EntityTypeShape EntityType="Model.StockCarGroupTable" Width="1.5" PointX="3.75" PointY="99.25" />
+        <EntityTypeShape EntityType="Model.StockCarStatusTable" Width="1.5" PointX="3.75" PointY="102.5" />
+        <EntityTypeShape EntityType="Model.StockCarTable" Width="1.5" PointX="6" PointY="101.5" />
+        <EntityTypeShape EntityType="Model.StockCarTypeTable" Width="1.5" PointX="3.75" PointY="105.25" />
+        <EntityTypeShape EntityType="Model.StockCompanyCardGroupTable" Width="1.5" PointX="34.75" PointY="18.25" />
+        <EntityTypeShape EntityType="Model.StockCompanyCardStatusTable" Width="1.5" PointX="15.75" PointY="38.25" />
+        <EntityTypeShape EntityType="Model.StockCompanyCardTable" Width="1.5" PointX="37.75" PointY="37.25" />
+        <EntityTypeShape EntityType="Model.StockCompanyCardTypeTable" Width="1.5" PointX="38.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.StockCompanyGroupTable" Width="1.5" PointX="3.75" PointY="72.375" />
+        <EntityTypeShape EntityType="Model.StockCompanyStatusTable" Width="1.5" PointX="3.75" PointY="84.125" />
+        <EntityTypeShape EntityType="Model.StockCompanyTable" Width="1.5" PointX="6" PointY="75.25" />
+        <EntityTypeShape EntityType="Model.StockCompanyTypeTable" Width="1.5" PointX="3.75" PointY="75.875" />
+        <EntityTypeShape EntityType="Model.StockCustomerStatusTable" Width="1.5" PointX="38.75" PointY="5.25" />
+        <EntityTypeShape EntityType="Model.StockCustomerTypeTable" Width="1.5" PointX="38.75" PointY="8.25" />
+        <EntityTypeShape EntityType="Model.StockDeliveryGraphTable" Width="1.5" PointX="5.25" PointY="40.25" />
+        <EntityTypeShape EntityType="Model.StockDeliveryGroupTable" Width="1.5" PointX="38.75" PointY="11.25" />
+        <EntityTypeShape EntityType="Model.StockDeliveryStatusTable" Width="1.5" PointX="38.75" PointY="14.25" />
+        <EntityTypeShape EntityType="Model.StockDeliveryTable" Width="1.5" PointX="38.75" PointY="31.25" />
+        <EntityTypeShape EntityType="Model.StockDeliveryTypeTable" Width="1.5" PointX="5.25" PointY="9.5" />
+        <EntityTypeShape EntityType="Model.StockDiscountGroupTable" Width="1.5" PointX="12.75" PointY="41.25" />
+        <EntityTypeShape EntityType="Model.StockDiscountLineStatusTable" Width="1.5" PointX="14.75" PointY="41.25" />
+        <EntityTypeShape EntityType="Model.StockDiscountLineTable" Width="1.5" PointX="39.75" PointY="17.25" />
+        <EntityTypeShape EntityType="Model.StockDiscountLineTypeTable" Width="1.5" PointX="39.75" PointY="22.25" />
+        <EntityTypeShape EntityType="Model.StockDiscountMethodTable" Width="1.5" PointX="20.75" PointY="41.25" />
+        <EntityTypeShape EntityType="Model.StockDiscountStatusTable" Width="1.5" PointX="31.75" PointY="35" />
+        <EntityTypeShape EntityType="Model.StockDiscountTable" Width="1.5" PointX="34" PointY="12.5" />
+        <EntityTypeShape EntityType="Model.StockDiscountTypeTable" Width="1.5" PointX="31.75" PointY="13" />
+        <EntityTypeShape EntityType="Model.StockEntryLineStatusTable" Width="1.5" PointX="8.25" PointY="26" />
+        <EntityTypeShape EntityType="Model.StockEntryLineTable" Width="1.5" PointX="10.5" PointY="13.5" />
+        <EntityTypeShape EntityType="Model.StockEntryLineTypeTable" Width="1.5" PointX="8.25" PointY="28.75" />
+        <EntityTypeShape EntityType="Model.StockEntryStatusTable" Width="1.5" PointX="6" PointY="86.75" />
+        <EntityTypeShape EntityType="Model.StockEntryTable" Width="1.5" PointX="8.25" PointY="73" />
+        <EntityTypeShape EntityType="Model.StockEntryTypeTable" Width="1.5" PointX="6" PointY="69.625" />
+        <EntityTypeShape EntityType="Model.StockItemBarcodeTable" Width="1.5" PointX="7.5" PointY="52.75" />
+        <EntityTypeShape EntityType="Model.StockItemByLocationTable" Width="1.5" PointX="39.75" PointY="25.25" />
+        <EntityTypeShape EntityType="Model.StockItemGroupTable" Width="1.5" PointX="3" PointY="23.625" />
+        <EntityTypeShape EntityType="Model.StockItemKindTable" Width="1.5" PointX="26.75" PointY="41.25" />
+        <EntityTypeShape EntityType="Model.StockItemStatusTable" Width="1.5" PointX="3" PointY="28.875" />
+        <EntityTypeShape EntityType="Model.StockItemTable" Width="1.5" PointX="5.25" PointY="17.375" />
+        <EntityTypeShape EntityType="Model.StockItemTypeTable" Width="1.5" PointX="3" PointY="16.125" />
+        <EntityTypeShape EntityType="Model.StockItemUnitGroupTable" Width="1.5" PointX="0.75" PointY="16.625" />
+        <EntityTypeShape EntityType="Model.StockItemUnitStatusTable" Width="1.5" PointX="0.75" PointY="23.875" />
+        <EntityTypeShape EntityType="Model.StockItemUnitTable" Width="1.5" PointX="3" PointY="19.625" />
+        <EntityTypeShape EntityType="Model.StockItemUnitTypeTable" Width="1.5" PointX="0.75" PointY="20.25" />
+        <EntityTypeShape EntityType="Model.StockLocationAddressTable" Width="1.5" PointX="10.5" PointY="56.625" />
+        <EntityTypeShape EntityType="Model.StockLocationGroupTable" Width="1.5" PointX="6" PointY="34.125" />
+        <EntityTypeShape EntityType="Model.StockLocationItemStatusTable" Width="1.5" PointX="5.25" PointY="26.75" />
+        <EntityTypeShape EntityType="Model.StockLocationItemTable" Width="1.5" PointX="7.5" PointY="18" />
+        <EntityTypeShape EntityType="Model.StockLocationRightTable" Width="1.5" PointX="10.5" PointY="42.625" />
+        <EntityTypeShape EntityType="Model.StockLocationShelfStatusTable" Width="1.5" PointX="8.25" PointY="40.125" />
+        <EntityTypeShape EntityType="Model.StockLocationShelfTable" Width="1.5" PointX="10.5" PointY="36.875" />
+        <EntityTypeShape EntityType="Model.StockLocationShelfTypeTable" Width="1.5" PointX="8.25" PointY="42.75" />
+        <EntityTypeShape EntityType="Model.StockLocationStatusTable" Width="1.5" PointX="6" PointY="31.375" />
+        <EntityTypeShape EntityType="Model.StockLocationTable" Width="1.5" PointX="8.25" PointY="32" />
+        <EntityTypeShape EntityType="Model.StockLocationTypeTable" Width="1.5" PointX="6" PointY="37.5" />
+        <EntityTypeShape EntityType="Model.StockLocationZoneTable" Width="1.5" PointX="28.75" PointY="41.25" />
+        <EntityTypeShape EntityType="Model.StockMarkupGroupTable" Width="1.5" PointX="3" PointY="31.5" />
+        <EntityTypeShape EntityType="Model.StockMarkupStatusTable" Width="1.5" PointX="26.75" PointY="15.375" />
+        <EntityTypeShape EntityType="Model.StockMarkupTable" Width="1.5" PointX="30" PointY="23" />
+        <EntityTypeShape EntityType="Model.StockMarkupTypeTable" Width="1.5" PointX="27.75" PointY="20.875" />
+        <EntityTypeShape EntityType="Model.StockPayMethodTable" Width="1.5" PointX="30.75" PointY="41.25" />
+        <EntityTypeShape EntityType="Model.StockPayPeriodTable" Width="1.5" PointX="39.75" PointY="35.25" />
+        <EntityTypeShape EntityType="Model.StockPersonGroupTable" Width="1.5" PointX="3.75" PointY="90.5" />
+        <EntityTypeShape EntityType="Model.StockPersonStatusTable" Width="1.5" PointX="3.75" PointY="96.5" />
+        <EntityTypeShape EntityType="Model.StockPersonTable" Width="1.5" PointX="6" PointY="91.625" />
+        <EntityTypeShape EntityType="Model.StockPersonTypeTable" Width="1.5" PointX="3.75" PointY="93.75" />
+        <EntityTypeShape EntityType="Model.StockPriceLineStatusTable" Width="1.5" PointX="39.75" PointY="41.25" />
+        <EntityTypeShape EntityType="Model.StockPriceLineTable" Width="1.5" PointX="10.5" PointY="78.75" />
+        <EntityTypeShape EntityType="Model.StockPriceLineTypeTable" Width="1.5" PointX="40.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.StockPriceStatusTable" Width="1.5" PointX="1.5" PointY="78.625" />
+        <EntityTypeShape EntityType="Model.StockPriceTable" Width="1.5" PointX="3.75" PointY="79.5" />
+        <EntityTypeShape EntityType="Model.StockPriceTypeTable" Width="1.5" PointX="1.5" PointY="81.375" />
+        <EntityTypeShape EntityType="Model.StockRecipeStatusTable" Width="1.5" PointX="33.75" PointY="32.75" />
+        <EntityTypeShape EntityType="Model.StockRecipeTable" Width="1.5" PointX="36" PointY="31.5" />
+        <EntityTypeShape EntityType="Model.StockRecipeTypeTable" Width="1.5" PointX="40.75" PointY="5.25" />
+        <EntityTypeShape EntityType="Model.StockSalesItemGroupNameTable" Width="1.5" PointX="19" PointY="53.875" />
+        <EntityTypeShape EntityType="Model.StockSalesItemGroupTable" Width="1.5" PointX="16.75" PointY="27.75" />
+        <EntityTypeShape EntityType="Model.StockSalesUserGroupTable" Width="1.5" PointX="40.75" PointY="8.25" />
+        <EntityTypeShape EntityType="Model.StockScaleTable" Width="1.5" PointX="40.75" PointY="13.25" />
+        <EntityTypeShape EntityType="Model.StockSupplierStatusTable" Width="1.5" PointX="40.75" PointY="29.25" />
+        <EntityTypeShape EntityType="Model.StockSupplierTypeTable" Width="1.5" PointX="40.75" PointY="32.25" />
+        <EntityTypeShape EntityType="Model.StockTaxMethodTable" Width="1.5" PointX="41.75" PointY="17.25" />
+        <EntityTypeShape EntityType="Model.StockTaxStatusTable" Width="1.5" PointX="0.75" PointY="10.125" />
+        <EntityTypeShape EntityType="Model.StockTaxTable" Width="1.5" PointX="3" PointY="10.875" />
+        <EntityTypeShape EntityType="Model.StockTaxTypeTable" Width="1.5" PointX="0.75" PointY="12.875" />
+        <EntityTypeShape EntityType="Model.StockUsageTypeTable" Width="1.5" PointX="5.25" PointY="12.875" />
+        <EntityTypeShape EntityType="Model.StockValuationTable" Width="1.5" PointX="17.75" PointY="43.25" />
+        <EntityTypeShape EntityType="Model.StockWork2110Table" Width="1.5" PointX="41.75" PointY="35.25" />
+        <EntityTypeShape EntityType="Model.StockWork2120Table" Width="1.5" PointX="42.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.StockWork2130Table" Width="1.5" PointX="42.75" PointY="20.25" />
+        <EntityTypeShape EntityType="Model.StockWork2140Table" Width="1.5" PointX="26.75" PointY="44.25" />
+        <EntityTypeShape EntityType="Model.StockWork21xZTable" Width="1.5" PointX="28.75" PointY="44.25" />
+        <EntityTypeShape EntityType="Model.StockWorkBudgetTable" Width="1.5" PointX="30.75" PointY="44.25" />
+        <EntityTypeShape EntityType="Model.StockWorkLiveTable" Width="1.5" PointX="37.75" PointY="44.25" />
+        <EntityTypeShape EntityType="Model.StockWorkTable" Width="1.5" PointX="21.75" PointY="45.25" />
+        <EntityTypeShape EntityType="Model.StockWorkValuationTable" Width="1.5" PointX="0.75" PointY="45.25" />
+        <EntityTypeShape EntityType="Model.SyncEntryStatusTable" Width="1.5" PointX="16.75" PointY="34.875" />
+        <EntityTypeShape EntityType="Model.SyncEntryTable" Width="1.5" PointX="19" PointY="31.375" />
+        <EntityTypeShape EntityType="Model.SyncEntryTypeTable" Width="1.5" PointX="16.75" PointY="31.875" />
+        <EntityTypeShape EntityType="Model.sysdiagram" Width="1.5" PointX="13.75" PointY="44.25" />
+        <EntityTypeShape EntityType="Model.zGLAccountTable" Width="1.5" PointX="2.75" PointY="45.25" />
+        <EntityTypeShape EntityType="Model.zGLAccountTable11" Width="1.5" PointX="23.75" PointY="45.25" />
+        <EntityTypeShape EntityType="Model.zPOSWorkTable" Width="1.5" PointX="43.75" PointY="34.25" />
+        <EntityTypeShape EntityType="Model.zShellSyncStatusTable" Width="1.5" PointX="43.75" PointY="17.25" />
+        <EntityTypeShape EntityType="Model.zShellSyncTable" Width="1.5" PointX="44.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.zShellSyncTypeTable" Width="1.5" PointX="44.75" PointY="7.25" />
+        <EntityTypeShape EntityType="Model.zStockEntryProcessTable" Width="1.5" PointX="7.75" PointY="46.25" />
+        <EntityTypeShape EntityType="Model.zStockEntrySubTypeTable" Width="1.5" PointX="44.75" PointY="10.25" />
+        <EntityTypeShape EntityType="Model.zzShellSyncStatusTable" Width="1.5" PointX="44.75" PointY="13.25" />
+        <EntityTypeShape EntityType="Model.zzShellSyncTable" Width="1.5" PointX="44.75" PointY="20.25" />
+        <EntityTypeShape EntityType="Model.zzShellSyncTypeTable" Width="1.5" PointX="44.75" PointY="26.25" />
+        <EntityTypeShape EntityType="Model.StockCompanyCardTableLog" Width="1.5" PointX="44.75" PointY="29.25" />
+        <EntityTypeShape EntityType="Model.StockPlanningMethodTable" Width="1.5" PointX="32.75" PointY="46.25" />
+        <EntityTypeShape EntityType="Model.zzShellSyncTable_MGroup" Width="1.5" PointX="4.75" PointY="47.25" />
+        <EntityTypeShape EntityType="Model.C2017_06_09_RSEntryATable" Width="1.5" PointX="45.75" PointY="32.25" />
+        <EntityTypeShape EntityType="Model.CashEntry00Edit0" Width="1.5" PointX="34.75" PointY="47.25" />
+        <EntityTypeShape EntityType="Model.CashEntry00Edit1" Width="1.5" PointX="45.75" PointY="16.25" />
+        <EntityTypeShape EntityType="Model.CashEntry00Edit2" Width="1.5" PointX="45.75" PointY="38.25" />
+        <EntityTypeShape EntityType="Model.CashEntryI10Edit0" Width="1.5" PointX="45.75" PointY="42.25" />
+        <EntityTypeShape EntityType="Model.CashEntryI10Edit1" Width="1.5" PointX="45.75" PointY="47.25" />
+        <EntityTypeShape EntityType="Model.CashEntryO10Edit0" Width="1.5" PointX="46.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.CashEntryO10Edit1" Width="1.5" PointX="46.75" PointY="7.25" />
+        <EntityTypeShape EntityType="Model.CashkLive01Edit1Total" Width="1.5" PointX="46.75" PointY="11.25" />
+        <EntityTypeShape EntityType="Model.CashLive01Edit0" Width="1.5" PointX="46.75" PointY="20.25" />
+        <EntityTypeShape EntityType="Model.CashLive01Edit1" Width="1.5" PointX="46.75" PointY="25.25" />
+        <EntityTypeShape EntityType="Model.CashLive01Edit1Total" Width="1.5" PointX="39.75" PointY="48.25" />
+        <EntityTypeShape EntityType="Model.CashLive02Edit0" Width="1.5" PointX="47.75" PointY="14.25" />
+        <EntityTypeShape EntityType="Model.CashLive02Edit1" Width="1.5" PointX="23.75" PointY="49.25" />
+        <EntityTypeShape EntityType="Model.CashLive02Edit1Total" Width="1.5" PointX="6.75" PointY="49.25" />
+        <EntityTypeShape EntityType="Model.CashLiveCustomerEdit0" Width="1.5" PointX="47.75" PointY="30.25" />
+        <EntityTypeShape EntityType="Model.CashLiveCustomerEdit1" Width="1.5" PointX="47.75" PointY="34.25" />
+        <EntityTypeShape EntityType="Model.CashLiveCustomerEdit1Total" Width="1.5" PointX="47.75" PointY="40.25" />
+        <EntityTypeShape EntityType="Model.CashLiveCustomerEdit2" Width="1.5" PointX="47.75" PointY="44.25" />
+        <EntityTypeShape EntityType="Model.CashLiveEntry00Edit0" Width="1.5" PointX="47.75" PointY="49.25" />
+        <EntityTypeShape EntityType="Model.CashLiveEntry00Edit1" Width="1.5" PointX="48.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.CashLiveEntry00Edit2" Width="1.5" PointX="48.75" PointY="7.25" />
+        <EntityTypeShape EntityType="Model.CashLiveSupplierEdit0" Width="1.5" PointX="48.75" PointY="18.25" />
+        <EntityTypeShape EntityType="Model.CashLiveSupplierEdit1" Width="1.5" PointX="48.75" PointY="22.25" />
+        <EntityTypeShape EntityType="Model.CashLiveSupplierEdit1Total" Width="1.5" PointX="49.75" PointY="12.25" />
+        <EntityTypeShape EntityType="Model.CashLiveSupplierEdit2" Width="1.5" PointX="49.75" PointY="28.25" />
+        <EntityTypeShape EntityType="Model.CashLocationEdit0" Width="1.5" PointX="49.75" PointY="33.25" />
+        <EntityTypeShape EntityType="Model.CashLocationEdit5" Width="1.5" PointX="49.75" PointY="36.25" />
+        <EntityTypeShape EntityType="Model.CashLocationGroupEdit0" Width="1.5" PointX="49.75" PointY="39.25" />
+        <EntityTypeShape EntityType="Model.CashLocationGroupEdit5" Width="1.5" PointX="39.75" PointY="51.25" />
+        <EntityTypeShape EntityType="Model.CashLocationList" Width="1.5" PointX="49.75" PointY="42.25" />
+        <EntityTypeShape EntityType="Model.CashWork_OnList" Width="1.5" PointX="49.75" PointY="46.25" />
+        <EntityTypeShape EntityType="Model.ExportPOSCompanyTable" Width="1.5" PointX="49.75" PointY="50.25" />
+        <EntityTypeShape EntityType="Model.ExportPOSComputerTable" Width="1.5" PointX="50.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.ExportPOSItemBarcodeTable" Width="1.5" PointX="50.75" PointY="6.25" />
+        <EntityTypeShape EntityType="Model.ExportPOSItemGroupTable" Width="1.5" PointX="50.75" PointY="9.25" />
+        <EntityTypeShape EntityType="Model.ExportPOSItemTable" Width="1.5" PointX="13.75" PointY="52.25" />
+        <EntityTypeShape EntityType="Model.ExportPOSLocationTable" Width="1.5" PointX="50.75" PointY="16.25" />
+        <EntityTypeShape EntityType="Model.ExportPOSUserTable" Width="1.5" PointX="50.75" PointY="20.25" />
+        <EntityTypeShape EntityType="Model.ExportRPOSEntryLineTable" Width="1.5" PointX="32.75" PointY="52.25" />
+        <EntityTypeShape EntityType="Model.ExportRPOSEntryTable" Width="1.5" PointX="34.75" PointY="52.25" />
+        <EntityTypeShape EntityType="Model.ExportRPOSPeriodTable" Width="1.5" PointX="50.75" PointY="24.25" />
+        <EntityTypeShape EntityType="Model.ImportPOSEntryLineTable" Width="1.5" PointX="41.75" PointY="52.25" />
+        <EntityTypeShape EntityType="Model.ImportPOSEntryTable" Width="1.5" PointX="43.75" PointY="52.25" />
+        <EntityTypeShape EntityType="Model.ImportPOSPeriodTable" Width="1.5" PointX="15.75" PointY="53.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSCarGroupTable" Width="1.5" PointX="2.75" PointY="53.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSCarTable" Width="1.5" PointX="4.75" PointY="53.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSCompanyCardTable" Width="1.5" PointX="51.75" PointY="12.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSCompanyGroupTable" Width="1.5" PointX="51.75" PointY="28.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSCompanyTable" Width="1.5" PointX="51.75" PointY="31.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSComputerTable" Width="1.5" PointX="51.75" PointY="38.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSItemBOMTable" Width="1.5" PointX="51.75" PointY="41.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSItemGroupTable" Width="1.5" PointX="51.75" PointY="46.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSItemTable" Width="1.5" PointX="45.75" PointY="53.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSItemUnitTable" Width="1.5" PointX="51.75" PointY="49.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSLocationRightTable" Width="1.5" PointX="51.75" PointY="52.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSLocationShelfTable" Width="1.5" PointX="52.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSLocationTable" Width="1.5" PointX="52.75" PointY="6.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSPersonGroupTable" Width="1.5" PointX="52.75" PointY="16.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSPersonTable" Width="1.5" PointX="52.75" PointY="19.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSSalesItemPriceTable" Width="1.5" PointX="23.75" PointY="54.25" />
+        <EntityTypeShape EntityType="Model.ImportRPOSUserTable" Width="1.5" PointX="53.75" PointY="12.25" />
+        <EntityTypeShape EntityType="Model.MyStockCompanyTable" Width="1.5" PointX="52.75" PointY="25.25" />
+        <EntityTypeShape EntityType="Model.OutstandingEntryTable" Width="1.5" PointX="53.75" PointY="28.25" />
+        <EntityTypeShape EntityType="Model.POSinTouch_CategoriesList" Width="1.5" PointX="9.75" PointY="54.25" />
+        <EntityTypeShape EntityType="Model.POSinTouch_DebitorsCategoriesList" Width="1.5" PointX="53.75" PointY="33.25" />
+        <EntityTypeShape EntityType="Model.POSinTouch_DebitorsList" Width="1.5" PointX="53.75" PointY="36.25" />
+        <EntityTypeShape EntityType="Model.POSinTouch_ProductsList" Width="1.5" PointX="53.75" PointY="40.25" />
+        <EntityTypeShape EntityType="Model.POSinTouch_WorkList" Width="1.5" PointX="53.75" PointY="43.25" />
+        <EntityTypeShape EntityType="Model.POSinTouch_WorkList2110" Width="1.5" PointX="47.75" PointY="55.25" />
+        <EntityTypeShape EntityType="Model.POSinTouch_WorkList2130" Width="1.5" PointX="53.75" PointY="50.25" />
+        <EntityTypeShape EntityType="Model.POSinTouch_Z" Width="1.5" PointX="49.75" PointY="55.25" />
+        <EntityTypeShape EntityType="Model.RSEntryAEdit0" Width="1.5" PointX="54.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.RSEntryAEdit1" Width="1.5" PointX="0.75" PointY="56.25" />
+        <EntityTypeShape EntityType="Model.RSEntryAGroupList" Width="1.5" PointX="54.75" PointY="7.25" />
+        <EntityTypeShape EntityType="Model.RSEntryAGroupTable" Width="1.5" PointX="5.75" PointY="56.25" />
+        <EntityTypeShape EntityType="Model.RSEntryALineTable" Width="1.5" PointX="54.75" PointY="16.25" />
+        <EntityTypeShape EntityType="Model.RSEntryAStatusTable" Width="1.5" PointX="54.75" PointY="19.25" />
+        <EntityTypeShape EntityType="Model.RSEntryATable" Width="1.5" PointX="54.75" PointY="22.25" />
+        <EntityTypeShape EntityType="Model.RSEntryATypeTable" Width="1.5" PointX="7.75" PointY="57.25" />
+        <EntityTypeShape EntityType="Model.RSEntryWP10Edit0" Width="1.5" PointX="55.75" PointY="10.25" />
+        <EntityTypeShape EntityType="Model.RSEntryWP10Edit1" Width="1.5" PointX="12.75" PointY="57.25" />
+        <EntityTypeShape EntityType="Model.RSEntryWP10Edit2" Width="1.5" PointX="25.75" PointY="57.25" />
+        <EntityTypeShape EntityType="Model.RSWaybillLineTable_Part" Width="1.5" PointX="55.75" PointY="28.25" />
+        <EntityTypeShape EntityType="Model.RSWaybillTable_Part" Width="1.5" PointX="27.75" PointY="57.25" />
+        <EntityTypeShape EntityType="Model.ShellComputerEdit0" Width="1.5" PointX="55.75" PointY="33.25" />
+        <EntityTypeShape EntityType="Model.ShellComputerEdit1" Width="1.5" PointX="55.75" PointY="37.25" />
+        <EntityTypeShape EntityType="Model.ShellComputerGroupEdit0" Width="1.5" PointX="55.75" PointY="40.25" />
+        <EntityTypeShape EntityType="Model.ShellComputerList" Width="1.5" PointX="55.75" PointY="43.25" />
+        <EntityTypeShape EntityType="Model.ShellDataEdit0" Width="1.5" PointX="55.75" PointY="47.25" />
+        <EntityTypeShape EntityType="Model.ShellDataEdit1" Width="1.5" PointX="55.75" PointY="51.25" />
+        <EntityTypeShape EntityType="Model.ShellDataEdit2" Width="1.5" PointX="55.75" PointY="54.25" />
+        <EntityTypeShape EntityType="Model.ShellDataGroupEdit0" Width="1.5" PointX="55.75" PointY="57.25" />
+        <EntityTypeShape EntityType="Model.ShellDataList" Width="1.5" PointX="56.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.ShellDiagnoseEdit0" Width="1.5" PointX="56.75" PointY="5.25" />
+        <EntityTypeShape EntityType="Model.ShellDiagnoseGroupEdit0" Width="1.5" PointX="56.75" PointY="15.25" />
+        <EntityTypeShape EntityType="Model.ShellDiagnoseGroupEdit5" Width="1.5" PointX="56.75" PointY="18.25" />
+        <EntityTypeShape EntityType="Model.ShellDiagnoseList" Width="1.5" PointX="17.75" PointY="58.25" />
+        <EntityTypeShape EntityType="Model.ShellFunctionTable" Width="1.5" PointX="56.75" PointY="21.25" />
+        <EntityTypeShape EntityType="Model.ShellMessageEdit0" Width="1.5" PointX="56.75" PointY="24.25" />
+        <EntityTypeShape EntityType="Model.ShellMessageGroupEdit0" Width="1.5" PointX="51.75" PointY="58.25" />
+        <EntityTypeShape EntityType="Model.ShellMessageList" Width="1.5" PointX="0.75" PointY="59.25" />
+        <EntityTypeShape EntityType="Model.ShellOperationEdit0" Width="1.5" PointX="57.75" PointY="8.25" />
+        <EntityTypeShape EntityType="Model.ShellOperationEdit1" Width="1.5" PointX="14.75" PointY="59.25" />
+        <EntityTypeShape EntityType="Model.ShellOperationGroupEdit0" Width="1.5" PointX="57.75" PointY="27.25" />
+        <EntityTypeShape EntityType="Model.ShellOperationGroupEdit1" Width="1.5" PointX="57.75" PointY="30.25" />
+        <EntityTypeShape EntityType="Model.ShellOperationList" Width="1.5" PointX="57.75" PointY="35.25" />
+        <EntityTypeShape EntityType="Model.ShellReportEdit0" Width="1.5" PointX="57.75" PointY="40.25" />
+        <EntityTypeShape EntityType="Model.ShellReportEdit1" Width="1.5" PointX="57.75" PointY="44.25" />
+        <EntityTypeShape EntityType="Model.ShellReportEdit2" Width="1.5" PointX="57.75" PointY="48.25" />
+        <EntityTypeShape EntityType="Model.ShellReportEdit5" Width="1.5" PointX="57.75" PointY="51.25" />
+        <EntityTypeShape EntityType="Model.ShellReportGroupEdit0" Width="1.5" PointX="57.75" PointY="54.25" />
+        <EntityTypeShape EntityType="Model.ShellReportGroupEdit5" Width="1.5" PointX="57.75" PointY="57.25" />
+        <EntityTypeShape EntityType="Model.ShellReportList" Width="1.5" PointX="58.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.ShellReportWorkList" Width="1.5" PointX="8.75" PointY="60.25" />
+        <EntityTypeShape EntityType="Model.ShellSessionTable" Width="1.5" PointX="58.75" PointY="14.25" />
+        <EntityTypeShape EntityType="Model.ShellSessionTable1" Width="1.5" PointX="58.75" PointY="18.25" />
+        <EntityTypeShape EntityType="Model.ShellSettingEdit0" Width="1.5" PointX="58.75" PointY="22.25" />
+        <EntityTypeShape EntityType="Model.ShellSettingEdit1" Width="1.5" PointX="53.75" PointY="60.25" />
+        <EntityTypeShape EntityType="Model.ShellSettingGroupEdit0" Width="1.5" PointX="55.75" PointY="60.25" />
+        <EntityTypeShape EntityType="Model.ShellSettingList" Width="1.5" PointX="57.75" PointY="60.25" />
+        <EntityTypeShape EntityType="Model.ShellSyncEdit0" Width="1.5" PointX="59.75" PointY="6.25" />
+        <EntityTypeShape EntityType="Model.ShellSyncList" Width="1.5" PointX="59.75" PointY="26.25" />
+        <EntityTypeShape EntityType="Model.ShellTermEdit0" Width="1.5" PointX="59.75" PointY="30.25" />
+        <EntityTypeShape EntityType="Model.ShellTermGroupEdit0" Width="1.5" PointX="59.75" PointY="11.25" />
+        <EntityTypeShape EntityType="Model.ShellTermGroupEdit5" Width="1.5" PointX="59.75" PointY="34.25" />
+        <EntityTypeShape EntityType="Model.ShellTermList" Width="1.5" PointX="59.75" PointY="37.25" />
+        <EntityTypeShape EntityType="Model.ShellUserEdit0" Width="1.5" PointX="59.75" PointY="41.25" />
+        <EntityTypeShape EntityType="Model.ShellUserEdit5" Width="1.5" PointX="39.75" PointY="61.25" />
+        <EntityTypeShape EntityType="Model.ShellUserGroupEdit0" Width="1.5" PointX="59.75" PointY="46.25" />
+        <EntityTypeShape EntityType="Model.ShellUserList" Width="1.5" PointX="59.75" PointY="49.25" />
+        <EntityTypeShape EntityType="Model.ShellUserRightTable" Width="1.5" PointX="59.75" PointY="54.25" />
+        <EntityTypeShape EntityType="Model.ShellWorkPageTable" Width="1.5" PointX="59.75" PointY="57.25" />
+        <EntityTypeShape EntityType="Model.StockAging00Edit0" Width="1.5" PointX="59.75" PointY="60.25" />
+        <EntityTypeShape EntityType="Model.StockAging00Edit1" Width="1.5" PointX="60.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.StockAging00Edit2" Width="1.5" PointX="60.75" PointY="14.25" />
+        <EntityTypeShape EntityType="Model.StockAging00Edit3" Width="1.5" PointX="14.75" PointY="62.25" />
+        <EntityTypeShape EntityType="Model.StockBalance00Edit0" Width="1.5" PointX="60.75" PointY="18.25" />
+        <EntityTypeShape EntityType="Model.StockBalance00Edit1" Width="1.5" PointX="16.75" PointY="62.25" />
+        <EntityTypeShape EntityType="Model.StockBalance00Edit2" Width="1.5" PointX="18.75" PointY="62.25" />
+        <EntityTypeShape EntityType="Model.StockBalance00Edit8" Width="1.5" PointX="41.75" PointY="62.25" />
+        <EntityTypeShape EntityType="Model.StockBalance00Edit9" Width="1.5" PointX="43.75" PointY="62.25" />
+        <EntityTypeShape EntityType="Model.StockBalance10Edit0" Width="1.5" PointX="49.75" PointY="62.25" />
+        <EntityTypeShape EntityType="Model.StockBalance10Edit1" Width="1.5" PointX="61.75" PointY="6.25" />
+        <EntityTypeShape EntityType="Model.StockBalance10Edit9" Width="1.5" PointX="10.75" PointY="63.25" />
+        <EntityTypeShape EntityType="Model.StockBalance20Edit0" Width="1.5" PointX="61.75" PointY="23.25" />
+        <EntityTypeShape EntityType="Model.StockBalance20Edit1" Width="1.5" PointX="61.75" PointY="28.25" />
+        <EntityTypeShape EntityType="Model.StockBalance20Edit1Total" Width="1.5" PointX="61.75" PointY="35.25" />
+        <EntityTypeShape EntityType="Model.StockBalance20Edit2" Width="1.5" PointX="61.75" PointY="38.25" />
+        <EntityTypeShape EntityType="Model.StockBalance20Edit9" Width="1.5" PointX="61.75" PointY="44.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanEdit0" Width="1.5" PointX="45.75" PointY="63.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanEdit1" Width="1.5" PointX="61.75" PointY="50.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanEdit2" Width="1.5" PointX="61.75" PointY="53.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanEdit3" Width="1.5" PointX="51.75" PointY="63.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanEdit4" Width="1.5" PointX="53.75" PointY="63.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanEdit5" Width="1.5" PointX="61.75" PointY="56.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanEdit6" Width="1.5" PointX="61.75" PointY="59.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanEdit7" Width="1.5" PointX="61.75" PointY="62.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanEdit8" Width="1.5" PointX="62.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanEdit9" Width="1.5" PointX="62.75" PointY="12.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanGroupEdit0" Width="1.5" PointX="0.75" PointY="62.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanGroupEdit5" Width="1.5" PointX="62.75" PointY="18.25" />
+        <EntityTypeShape EntityType="Model.StockBOMPlanList" Width="1.5" PointX="23.75" PointY="64.25" />
+        <EntityTypeShape EntityType="Model.StockBudget00Edit0" Width="1.5" PointX="29.75" PointY="64.25" />
+        <EntityTypeShape EntityType="Model.StockBudget00Edit1" Width="1.5" PointX="55.75" PointY="64.25" />
+        <EntityTypeShape EntityType="Model.StockBudget00Edit2" Width="1.5" PointX="63.75" PointY="5.25" />
+        <EntityTypeShape EntityType="Model.StockBudget00Edit2W" Width="1.5" PointX="63.75" PointY="22.25" />
+        <EntityTypeShape EntityType="Model.StockBudget00Edit3" Width="1.5" PointX="25.75" PointY="65.25" />
+        <EntityTypeShape EntityType="Model.StockBudget00Edit3W" Width="1.5" PointX="63.75" PointY="31.25" />
+        <EntityTypeShape EntityType="Model.StockBudget00Edit4" Width="1.5" PointX="63.75" PointY="40.25" />
+        <EntityTypeShape EntityType="Model.StockBudget00Edit7" Width="1.5" PointX="63.75" PointY="45.25" />
+        <EntityTypeShape EntityType="Model.StockBudget00Edit8" Width="1.5" PointX="63.75" PointY="50.25" />
+        <EntityTypeShape EntityType="Model.StockBudget00Edit9" Width="1.5" PointX="63.75" PointY="56.25" />
+        <EntityTypeShape EntityType="Model.StockCarEdit0" Width="1.5" PointX="57.75" PointY="65.25" />
+        <EntityTypeShape EntityType="Model.StockCarGroupEdit0" Width="1.5" PointX="63.75" PointY="61.25" />
+        <EntityTypeShape EntityType="Model.StockCarGroupEdit5" Width="1.5" PointX="59.75" PointY="65.25" />
+        <EntityTypeShape EntityType="Model.StockCarList" Width="1.5" PointX="61.75" PointY="65.25" />
+        <EntityTypeShape EntityType="Model.StockCompanyEdit0" Width="1.5" PointX="63.75" PointY="64.25" />
+        <EntityTypeShape EntityType="Model.StockCompanyList" Width="1.5" PointX="64.75" PointY="12.25" />
+        <EntityTypeShape EntityType="Model.StockCustomerEdit0" Width="1.5" PointX="34.75" PointY="66.25" />
+        <EntityTypeShape EntityType="Model.StockCustomerEdit2" Width="1.5" PointX="64.75" PointY="16.25" />
+        <EntityTypeShape EntityType="Model.StockCustomerEdit3" Width="1.5" PointX="5.75" PointY="66.25" />
+        <EntityTypeShape EntityType="Model.StockCustomerEdit5" Width="1.5" PointX="39.75" PointY="66.25" />
+        <EntityTypeShape EntityType="Model.StockCustomerGroupEdit0" Width="1.5" PointX="64.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.StockCustomerGroupEdit1" Width="1.5" PointX="41.75" PointY="66.25" />
+        <EntityTypeShape EntityType="Model.StockCustomerGroupTable" Width="1.5" PointX="7.75" PointY="66.25" />
+        <EntityTypeShape EntityType="Model.StockCustomerList" Width="1.5" PointX="51.75" PointY="66.25" />
+        <EntityTypeShape EntityType="Model.StockCustomerTable" Width="1.5" PointX="65.75" PointY="5.25" />
+        <EntityTypeShape EntityType="Model.StockDeliveryEdit0" Width="1.5" PointX="18.75" PointY="67.25" />
+        <EntityTypeShape EntityType="Model.StockDeliveryGroupEdit0" Width="1.5" PointX="65.75" PointY="21.25" />
+        <EntityTypeShape EntityType="Model.StockDeliveryGroupEdit5" Width="1.5" PointX="65.75" PointY="24.25" />
+        <EntityTypeShape EntityType="Model.StockDeliveryList" Width="1.5" PointX="65.75" PointY="27.25" />
+        <EntityTypeShape EntityType="Model.StockDiscountEdit0" Width="1.5" PointX="65.75" PointY="31.25" />
+        <EntityTypeShape EntityType="Model.StockDiscountEdit1" Width="1.5" PointX="31.75" PointY="67.25" />
+        <EntityTypeShape EntityType="Model.StockDiscountGroupEdit0" Width="1.5" PointX="65.75" PointY="35.25" />
+        <EntityTypeShape EntityType="Model.StockDiscountGroupEdit5" Width="1.5" PointX="65.75" PointY="38.25" />
+        <EntityTypeShape EntityType="Model.StockDiscountList" Width="1.5" PointX="65.75" PointY="41.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2110Edit0" Width="1.5" PointX="65.75" PointY="45.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2110Edit1" Width="1.5" PointX="43.75" PointY="67.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2110Edit2_Fiscal" Width="1.5" PointX="45.75" PointY="67.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2110Edit2_FiscalDitails" Width="1.5" PointX="47.75" PointY="67.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2110Edit2_NonFiscal" Width="1.5" PointX="65.75" PointY="53.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2120Edit0" Width="1.5" PointX="65.75" PointY="56.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2120Edit1" Width="1.5" PointX="65.75" PointY="64.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2120Edit2" Width="1.5" PointX="66.75" PointY="12.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2122Edit0" Width="1.5" PointX="12.75" PointY="68.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2122Edit1" Width="1.5" PointX="66.75" PointY="16.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2123Edit0" Width="1.5" PointX="14.75" PointY="68.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2130Edit0" Width="1.5" PointX="36.75" PointY="68.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2130Edit1" Width="1.5" PointX="67.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2130Edit2" Width="1.5" PointX="67.75" PointY="7.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2130Edit2_Fiscal" Width="1.5" PointX="8.75" PointY="69.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2130Edit2_FiscalDitails" Width="1.5" PointX="67.75" PointY="21.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2130Edit2_NonFiscal" Width="1.5" PointX="67.75" PointY="24.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2140Edit0" Width="1.5" PointX="67.75" PointY="27.25" />
+        <EntityTypeShape EntityType="Model.StockEntry2140Edit1" Width="1.5" PointX="67.75" PointY="35.25" />
+        <EntityTypeShape EntityType="Model.StockEntry21xZEdit0" Width="1.5" PointX="67.75" PointY="40.25" />
+        <EntityTypeShape EntityType="Model.StockEntry21xZEdit1" Width="1.5" PointX="67.75" PointY="49.25" />
+        <EntityTypeShape EntityType="Model.StockEntry21xZList" Width="1.5" PointX="67.75" PointY="54.25" />
+        <EntityTypeShape EntityType="Model.StockEntry6300Edit0" Width="1.5" PointX="67.75" PointY="58.25" />
+        <EntityTypeShape EntityType="Model.StockEntryDP9Edit0" Width="1.5" PointX="57.75" PointY="69.25" />
+        <EntityTypeShape EntityType="Model.StockEntryDP9Edit1" Width="1.5" PointX="59.75" PointY="69.25" />
+        <EntityTypeShape EntityType="Model.StockEntryDP9Edit2" Width="1.5" PointX="67.75" PointY="63.25" />
+        <EntityTypeShape EntityType="Model.StockEntryI10Edit0" Width="1.5" PointX="65.75" PointY="69.25" />
+        <EntityTypeShape EntityType="Model.StockEntryI10Edit1" Width="1.5" PointX="67.75" PointY="68.25" />
+        <EntityTypeShape EntityType="Model.StockEntryI10Edit2" Width="1.5" PointX="0.75" PointY="70.25" />
+        <EntityTypeShape EntityType="Model.StockEntryI10Edit4" Width="1.5" PointX="68.75" PointY="12.25" />
+        <EntityTypeShape EntityType="Model.StockEntryI10Edit5" Width="1.5" PointX="68.75" PointY="16.25" />
+        <EntityTypeShape EntityType="Model.StockEntryI12Edit0" Width="1.5" PointX="16.75" PointY="70.25" />
+        <EntityTypeShape EntityType="Model.StockEntryI12Edit1" Width="1.5" PointX="18.75" PointY="70.25" />
+        <EntityTypeShape EntityType="Model.StockEntryI12Edit12" Width="1.5" PointX="20.75" PointY="70.25" />
+        <EntityTypeShape EntityType="Model.StockEntryI12Edit2" Width="1.5" PointX="22.75" PointY="70.25" />
+        <EntityTypeShape EntityType="Model.StockEntryI12Edit3" Width="1.5" PointX="27.75" PointY="70.25" />
+        <EntityTypeShape EntityType="Model.StockEntryLine_BOMTable" Width="1.5" PointX="47.75" PointY="70.25" />
+        <EntityTypeShape EntityType="Model.StockEntryM10Edit0" Width="1.5" PointX="49.75" PointY="70.25" />
+        <EntityTypeShape EntityType="Model.StockEntryM10Edit1" Width="1.5" PointX="51.75" PointY="70.25" />
+        <EntityTypeShape EntityType="Model.StockEntryM10Edit2" Width="1.5" PointX="61.75" PointY="70.25" />
+        <EntityTypeShape EntityType="Model.StockEntryM10Edit3" Width="1.5" PointX="69.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.StockEntryM10Edit5" Width="1.5" PointX="69.75" PointY="6.25" />
+        <EntityTypeShape EntityType="Model.StockEntryM10List" Width="1.5" PointX="69.75" PointY="20.25" />
+        <EntityTypeShape EntityType="Model.StockEntryMatrix_R2" Width="1.5" PointX="69.75" PointY="23.25" />
+        <EntityTypeShape EntityType="Model.StockEntryP10Edit0" Width="1.5" PointX="29.75" PointY="71.25" />
+        <EntityTypeShape EntityType="Model.StockEntryP10Edit1" Width="1.5" PointX="69.75" PointY="33.25" />
+        <EntityTypeShape EntityType="Model.StockEntryP10Edit1_2" Width="1.5" PointX="31.75" PointY="71.25" />
+        <EntityTypeShape EntityType="Model.StockEntryP10StatusTable" Width="1.5" PointX="69.75" PointY="39.25" />
+        <EntityTypeShape EntityType="Model.StockEntryP10Table" Width="1.5" PointX="38.75" PointY="71.25" />
+        <EntityTypeShape EntityType="Model.StockEntryP20Edit0" Width="1.5" PointX="69.75" PointY="42.25" />
+        <EntityTypeShape EntityType="Model.StockEntryP20Edit1" Width="1.5" PointX="40.75" PointY="71.25" />
+        <EntityTypeShape EntityType="Model.StockEntryP30Edit0" Width="1.5" PointX="69.75" PointY="48.25" />
+        <EntityTypeShape EntityType="Model.StockEntryP30Edit1" Width="1.5" PointX="69.75" PointY="53.25" />
+        <EntityTypeShape EntityType="Model.StockEntryP50Edit0" Width="1.5" PointX="69.75" PointY="57.25" />
+        <EntityTypeShape EntityType="Model.StockEntryP50Edit1" Width="1.5" PointX="69.75" PointY="63.25" />
+        <EntityTypeShape EntityType="Model.StockEntryPrintReportTable" Width="1.5" PointX="69.75" PointY="69.25" />
+        <EntityTypeShape EntityType="Model.StockEntryPrintTable" Width="1.5" PointX="70.75" PointY="10.25" />
+        <EntityTypeShape EntityType="Model.StockEntryR10Edit0" Width="1.5" PointX="24.75" PointY="72.25" />
+        <EntityTypeShape EntityType="Model.StockEntryR10Edit1" Width="1.5" PointX="42.75" PointY="72.25" />
+        <EntityTypeShape EntityType="Model.StockEntryR10Edit2" Width="1.5" PointX="44.75" PointY="72.25" />
+        <EntityTypeShape EntityType="Model.StockEntryRP9Edit0" Width="1.5" PointX="53.75" PointY="72.25" />
+        <EntityTypeShape EntityType="Model.StockEntryRP9Edit1" Width="1.5" PointX="71.75" PointY="16.25" />
+        <EntityTypeShape EntityType="Model.StockEntryRP9Edit2" Width="1.5" PointX="71.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.StockEntryRP9Edit3" Width="1.5" PointX="71.75" PointY="25.25" />
+        <EntityTypeShape EntityType="Model.StockEntryRP9Edit4" Width="1.5" PointX="71.75" PointY="29.25" />
+        <EntityTypeShape EntityType="Model.StockEntryRP9Edit5" Width="1.5" PointX="71.75" PointY="33.25" />
+        <EntityTypeShape EntityType="Model.StockEntryRP9Edit6" Width="1.5" PointX="33.75" PointY="73.25" />
+        <EntityTypeShape EntityType="Model.StockEntryS10Edit0" Width="1.5" PointX="71.75" PointY="37.25" />
+        <EntityTypeShape EntityType="Model.StockEntryS10Edit1" Width="1.5" PointX="71.75" PointY="43.25" />
+        <EntityTypeShape EntityType="Model.StockEntryS10Edit4" Width="1.5" PointX="71.75" PointY="48.25" />
+        <EntityTypeShape EntityType="Model.StockEntryS19Edit0" Width="1.5" PointX="71.75" PointY="52.25" />
+        <EntityTypeShape EntityType="Model.StockEntryS19Edit1" Width="1.5" PointX="55.75" PointY="73.25" />
+        <EntityTypeShape EntityType="Model.StockEntryS20Edit0" Width="1.5" PointX="71.75" PointY="58.25" />
+        <EntityTypeShape EntityType="Model.StockEntryS20Edit1" Width="1.5" PointX="71.75" PointY="64.25" />
+        <EntityTypeShape EntityType="Model.StockEntrySP9Edit0" Width="1.5" PointX="71.75" PointY="69.25" />
+        <EntityTypeShape EntityType="Model.StockEntrySP9Edit1" Width="1.5" PointX="72.75" PointY="8.25" />
+        <EntityTypeShape EntityType="Model.StockEntrySP9Edit12" Width="1.5" PointX="0.75" PointY="74.25" />
+        <EntityTypeShape EntityType="Model.StockEntrySP9Edit2" Width="1.5" PointX="26.75" PointY="74.25" />
+        <EntityTypeShape EntityType="Model.StockEntryT10Edit0" Width="1.5" PointX="57.75" PointY="74.25" />
+        <EntityTypeShape EntityType="Model.StockEntryT10Edit1" Width="1.5" PointX="71.75" PointY="74.25" />
+        <EntityTypeShape EntityType="Model.StockEntryT13Edit0" Width="1.5" PointX="73.75" PointY="13.25" />
+        <EntityTypeShape EntityType="Model.StockEntryT13Edit1" Width="1.5" PointX="73.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.StockEntryT13Edit15" Width="1.5" PointX="73.75" PointY="20.25" />
+        <EntityTypeShape EntityType="Model.StockEntryT13Edit5" Width="1.5" PointX="73.75" PointY="26.25" />
+        <EntityTypeShape EntityType="Model.StockEntryT19Edit0" Width="1.5" PointX="73.75" PointY="32.25" />
+        <EntityTypeShape EntityType="Model.StockEntryT19Edit1" Width="1.5" PointX="73.75" PointY="38.25" />
+        <EntityTypeShape EntityType="Model.StockEntryW00Edit0" Width="1.5" PointX="73.75" PointY="43.25" />
+        <EntityTypeShape EntityType="Model.StockEntryW00Edit1" Width="1.5" PointX="73.75" PointY="49.25" />
+        <EntityTypeShape EntityType="Model.StockItemBOMTable" Width="1.5" PointX="49.75" PointY="75.25" />
+        <EntityTypeShape EntityType="Model.StockItemEdit1" Width="1.5" PointX="73.75" PointY="54.25" />
+        <EntityTypeShape EntityType="Model.StockItemEdit2" Width="1.5" PointX="73.75" PointY="59.25" />
+        <EntityTypeShape EntityType="Model.StockItemEdit3" Width="1.5" PointX="59.75" PointY="75.25" />
+        <EntityTypeShape EntityType="Model.StockItemEdit4" Width="1.5" PointX="61.75" PointY="75.25" />
+        <EntityTypeShape EntityType="Model.StockItemGroupEdit0" Width="1.5" PointX="73.75" PointY="64.25" />
+        <EntityTypeShape EntityType="Model.StockItemT0Edit0" Width="1.5" PointX="63.75" PointY="75.25" />
+        <EntityTypeShape EntityType="Model.StockItemT0Edit1" Width="1.5" PointX="65.75" PointY="75.25" />
+        <EntityTypeShape EntityType="Model.StockItemT0Edit4" Width="1.5" PointX="73.75" PointY="69.25" />
+        <EntityTypeShape EntityType="Model.StockItemT0GroupEdit0" Width="1.5" PointX="73.75" PointY="72.25" />
+        <EntityTypeShape EntityType="Model.StockItemT0GroupEdit1" Width="1.5" PointX="74.75" PointY="7.25" />
+        <EntityTypeShape EntityType="Model.StockItemT0GroupTable" Width="1.5" PointX="12.75" PointY="76.25" />
+        <EntityTypeShape EntityType="Model.StockItemT0StatusTable" Width="1.5" PointX="14.75" PointY="76.25" />
+        <EntityTypeShape EntityType="Model.StockItemT0Table" Width="1.5" PointX="16.75" PointY="76.25" />
+        <EntityTypeShape EntityType="Model.StockItemT0TypeTable" Width="1.5" PointX="18.75" PointY="76.25" />
+        <EntityTypeShape EntityType="Model.StockItemT1Edit0" Width="1.5" PointX="20.75" PointY="76.25" />
+        <EntityTypeShape EntityType="Model.StockItemT1Edit1" Width="1.5" PointX="35.75" PointY="76.25" />
+        <EntityTypeShape EntityType="Model.StockItemT1GroupEdit0" Width="1.5" PointX="37.75" PointY="76.25" />
+        <EntityTypeShape EntityType="Model.StockItemT1GroupEdit1" Width="1.5" PointX="67.75" PointY="76.25" />
+        <EntityTypeShape EntityType="Model.StockItemT1GroupTable" Width="1.5" PointX="73.75" PointY="76.25" />
+        <EntityTypeShape EntityType="Model.StockItemT1StatusTable" Width="1.5" PointX="75.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.StockItemT1Table" Width="1.5" PointX="75.75" PointY="11.25" />
+        <EntityTypeShape EntityType="Model.StockItemT2Edit0" Width="1.5" PointX="75.75" PointY="16.25" />
+        <EntityTypeShape EntityType="Model.StockItemT2Edit1" Width="1.5" PointX="75.75" PointY="23.25" />
+        <EntityTypeShape EntityType="Model.StockItemT2Edit2" Width="1.5" PointX="75.75" PointY="27.25" />
+        <EntityTypeShape EntityType="Model.StockItemT2Edit3" Width="1.5" PointX="28.75" PointY="77.25" />
+        <EntityTypeShape EntityType="Model.StockItemT2Edit4" Width="1.5" PointX="2.75" PointY="7.25" />
+        <EntityTypeShape EntityType="Model.StockItemT2Edit5" Width="1.5" PointX="75.75" PointY="31.25" />
+        <EntityTypeShape EntityType="Model.StockItemT2GroupEdit0" Width="1.5" PointX="30.75" PointY="77.25" />
+        <EntityTypeShape EntityType="Model.StockItemT2GroupEdit5" Width="1.5" PointX="75.75" PointY="34.25" />
+        <EntityTypeShape EntityType="Model.StockItemT2GroupTable" Width="1.5" PointX="75.75" PointY="39.25" />
+        <EntityTypeShape EntityType="Model.StockItemT2List" Width="1.5" PointX="39.75" PointY="77.25" />
+        <EntityTypeShape EntityType="Model.StockItemT2StatusTable" Width="1.5" PointX="75.75" PointY="43.25" />
+        <EntityTypeShape EntityType="Model.StockItemT2Table" Width="1.5" PointX="41.75" PointY="77.25" />
+        <EntityTypeShape EntityType="Model.StockItemT2TypeTable" Width="1.5" PointX="75.75" PointY="46.25" />
+        <EntityTypeShape EntityType="Model.StockItemT3Edit0" Width="1.5" PointX="75.75" PointY="49.25" />
+        <EntityTypeShape EntityType="Model.StockItemT3Edit1" Width="1.5" PointX="51.75" PointY="77.25" />
+        <EntityTypeShape EntityType="Model.StockItemT3Edit2" Width="1.5" PointX="75.75" PointY="55.25" />
+        <EntityTypeShape EntityType="Model.StockItemT3Edit3" Width="1.5" PointX="75.75" PointY="60.25" />
+        <EntityTypeShape EntityType="Model.StockItemT3Edit4" Width="1.5" PointX="75.75" PointY="64.25" />
+        <EntityTypeShape EntityType="Model.StockItemT3GroupEdit0" Width="1.5" PointX="75.75" PointY="68.25" />
+        <EntityTypeShape EntityType="Model.StockItemT3GroupEdit5" Width="1.5" PointX="75.75" PointY="71.25" />
+        <EntityTypeShape EntityType="Model.StockItemT3GroupTable" Width="1.5" PointX="75.75" PointY="75.25" />
+        <EntityTypeShape EntityType="Model.StockItemT3List" Width="1.5" PointX="76.75" PointY="5.25" />
+        <EntityTypeShape EntityType="Model.StockItemT3StatusTable" Width="1.5" PointX="22.75" PointY="78.25" />
+        <EntityTypeShape EntityType="Model.StockItemT3Table" Width="1.5" PointX="32.75" PointY="78.25" />
+        <EntityTypeShape EntityType="Model.StockItemT3TypeTable" Width="1.5" PointX="43.75" PointY="78.25" />
+        <EntityTypeShape EntityType="Model.StockItemT5Edit1" Width="1.5" PointX="53.75" PointY="78.25" />
+        <EntityTypeShape EntityType="Model.StockItemT5Edit2" Width="1.5" PointX="75.75" PointY="78.25" />
+        <EntityTypeShape EntityType="Model.StockItemT5GroupEdit0" Width="1.5" PointX="77.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.StockItemT5GroupTable" Width="1.5" PointX="77.75" PointY="11.25" />
+        <EntityTypeShape EntityType="Model.StockItemT5StatusTable" Width="1.5" PointX="77.75" PointY="14.25" />
+        <EntityTypeShape EntityType="Model.StockItemT5TypeTable" Width="1.5" PointX="77.75" PointY="17.25" />
+        <EntityTypeShape EntityType="Model.StockItemUnitEdit0" Width="1.5" PointX="77.75" PointY="20.25" />
+        <EntityTypeShape EntityType="Model.StockItemUnitGroupEdit0" Width="1.5" PointX="77.75" PointY="23.25" />
+        <EntityTypeShape EntityType="Model.StockItemUnitGroupEdit5" Width="1.5" PointX="77.75" PointY="26.25" />
+        <EntityTypeShape EntityType="Model.StockItemUnitList" Width="1.5" PointX="24.75" PointY="79.25" />
+        <EntityTypeShape EntityType="Model.StockLiveEntry00Edit0" Width="1.5" PointX="77.75" PointY="29.25" />
+        <EntityTypeShape EntityType="Model.StockLiveEntry00Edit1" Width="1.5" PointX="77.75" PointY="33.25" />
+        <EntityTypeShape EntityType="Model.StockLiveEntry00Edit2" Width="1.5" PointX="34.75" PointY="79.25" />
+        <EntityTypeShape EntityType="Model.StockLiveEntry00Edit3" Width="1.5" PointX="77.75" PointY="40.25" />
+        <EntityTypeShape EntityType="Model.StockLiveHeaders00Edit0" Width="1.5" PointX="77.75" PointY="46.25" />
+        <EntityTypeShape EntityType="Model.StockLiveHeaders00Edit1" Width="1.5" PointX="77.75" PointY="52.25" />
+        <EntityTypeShape EntityType="Model.StockLiveHeaders00Edit1Total" Width="1.5" PointX="77.75" PointY="59.25" />
+        <EntityTypeShape EntityType="Model.StockLiveHeaders02Edit0" Width="1.5" PointX="59.75" PointY="79.25" />
+        <EntityTypeShape EntityType="Model.StockLiveHeaders02Edit1" Width="1.5" PointX="77.75" PointY="63.25" />
+        <EntityTypeShape EntityType="Model.StockLiveHeaders02Edit1Total" Width="1.5" PointX="77.75" PointY="71.25" />
+        <EntityTypeShape EntityType="Model.StockLiveMovement00Edit0" Width="1.5" PointX="69.75" PointY="79.25" />
+        <EntityTypeShape EntityType="Model.StockLiveMovement00Edit1" Width="1.5" PointX="77.75" PointY="75.25" />
+        <EntityTypeShape EntityType="Model.StockLiveMovement00Edit1Total" Width="1.5" PointX="78.75" PointY="5.25" />
+        <EntityTypeShape EntityType="Model.StockLiveMovement09Edit0" Width="1.5" PointX="12.75" PointY="80.25" />
+        <EntityTypeShape EntityType="Model.StockLiveMovement10Edit0" Width="1.5" PointX="36.75" PointY="80.25" />
+        <EntityTypeShape EntityType="Model.StockLiveMovement10Edit1" Width="1.5" PointX="55.75" PointY="80.25" />
+        <EntityTypeShape EntityType="Model.StockLiveMovement20Edit0" Width="1.5" PointX="65.75" PointY="80.25" />
+        <EntityTypeShape EntityType="Model.StockLiveMovement20Edit1" Width="1.5" PointX="71.75" PointY="80.25" />
+        <EntityTypeShape EntityType="Model.StockLivePrice00Edit0" Width="1.5" PointX="79.75" PointY="9.25" />
+        <EntityTypeShape EntityType="Model.StockLivePrice00Edit1" Width="1.5" PointX="79.75" PointY="13.25" />
+        <EntityTypeShape EntityType="Model.StockLocationEdit0" Width="1.5" PointX="79.75" PointY="19.25" />
+        <EntityTypeShape EntityType="Model.StockLocationEdit1" Width="1.5" PointX="79.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.StockLocationEdit4" Width="1.5" PointX="79.75" PointY="24.25" />
+        <EntityTypeShape EntityType="Model.StockLocationEdit5" Width="1.5" PointX="26.75" PointY="81.25" />
+        <EntityTypeShape EntityType="Model.StockLocationEdit6" Width="1.5" PointX="79.75" PointY="30.25" />
+        <EntityTypeShape EntityType="Model.StockLocationEdit9" Width="1.5" PointX="28.75" PointY="81.25" />
+        <EntityTypeShape EntityType="Model.StockLocationGroupEdit0" Width="1.5" PointX="79.75" PointY="33.25" />
+        <EntityTypeShape EntityType="Model.StockLocationList" Width="1.5" PointX="79.75" PointY="36.25" />
+        <EntityTypeShape EntityType="Model.StockMarkupEdit0" Width="1.5" PointX="79.75" PointY="40.25" />
+        <EntityTypeShape EntityType="Model.StockMarkupGroupEdit0" Width="1.5" PointX="79.75" PointY="45.25" />
+        <EntityTypeShape EntityType="Model.StockMarkupGroupEdit5" Width="1.5" PointX="43.75" PointY="81.25" />
+        <EntityTypeShape EntityType="Model.StockMarkupList" Width="1.5" PointX="79.75" PointY="48.25" />
+        <EntityTypeShape EntityType="Model.StockPBalance10Edit0" Width="1.5" PointX="49.75" PointY="81.25" />
+        <EntityTypeShape EntityType="Model.StockPBalance10Edit1" Width="1.5" PointX="79.75" PointY="52.25" />
+        <EntityTypeShape EntityType="Model.StockPBalance10Edit1Total" Width="1.5" PointX="79.75" PointY="58.25" />
+        <EntityTypeShape EntityType="Model.StockPBalance20Edit0" Width="1.5" PointX="79.75" PointY="62.25" />
+        <EntityTypeShape EntityType="Model.StockPBalance20Edit1" Width="1.5" PointX="61.75" PointY="81.25" />
+        <EntityTypeShape EntityType="Model.StockPBalance20Edit1Total" Width="1.5" PointX="79.75" PointY="67.25" />
+        <EntityTypeShape EntityType="Model.StockPersonEdit0" Width="1.5" PointX="79.75" PointY="71.25" />
+        <EntityTypeShape EntityType="Model.StockPersonGroupEdit0" Width="1.5" PointX="79.75" PointY="77.25" />
+        <EntityTypeShape EntityType="Model.StockPersonGroupEdit5" Width="1.5" PointX="79.75" PointY="80.25" />
+        <EntityTypeShape EntityType="Model.StockPersonList" Width="1.5" PointX="80.75" PointY="5.25" />
+        <EntityTypeShape EntityType="Model.StockPurchase00Edit0" Width="1.5" PointX="14.75" PointY="82.25" />
+        <EntityTypeShape EntityType="Model.StockPurchase00Edit1" Width="1.5" PointX="16.75" PointY="82.25" />
+        <EntityTypeShape EntityType="Model.StockPurchase00Edit1Total" Width="1.5" PointX="18.75" PointY="82.25" />
+        <EntityTypeShape EntityType="Model.StockPurchase10Edit0" Width="1.5" PointX="20.75" PointY="82.25" />
+        <EntityTypeShape EntityType="Model.StockPurchase10Edit1" Width="1.5" PointX="38.75" PointY="82.25" />
+        <EntityTypeShape EntityType="Model.StockPurchase10Edit1Total" Width="1.5" PointX="40.75" PointY="82.25" />
+        <EntityTypeShape EntityType="Model.StockPurchase20Edit0" Width="1.5" PointX="81.75" PointY="9.25" />
+        <EntityTypeShape EntityType="Model.StockPurchase20Edit1" Width="1.5" PointX="81.75" PointY="14.25" />
+        <EntityTypeShape EntityType="Model.StockPurchase20Edit1Total" Width="1.5" PointX="81.75" PointY="20.25" />
+        <EntityTypeShape EntityType="Model.StockPurchase20Edit2" Width="1.5" PointX="81.75" PointY="24.25" />
+        <EntityTypeShape EntityType="Model.StockPurchase20Edit3" Width="1.5" PointX="22.75" PointY="83.25" />
+        <EntityTypeShape EntityType="Model.StockPurchase20Edit3Total" Width="1.5" PointX="81.75" PointY="30.25" />
+        <EntityTypeShape EntityType="Model.StockSales00Edit0" Width="1.5" PointX="30.75" PointY="83.25" />
+        <EntityTypeShape EntityType="Model.StockSales00Edit1" Width="1.5" PointX="81.75" PointY="34.25" />
+        <EntityTypeShape EntityType="Model.StockSales00Edit1Total" Width="1.5" PointX="81.75" PointY="40.25" />
+        <EntityTypeShape EntityType="Model.StockSales10Edit0" Width="1.5" PointX="81.75" PointY="44.25" />
+        <EntityTypeShape EntityType="Model.StockSales10Edit1" Width="1.5" PointX="81.75" PointY="50.25" />
+        <EntityTypeShape EntityType="Model.StockSales10Edit1Total" Width="1.5" PointX="51.75" PointY="83.25" />
+        <EntityTypeShape EntityType="Model.StockSales20Edit0" Width="1.5" PointX="81.75" PointY="57.25" />
+        <EntityTypeShape EntityType="Model.StockSales20Edit1" Width="1.5" PointX="81.75" PointY="62.25" />
+        <EntityTypeShape EntityType="Model.StockSales20Edit1Total" Width="1.5" PointX="81.75" PointY="69.25" />
+        <EntityTypeShape EntityType="Model.StockSales20Edit2" Width="1.5" PointX="81.75" PointY="73.25" />
+        <EntityTypeShape EntityType="Model.StockSales20Edit3" Width="1.5" PointX="73.75" PointY="83.25" />
+        <EntityTypeShape EntityType="Model.StockSales20Edit4" Width="1.5" PointX="75.75" PointY="83.25" />
+        <EntityTypeShape EntityType="Model.StockSalesItemEdit0" Width="1.5" PointX="81.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.StockSalesItemGroupList" Width="1.5" PointX="81.75" PointY="79.25" />
+        <EntityTypeShape EntityType="Model.StockSalesItemList" Width="1.5" PointX="77.75" PointY="83.25" />
+        <EntityTypeShape EntityType="Model.StockSalesItemStatusTable" Width="1.5" PointX="79.75" PointY="83.25" />
+        <EntityTypeShape EntityType="Model.StockSalesItemTable" Width="1.5" PointX="81.75" PointY="82.25" />
+        <EntityTypeShape EntityType="Model.StockSalesItemTypeTable" Width="1.5" PointX="0.75" PointY="84.25" />
+        <EntityTypeShape EntityType="Model.StockSalesPriceEdit0" Width="1.5" PointX="24.75" PointY="84.25" />
+        <EntityTypeShape EntityType="Model.StockSalesPriceGroupEdit0" Width="1.5" PointX="82.75" PointY="5.25" />
+        <EntityTypeShape EntityType="Model.StockSalesPriceGroupEdit5" Width="1.5" PointX="26.75" PointY="84.25" />
+        <EntityTypeShape EntityType="Model.StockSalesPriceGroupTable" Width="1.5" PointX="83.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.StockSalesPriceList" Width="1.5" PointX="83.75" PointY="8.25" />
+        <EntityTypeShape EntityType="Model.StockSalesPriceStatusTable" Width="1.5" PointX="83.75" PointY="13.25" />
+        <EntityTypeShape EntityType="Model.StockSalesPriceTable" Width="1.5" PointX="83.75" PointY="16.25" />
+        <EntityTypeShape EntityType="Model.StockSupplierEdit0" Width="1.5" PointX="83.75" PointY="22.25" />
+        <EntityTypeShape EntityType="Model.StockSupplierEdit1" Width="1.5" PointX="83.75" PointY="28.25" />
+        <EntityTypeShape EntityType="Model.StockSupplierGroupEdit0" Width="1.5" PointX="83.75" PointY="33.25" />
+        <EntityTypeShape EntityType="Model.StockSupplierGroupEdit1" Width="1.5" PointX="32.75" PointY="85.25" />
+        <EntityTypeShape EntityType="Model.StockSupplierGroupTable" Width="1.5" PointX="83.75" PointY="36.25" />
+        <EntityTypeShape EntityType="Model.StockSupplierList" Width="1.5" PointX="83.75" PointY="39.25" />
+        <EntityTypeShape EntityType="Model.StockSupplierTable" Width="1.5" PointX="40.75" PointY="85.25" />
+        <EntityTypeShape EntityType="Model.StockValuation00Edit0" Width="1.5" PointX="83.75" PointY="43.25" />
+        <EntityTypeShape EntityType="Model.StockValuation00Edit1" Width="1.5" PointX="42.75" PointY="85.25" />
+        <EntityTypeShape EntityType="Model.StockValuation00Edit2" Width="1.5" PointX="44.75" PointY="85.25" />
+        <EntityTypeShape EntityType="Model.StockValuation00Edit3" Width="1.5" PointX="83.75" PointY="47.25" />
+        <EntityTypeShape EntityType="Model.StockWork_OnList" Width="1.5" PointX="46.75" PointY="85.25" />
+        <EntityTypeShape EntityType="Model.StockWork_OnList_LR" Width="1.5" PointX="83.75" PointY="52.25" />
+        <EntityTypeShape EntityType="Model.StockWork_OnList_LR_Transfer" Width="1.5" PointX="83.75" PointY="57.25" />
+        <EntityTypeShape EntityType="Model.StockWork_OnList_LR_Transfer1" Width="1.5" PointX="57.75" PointY="85.25" />
+        <EntityTypeShape EntityType="Model.StockWork_OnList_LR10" Width="1.5" PointX="83.75" PointY="62.25" />
+        <EntityTypeShape EntityType="Model.StockWork_OnList_LR2" Width="1.5" PointX="83.75" PointY="67.25" />
+        <EntityTypeShape EntityType="Model.StockWork_OnList_T10" Width="1.5" PointX="67.75" PointY="85.25" />
+        <EntityTypeShape EntityType="Model.StockWork_OnList_T12" Width="1.5" PointX="83.75" PointY="72.25" />
+        <EntityTypeShape EntityType="Model.StockWork_OnList_T12V" Width="1.5" PointX="83.75" PointY="77.25" />
+        <EntityTypeShape EntityType="Model.StockWork_OnList_T19" Width="1.5" PointX="83.75" PointY="82.25" />
+        <EntityTypeShape EntityType="Model.StockWork2120_OnList" Width="1.5" PointX="10.75" PointY="86.25" />
+        <EntityTypeShape EntityType="Model.TransItemEdit0" Width="1.5" PointX="34.75" PointY="86.25" />
+        <EntityTypeShape EntityType="Model.TransItemGroupEdit0" Width="1.5" PointX="84.75" PointY="5.25" />
+        <EntityTypeShape EntityType="Model.TransItemGroupTable" Width="1.5" PointX="48.75" PointY="86.25" />
+        <EntityTypeShape EntityType="Model.TransItemStatusTable" Width="1.5" PointX="53.75" PointY="86.25" />
+        <EntityTypeShape EntityType="Model.TransItemTable" Width="1.5" PointX="63.75" PointY="86.25" />
+        <EntityTypeShape EntityType="Model.TransItemTypeTable" Width="1.5" PointX="69.75" PointY="86.25" />
+        <EntityTypeShape EntityType="Model.xStockSalesItemGroupTable" Width="1.5" PointX="85.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.zPOSEntryZ00Edit0" Width="1.5" PointX="0.75" PointY="87.25" />
+        <EntityTypeShape EntityType="Model.zPOSEntryZ00Edit1" Width="1.5" PointX="85.75" PointY="8.25" />
+        <EntityTypeShape EntityType="Model.zPOSEntryZ00List" Width="1.5" PointX="85.75" PointY="13.25" />
+        <EntityTypeShape EntityType="Model.zStockItemT0Edit2" Width="1.5" PointX="12.75" PointY="87.25" />
+        <EntityTypeShape EntityType="Model.zStockItemT0List" Width="1.5" PointX="14.75" PointY="87.25" />
+        <EntityTypeShape EntityType="Model.zStockItemT1List" Width="1.5" PointX="85.75" PointY="17.25" />
+        <EntityTypeShape EntityType="Model.zStockSupplierEdit2F" Width="1.5" PointX="16.75" PointY="87.25" />
+        <EntityTypeShape EntityType="Model.zStockSupplierList" Width="1.5" PointX="18.75" PointY="87.25" />
+        <AssociationConnector Association="Model.FK_CashEntryLine__CashEntryLineStatus" />
+        <AssociationConnector Association="Model.FK_CashEntryLine__CashEntryLineType" />
+        <AssociationConnector Association="Model.FK_CashEntry__CashEntryStatus" />
+        <AssociationConnector Association="Model.FK_CashEntry__CashEntryType" />
+        <AssociationConnector Association="Model.FK_CashLocation__CashLocationGroup" />
+        <AssociationConnector Association="Model.FK_CashLocationGroup__CashLocationGroupParent" />
+        <AssociationConnector Association="Model.FK_CashLocation__CashLocationStatus" />
+        <AssociationConnector Association="Model.FK_CashLocation__CashLocationType" />
+        <AssociationConnector Association="Model.FK_RSMessage__RSMessageGroup" />
+        <AssociationConnector Association="Model.FK_RSMessageGroup__RSMessageGroupParent" />
+        <AssociationConnector Association="Model.FK_RSMessage__RSMessageStatus" />
+        <AssociationConnector Association="Model.FK_RSMessage__RSMessageType" />
+        <AssociationConnector Association="Model.FK_ShellComputerGroupTable_ShellComputerGroupTable" />
+        <AssociationConnector Association="Model.FK_ShellComputerTable_ShellComputerGroupTable" />
+        <AssociationConnector Association="Model.FK_ShellComputerTable_ShellComputerStatusTable" />
+        <AssociationConnector Association="Model.FK_ShellComputerTable_ShellComputerTypeTable" />
+        <AssociationConnector Association="Model.FK_ShellComputerTable_StockLocationTable" />
+        <AssociationConnector Association="Model.FK_ShellComputerUserTable_ShellComputerTable" />
+        <AssociationConnector Association="Model.FK_ShellComputerUserTable_ShellUserTable" />
+        <AssociationConnector Association="Model.FK_ShellData__ShellDataGroup" />
+        <AssociationConnector Association="Model.FK_ShellDataGroup__ShellDataGroupParent" />
+        <AssociationConnector Association="Model.FK_DataRight__ParentData" />
+        <AssociationConnector Association="Model.FK_ShellDataSearchTable_ShellDataSearchTable" />
+        <AssociationConnector Association="Model.FK_ShellDataSearchTable_ShellDataTable" />
+        <AssociationConnector Association="Model.FK_ShellDataSortTable_ShellDataSortTable" />
+        <AssociationConnector Association="Model.FK_ShellDataSortTable_ShellDataTable" />
+        <AssociationConnector Association="Model.FK_ShellData__ShellDataStatus" />
+        <AssociationConnector Association="Model.FK_ShellData__ShellDataType" />
+        <AssociationConnector Association="Model.FK_ShellDiagnose__ShellDiagnoseGroup" />
+        <AssociationConnector Association="Model.FK_ShellDiagnoseGroup__ShellDiagnoseGroupParent" />
+        <AssociationConnector Association="Model.FK_ShellDiagnose__ShellDiagnoseStatus" />
+        <AssociationConnector Association="Model.FK_ShellDiagnose__ShellDiagnoseType" />
+        <AssociationConnector Association="Model.FK_ShellDLL__ShellDLLGroup" />
+        <AssociationConnector Association="Model.FK_ShellDLLGroup__ShellDLLGroupParent" />
+        <AssociationConnector Association="Model.FK_ShellDLLLanguage__ShellDLL" />
+        <AssociationConnector Association="Model.FK_ShellDLLLanguage__ShellLanguageTable" />
+        <AssociationConnector Association="Model.FK_ShellDLL__ShellDLLStatus" />
+        <AssociationConnector Association="Model.FK_ShellDLL__ShellDLLType" />
+        <AssociationConnector Association="Model.FK_ShellLanguageTable_ShellLanguageStatusTable" />
+        <AssociationConnector Association="Model.FK_ShellLanguageTable_ShellLanguageTypeTable" />
+        <AssociationConnector Association="Model.FK_ShellSchedulerLanguage__ShellLanguageTable" />
+        <AssociationConnector Association="Model.FK_ShellTermName__ShellLanguage" />
+        <AssociationConnector Association="Model.FK_ShellUserTable_ShellLanguageTable" />
+        <AssociationConnector Association="Model.FK_ShellMessageGroupTable_ShellMessageGroupTable" />
+        <AssociationConnector Association="Model.FK_ShellMessageTable_ShellMessageGroupTable" />
+        <AssociationConnector Association="Model.FK_ShellMessage__ShellMessageStatus" />
+        <AssociationConnector Association="Model.FK_ShellMessage__ShellMessageType" />
+        <AssociationConnector Association="Model.FK_ShellOperation__ShellOperationGroup" />
+        <AssociationConnector Association="Model.FK_ShellOperationGroup__ShellOperationGroupParent" />
+        <AssociationConnector Association="Model.FK_ShellOperationLineTable_ShellOperationTable" />
+        <AssociationConnector Association="Model.FK_ShellOperation__ShellOperationStatus" />
+        <AssociationConnector Association="Model.FK_ShellOperation__ShellOperationType" />
+        <AssociationConnector Association="Model.FK_ShellReportFilterTable_ShellReportFilterStatusTable" />
+        <AssociationConnector Association="Model.FK_ShellReportFilterTable_ShellReportFilterTypeTable" />
+        <AssociationConnector Association="Model.FK_ShellReportFilterTable_ShellReportTable" />
+        <AssociationConnector Association="Model.FK_ShellReportWorkTable_ShellReportFilterTable" />
+        <AssociationConnector Association="Model.FK_ShellReportFilterValueTable_ShellUserTable" />
+        <AssociationConnector Association="Model.FK_ShellReportFormTable_ShellReportTable" />
+        <AssociationConnector Association="Model.FK_ShellReport__ShellReportGroup" />
+        <AssociationConnector Association="Model.FK_ShellReportGroup__ShellReportGroupParent" />
+        <AssociationConnector Association="Model.FK_ShellReport__ShellReportStatus" />
+        <AssociationConnector Association="Model.FK_ShellReport__ShellReportType" />
+        <AssociationConnector Association="Model.FK_ShellScheduler__ShellSchedulerGroup" />
+        <AssociationConnector Association="Model.FK_ShellSchedulerGroup__ShellSchedulerGroupParent" />
+        <AssociationConnector Association="Model.FK_ShellSchedulerLanguage__ShellScheduler" />
+        <AssociationConnector Association="Model.FK_ShellScheduler__ShellSchedulerStatus" />
+        <AssociationConnector Association="Model.FK_ShellScheduler__ShellSchedulerType" />
+        <AssociationConnector Association="Model.FK_ShellSetting__ShellSettingGroup" />
+        <AssociationConnector Association="Model.FK_ShellSettingGroup__ShellSettingGroupParent" />
+        <AssociationConnector Association="Model.FK_ShellSetting__ShellSettingStatus" />
+        <AssociationConnector Association="Model.FK_ShellSetting__ShellSettingType" />
+        <AssociationConnector Association="Model.FK_ShellSettingValue__ShellSetting" />
+        <AssociationConnector Association="Model.FK_ShellSettingValue__ShellUser" />
+        <AssociationConnector Association="Model.FK_ShellTerm__ShellTermGroup" />
+        <AssociationConnector Association="Model.FK_ShellTermGroup__ShellTermGroupParent" />
+        <AssociationConnector Association="Model.FK_ShellTermName__ShellTerm" />
+        <AssociationConnector Association="Model.FK_ShellTerm__ShellTermStatus" />
+        <AssociationConnector Association="Model.FK_ShellTerm__ShellTermType" />
+        <AssociationConnector Association="Model.FK_ShellUser__ShellUserGroup" />
+        <AssociationConnector Association="Model.FK_ShellUserGroup__ShellUserGroupParent" />
+        <AssociationConnector Association="Model.FK_ShellUser__ShellUserStatus" />
+        <AssociationConnector Association="Model.FK_ShellUser__ShellUserType" />
+        <AssociationConnector Association="Model.FK_StockEntryTable_ShellUserTable" />
+        <AssociationConnector Association="Model.FK_StockBOMPlan__StockBOMPlanGroup" />
+        <AssociationConnector Association="Model.FK_StockBOMPlanGroup__StockBOMPlanGroupParent" />
+        <AssociationConnector Association="Model.FK_StockBOMPlanLineTable_StockBOMPlanLineStatusTable" />
+        <AssociationConnector Association="Model.FK_StockBOMPlanLineTable_StockBOMPlanLineTypeTable" />
+        <AssociationConnector Association="Model.FK_StockBOMPlanLineTable_StockBOMPlanTable" />
+        <AssociationConnector Association="Model.FK_StockBOMPlanLineTable_StockItemTable" />
+        <AssociationConnector Association="Model.FK_StockBOMPlan__StockBOMPlanStatus" />
+        <AssociationConnector Association="Model.FK_StockBOMPlan__StockBOMPlanType" />
+        <AssociationConnector Association="Model.FK_StockBOMPlanTable_StockItemTable" />
+        <AssociationConnector Association="Model.FK_StockCar__StockCarGroup" />
+        <AssociationConnector Association="Model.FK_StockCarGroup__StockCarGroupParent" />
+        <AssociationConnector Association="Model.FK_StockCar__StockCarStatus" />
+        <AssociationConnector Association="Model.FK_StockCar__StockCarType" />
+        <AssociationConnector Association="Model.FK_StockEntryTable_StockCarTable" />
+        <AssociationConnector Association="Model.FK_Company__CompanyGroup" />
+        <AssociationConnector Association="Model.FK_CompanyGroup__CompanyGroupParent" />
+        <AssociationConnector Association="Model.FK_Company__CompanyStatus" />
+        <AssociationConnector Association="Model.FK_Company__CompanyType" />
+        <AssociationConnector Association="Model.FK_CompanyTable_StockPriceTable" />
+        <AssociationConnector Association="Model.FK_StockCompanyTable_StockTaxTable" />
+        <AssociationConnector Association="Model.FK_StockEntryTable_StockCompanyTable" />
+        <AssociationConnector Association="Model.FK_StockEntryTable_StockCompanyTable1" />
+        <AssociationConnector Association="Model.FK_StockLocationAddressTable_StockCompanyTable" />
+        <AssociationConnector Association="Model.FK_StockSalesItemGroupNameTable_StockCompanyTable" />
+        <AssociationConnector Association="Model.FK_StockLocationItemTable_StockDeliveryGraphTable" />
+        <AssociationConnector Association="Model.FK_StockLocationItemTable_StockDeliveryTypeTable" />
+        <AssociationConnector Association="Model.FK_StockDiscount__StockDiscountStatus" />
+        <AssociationConnector Association="Model.FK_StockDiscount__StockDiscountType" />
+        <AssociationConnector Association="Model.FK_StockEntryLineTable_StockEntryLineStatusTable" />
+        <AssociationConnector Association="Model.FK_StockEntryLineTable_StockEntryLineTypeTable" />
+        <AssociationConnector Association="Model.FK_StockEntryLineTable_StockEntryTable" />
+        <AssociationConnector Association="Model.FK_StockEntryLineTable_StockItemTable" />
+        <AssociationConnector Association="Model.FK_StockEntryLineTable_StockLocationTable" />
+        <AssociationConnector Association="Model.FK_StockEntryTable_StockEntryStatusTable" />
+        <AssociationConnector Association="Model.FK_StockEntryTable_StockEntryTypeTable" />
+        <AssociationConnector Association="Model.FK_StockEntryTable_StockPersonTable" />
+        <AssociationConnector Association="Model.FK_StockPriceLineTable_StockEntryTable" />
+        <AssociationConnector Association="Model.FK_StockItemBarcodeTable_StockItemTable" />
+        <AssociationConnector Association="Model.FK_StockItemGroup__StockItemGroupParent" />
+        <AssociationConnector Association="Model.FK_StockItemTable_StockItemGroupTable" />
+        <AssociationConnector Association="Model.FK_StockItemTable_StockItemStatusTable" />
+        <AssociationConnector Association="Model.FK_StockItemTable_StockItemTypeTable" />
+        <AssociationConnector Association="Model.FK_StockItemTable_StockItemUnitTable" />
+        <AssociationConnector Association="Model.FK_StockItemTable_StockMarkupGroupTable" />
+        <AssociationConnector Association="Model.FK_StockItemTable_StockTaxTable" />
+        <AssociationConnector Association="Model.FK_StockLocationItemTable_StockItemTable" />
+        <AssociationConnector Association="Model.FK_StockItemUnit__StockItemUnitGroup" />
+        <AssociationConnector Association="Model.FK_StockItemUnitGroup__StockItemUnitGroupParent" />
+        <AssociationConnector Association="Model.FK_StockItemUnit__StockItemUnitStatus" />
+        <AssociationConnector Association="Model.FK_StockItemUnit__StockItemUnitType" />
+        <AssociationConnector Association="Model.FK_StockLocationAddressTable_StockLocationTable" />
+        <AssociationConnector Association="Model.FK_StockLocation__StockLocationGroup" />
+        <AssociationConnector Association="Model.FK_StockLocationGroup__StockLocationGroupParent" />
+        <AssociationConnector Association="Model.FK_StockLocationItemTable_StockLocationItemStatusTable" />
+        <AssociationConnector Association="Model.FK_StockLocationItemTable_StockLocationTable" />
+        <AssociationConnector Association="Model.FK_StockLocationItemTable_StockUsageTypeTable" />
+        <AssociationConnector Association="Model.FK_StockLocationRightTable_StockLocationTable" />
+        <AssociationConnector Association="Model.FK_StockLocationShelfTable_StockLocationShelfStatusTable" />
+        <AssociationConnector Association="Model.FK_StockLocationShelfTable_StockLocationShelfTypeTable" />
+        <AssociationConnector Association="Model.FK_StockLocationShelfTable_StockLocationTable" />
+        <AssociationConnector Association="Model.FK_StockLocation__StockLocationStatus" />
+        <AssociationConnector Association="Model.FK_StockLocation__StockLocationType" />
+        <AssociationConnector Association="Model.FK_StockMarkup__StockMarkupGroup" />
+        <AssociationConnector Association="Model.FK_StockMarkupGroup__StockMarkupGroupParent" />
+        <AssociationConnector Association="Model.FK_StockMarkup__StockMarkupStatus" />
+        <AssociationConnector Association="Model.FK_StockMarkup__StockMarkupType" />
+        <AssociationConnector Association="Model.FK_StockPerson__StockPersonGroup" />
+        <AssociationConnector Association="Model.FK_StockPersonGroup__StockPersonGroupParent" />
+        <AssociationConnector Association="Model.FK_StockPerson__StockPersonStatus" />
+        <AssociationConnector Association="Model.FK_StockPerson__StockPersonType" />
+        <AssociationConnector Association="Model.FK_StockPriceLineTable_StockPriceTable" />
+        <AssociationConnector Association="Model.FK_StockPrice__StockPriceStatus" />
+        <AssociationConnector Association="Model.FK_StockPrice__StockPriceType" />
+        <AssociationConnector Association="Model.FK_StockRecipe__StockRecipeStatus" />
+        <AssociationConnector Association="Model.FK_StockSalesItemGroupNameTable_StockSalesItemGroupTable" />
+        <AssociationConnector Association="Model.FK_StockSalesItemGroup__StockSalesItemGroupParent" />
+        <AssociationConnector Association="Model.FK_StockTaxTable_StockTaxStatusTable" />
+        <AssociationConnector Association="Model.FK_StockTaxTable_StockTaxTypeTable" />
+        <AssociationConnector Association="Model.FK_SyncEntryTable_SyncEntryStatusTable" />
+        <AssociationConnector Association="Model.FK_SyncEntryTable_SyncEntryTypeTable" />
+      </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

@@ -1,64 +1,115 @@
-﻿<style>
+﻿@model  IList<WebApplicationGrid.ViewModels.HelperModels.DropDownModel>
+
+<style>
     #searchForm {
-        width:20%;
-        float:left;
-        display:block;
+        width:25%;
+        float: left;
+        display: block;
+        /*padding-top:15px;*/
+    }
+    .dropDownContainer {
+        float: left;
+        width: 13%;
+        padding: 0px 5px 5px 5px;
+        border-radius:5px;
+        margin-left: 5px;
+        background-color: #E9E9E9;
     }
     .form-control {
         display: block;
-        width: 10%;
-        float: left;
-        margin-left:10px;
     }
+
     #searchForm {
-        margin-bottom:0px !important;
+        margin-bottom: 0px !important;
     }
+
     #topfiltersNavBar {
-        padding-top:6px !important;
-        margin-bottom:10px; 
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+        background-color: #D3D2D9;
     }
-    #sel1 {
-        font-size:15px;
+    .labelForDropDown {
+        margin: 0px;
     }
-    #searchForm >input {
-        font-size:15px;
+    #searchForm > input {
+        font-size: 15px;
     }
+
     #searchForm > button {
-        font-size:15px;
+        font-size: 15px;
     }
-
-
-
-
+    #pageSearchField {
+        width:60%;
+        display:block;
+        float:left;
+        padding:20px;
+    }
+    #pageSearchSubmitBtn {
+        width: 20%;
+        display: block;
+        float: left;
+        padding: 9px;
+        margin-left: 3px;
+        border: 1px solid #37C5EF;
+    }
+    #inputForPaging {
+        margin-top:2px;
+        padding-bottom:6px;
+    }
 </style>
+<script>
+    document.getElementById("inputForPaging").defaultValue = 10
+</script>
+
 <nav class="navbar navbar-light bg-light justify-content-between" id="topfiltersNavBar">
     <form class="form-inline" id="searchForm">
-        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit" >Search</button>
+        <input class="form-control" type="search" placeholder="Global Page Search" aria-label="Search" id="pageSearchField">
+        <button class="btn btn-outline-success" id="pageSearchSubmitBtn" type="submit">Search</button>
     </form>
 
-    <select class="form-control" id="sel1" name="sellist1">
-        <option> Selected Version One </option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-    </select>
-    <select class="form-control" id="sel1" name="sellist1">
-        <option>Sected  Two</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-    </select>
-    <select class="form-control" id="sel1" name="sellist1">
-        <option>Sected Version Three</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-    </select> 
-    <select class="form-control" id="sel1" name="sellist1">
-        <option>S V Four</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-    </select>
+    <div class="dropDownContainer">
+        <label for="form-control status" class="labelForDropDown"> სტატუსი </label>
+        <select class="form-control status" id="sel1" name="sellist1">
+            @foreach (var item in Model.First().StatusSource)
+            {
+                <option> @item </option>
+            }
+        </select>
+    </div>
+
+    <div class="dropDownContainer">
+        <label for="form-control type" class="labelForDropDown"> ტიპი </label>
+        <select class="form-control " id="sel1" name="sellist1">
+            @foreach (var item in Model.First().TypeSource)
+            {
+                <option> @item </option>
+            }
+        </select>
+    </div>
+
+    <div class="dropDownContainer">
+        <label for="form-control method" class="labelForDropDown"> მეთოდი </label>
+        <select class="form-control" id="sel1" name="sellist1">
+            @foreach (var item in Model.First().PageSearchSource)
+            {
+                <option> @item.SearchName </option>
+            }
+        </select>
+    </div>
+    <div class="dropDownContainer">
+        <label for="form-control sort" class="labelForDropDown" > დალაგება </label>
+        <select class="form-control" id="sel1" name="sellist1">
+            @foreach (var item in Model.First().PaegSortSource)
+            {
+                <option> @item.SortName </option>
+            }
+        </select>
+    </div>
+    
+
+    <div class="dropDownContainer">
+        <label for="form-control search" class="labelForDropDown"> ჩანაწერი </label>
+        <input type="number"  class="form-control" id="inputForPaging"  min="1"/> 
+    </div>
+
 </nav>

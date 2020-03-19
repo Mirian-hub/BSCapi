@@ -7,6 +7,7 @@
     #firstPageBody {
         background-color: #F4F6FA;
         padding:0px !important;
+        position:absolute;
     }
     #mainContainer {
         padding-left:10px;
@@ -98,13 +99,18 @@
         border: none;
     }
 
-    #TopFiltersGroup {
+    /*#TopFiltersGroup {
         background-color: #D3D2D9 !important;
-    }
+        overflow:hidden !important;
+        margin-bottom:10px;
+    }*/
     #topfiltersNavBar {
         background-color: #D3D2D9 !important;
     }
-
+    #mainContent {
+        height: 100% !important;
+        position:absolute;
+    }
 
    
 </style>
@@ -137,7 +143,6 @@
         <div id="mainContent">
             <div id="TopFiltersGroup">
                 @Html.Partial("_Filters")
-
             </div>
             <div id="topButtons">
                 @Html.Partial("_TopButtons")
@@ -148,9 +153,9 @@
                 @Html.Partial("_LeftManu")
             </div>
 
-            <div id="MainListView">
+            @*<div id="MainListView">
                 @Html.Partial("_MainListView")
-            </div>
+            </div>*@
 
         </div> 
         <div class="container body-content">

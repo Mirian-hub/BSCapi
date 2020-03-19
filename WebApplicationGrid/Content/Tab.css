@@ -1,0 +1,197 @@
+﻿#listViewtable {
+    width: 100%;
+    table-layout: fixed;
+    margin-left: 3px;
+    display: block;
+    float: left;
+}
+
+#listViewtable tr th {
+    padding: 10px;
+    background-color: #ebfaef !important;
+    border-bottom: 1px solid #D3D2D9;
+}
+
+#listViewtable td {
+    border-bottom: 1px solid #D3D2D9;
+    border-right: 1px solid #D3D2D9;
+    padding: 5px;
+    background-color: #ebfaef !important;
+    font-size: 14px;
+}
+
+#mainListViewD {
+    width: 75%;
+    overflow: auto;
+    float: left;
+    padding-top:3px;
+}
+
+
+#leftSideManu {
+    float: left;
+    width: 25%;
+    background-color: beige;
+    padding-top: 3px;
+}
+
+.PageMainContent {
+    background-color: #ebfaef !important;
+}
+
+#footerBtn {
+    float: left;
+    margin: 10px;
+}
+
+.ui-tabs .ui-tabs-panel {
+    padding: 3px !important;
+}
+
+.container py-4 {
+    margin: 0px !important;
+}
+@media (min-width: 1200px) {
+    .container {
+        width: auto !important;
+    }
+}
+.table.dataTable {
+    font-size:14px !important;
+    width:100% !important;
+}
+#dataTable_wrapper label input {
+    border: 1px solid #cccccc !important;
+}
+
+#mainContentContainer:after {
+    content: " ";
+    display: block;
+    clear: both
+}
+
+
+
+
+/*#dataTableGroup_filter {
+    text-align: left !important;
+    float: left !important;
+}*/
+
+#dataTableGroup_filter input {
+    border: 1px solid #cccccc !important;
+    text-align: left !important;
+}
+
+label {
+    font-weight: 100 !important;
+}
+
+#dataTableGroup {
+    width: 100% !important;
+    margin:0px !important;
+    table-layout:fixed !important;
+}
+
+/*#dataTableGroup tbody {
+    display:block !important; 
+    height:100% !important;
+    overflow:auto !important;
+}*/
+/*#dataTableGroup tbody tr {
+    display: table !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+}*/
+/*#dataTableGroup thead {
+    width: calc( 100% - 1em )  scrollbar is average 1em/16px width, remove it from thead width 
+}*/
+
+/*#dataTableGroup_info {
+    display:none;
+}*/   
+
+/*#dataTableGroup thead tr {
+    display:inline-block !important;
+    width:100% !important;
+}*/
+
+#dataTableGroup thead tr th{
+    border:none !important;
+}
+#dataTableGroup tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+#dataTableGroup tbody {
+    display:block;
+    max-height:350px;
+    overflow:auto;
+}
+
+#dataTableGroup_length {
+    font-size:12px;
+}
+#dataTableGroup_wrapper {
+    font-size:12px;
+}
+
+#dataTableGroup tbody tr:hover {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    text-align: center;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor:pointer; 
+}
+.container py-4 {
+    width:100% !important;
+}
+
+#dataTableGroup tfoot th {
+    padding:5px 5px;
+    border:none ;
+
+}
+#dataTableGroup thead tr th {
+    width: 50% !important;
+    font-size:13px;
+}
+#dataTableGroup tfoot tr th input {
+    font-size:12px !important;
+}
+#dataTableGroup_previous {
+    padding-left: 0px !important;
+}
+#dataTableGroup_paginate {
+    float:left;
+    text-align:left;
+}
+
+
+#dataTable tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#dataTable tbody {
+    display: block;
+    max-height: 350px;
+    overflow: auto;
+}
+#dataTable thead tr th {
+    border:none !important;
+    font-size:13px;
+}
+#dataTable tfoot tr th input {
+    font-size:12px;
+}
+#dataTable tfoot tr th {
+    padding: 10px 5px !important;
+    border:none;
+}
+
+arra
