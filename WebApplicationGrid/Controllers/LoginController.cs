@@ -90,7 +90,7 @@ namespace WebApplicationGrid.Controllers
             }
             else
             {
-                user.ErrorMessage = "User Name or Password is incorrest !";
+                user.ErrorMessage = "User Name or Passsword is incorrest !";
                 return View("Index", user);
             }
         }
